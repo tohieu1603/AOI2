@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<TrayGridSetting xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <RowCount>7</RowCount>
+  <ColumnCount>7</ColumnCount>
+  <RowGap>16.5</RowGap>
+  <ColumnGap>16.5</ColumnGap>
+  <TrayTypeName>4CS4TELE</TrayTypeName>
+</TrayGridSetting>

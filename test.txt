@@ -1,0 +1,86 @@
+        public static bool SaveTestData2(MesUploadDataModel data, out string strMsg)
+        {
+            if (!Parameter.GetBit("MesEnable"))
+            {
+                strMsg = "Disable Mes";
+                return true;
+            }
+
+            data.domainId = Parameter.GetString("domainId");
+            data.machineNo = Parameter.GetString("machineNo");
+            data.model = Parameter.GetString("model");
+
+            string sendJson = JsonConvert.SerializeObject(data);
+            string sendUrl = DataGroup.GetGroupData("MesConfig", "SaveTestDataURL").m_dbOffset.S;
+            string strRes = "";
+
+            bool success = HttpHelper.Post(sendUrl, sendJson, out strRes);
+            var reciveData = JsonConvert.DeserializeObject<MesResponseModel>(strRes);
+
+            RecordMgr.SaveTxtLog(RecordMode.Mes_SaveTestData, sendUrl, sendJson, strRes);
+
+            strMsg = reciveData?.message ?? strRes;
+            return success && (reciveData?.success ?? false);
+        }
+
+
+        public static bool SaveMesData(MesUploadDataModel data, out string strMsg)
+        {
+            if(!Parameter.GetBit("MesEnable"))
+            {
+                strMsg = "Disable Mes";
+                return true;
+            }
+
+            var payload = new
+            {
+                reportTime = data.reportTime,
+                domainId = Parameter.GetString("domainId"),
+
+                machineNo = Parameter.GetString("eqpId"),
+                woId = data.woId,
+                model = Parameter.GetString("model"),
+                testStartTime = data.testStartTime,
+                testEndTime = data.testEndTime,
+                executionDuration = data.executionDuration,
+                inputQty = data.inputQty,
+                totalPassQty = data.totalPassQty,
+                totalFailQty = data.totalFailQty,
+                itemList = data.itemList.Select(x => new
+                {
+                    defectCode = x.errorCode,
+                    defectName = x.errorDesc,
+                    qty = x.failQty
+                })
+            };
+
+            var sendJson = JsonConvert.SerializeObject(payload);
+            var url = DataGroup.GetGroupData("MesConfig", "SaveTestDataURL").m_dbOffset.S;
+            string strRes = "";
+            bool success = HttpHelper.Post(url, sendJson, out strRes);
+
+            var reciveData = JsonConvert.DeserializeObject<MesResponseModel>(strRes);
+            bool bRet = success && (reciveData?.success ?? false);
+            strMsg = reciveData?.message ?? strRes;
+
+            RecordMgr.SaveTxtLog(RecordMode.Mes_SaveTestData, url, sendJson, strRes);
+            return bRet;
+        }
+public class DefectItem
+{
+    [JsonProperty("defectCode")]
+    public string errorCode = "";
+
+    [JsonProperty("defectName")]
+    public string errorDesc = "";
+
+    [JsonProperty("qty")]
+    public int failQty = 0;
+}
+
+NgData_rawList = [
+    [3, 4],   // Slot 0
+    [],       // Slot 1
+    [6],      // Slot 2
+    []        // Slot 3
+]

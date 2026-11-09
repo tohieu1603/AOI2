@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{27FE8AE8-F63C-4FB4-938A-99B89B3DCD75}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AF.Upload.Hive</RootNamespace>
+    <AssemblyName>AF.Upload.Hive</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Exe\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\Exe\AF.Upload.Hive.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AF.Card, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\autoframe2 - Hive\exe\AF.Card.dll</HintPath>
+    </Reference>
+    <Reference Include="AF.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\autoframe2 - Hive\exe\AF.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="AF.Communicate, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\autoframe2 - Hive\exe\AF.Communicate.dll</HintPath>
+    </Reference>
+    <Reference Include="AF.Data.Language, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\exe\AF.Data.Language.dll</HintPath>
+    </Reference>
+    <Reference Include="AF.Data.Permission, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\exe\AF.Data.Permission.dll</HintPath>
+    </Reference>
+    <Reference Include="AF.File, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\autoframe2 - Hive\exe\AF.File.dll</HintPath>
+    </Reference>
+    <Reference Include="AF.Station, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\autoframe2 - Hive\exe\AF.Station.dll</HintPath>
+    </Reference>
+    <Reference Include="DowntimeCauseDLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Exe\DowntimeCauseDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=7.7.0.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Exe\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Exe\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\exe\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\exe\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.11.7.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Exe\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\exe\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\exe\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Exe\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\exe\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="zxing, Version=0.16.11.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Exe\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.11.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Exe\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UI\Form_HiveOnboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_HiveOnboard.Designer.cs">
+      <DependentUpon>Form_HiveOnboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_SafetyStatusMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalMessageBoxHook.cs" />
+    <Compile Include="HashHelper.cs" />
+    <Compile Include="HiveCommandProcessor.cs" />
+    <Compile Include="UI\Form_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_Login.Designer.cs">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_MsgWithMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_MsgWithMaintenance.Designer.cs">
+      <DependentUpon>Form_MsgWithMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_OffboardMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_OffboardMsg.Designer.cs">
+      <DependentUpon>Form_OffboardMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_OperationMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_OperationMsg.Designer.cs">
+      <DependentUpon>Form_OperationMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_ResOnboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_ResOnboard.Designer.cs">
+      <DependentUpon>Form_ResOnboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_Resume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_Resume.Designer.cs">
+      <DependentUpon>Form_Resume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_ResumeInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_ResumeInput.Designer.cs">
+      <DependentUpon>Form_ResumeInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_ResumeMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_ResumeMsg.Designer.cs">
+      <DependentUpon>Form_ResumeMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_SafetyStatusMonitor.Designer.cs">
+      <DependentUpon>Form_SafetyStatusMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_Warning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_Warning.Designer.cs">
+      <DependentUpon>Form_Warning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_MsgWithRepair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_MsgWithRepair.Designer.cs">
+      <DependentUpon>Form_MsgWithRepair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_Operation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_Operation.Designer.cs">
+      <DependentUpon>Form_Operation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HiveMgr.cs" />
+    <Compile Include="HiveTool.cs" />
+    <Compile Include="UI\HiveUIColors.cs" />
+    <Compile Include="UI\HiveUserControl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\Form_HiveOnboard.resx">
+      <DependentUpon>Form_HiveOnboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_Login.resx">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_MsgWithMaintenance.resx">
+      <DependentUpon>Form_MsgWithMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_OffboardMsg.resx">
+      <DependentUpon>Form_OffboardMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_OperationMsg.resx">
+      <DependentUpon>Form_OperationMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_ResOnboard.resx">
+      <DependentUpon>Form_ResOnboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_Resume.resx">
+      <DependentUpon>Form_Resume.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_ResumeInput.resx">
+      <DependentUpon>Form_ResumeInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_ResumeMsg.resx">
+      <DependentUpon>Form_ResumeMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_SafetyStatusMonitor.resx">
+      <DependentUpon>Form_SafetyStatusMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_Warning.resx">
+      <DependentUpon>Form_Warning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_MsgWithRepair.resx">
+      <DependentUpon>Form_MsgWithRepair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_Operation.resx">
+      <DependentUpon>Form_Operation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\EStop.png" />
+    <None Include="res\LightCurtain.png" />
+    <None Include="res\SafetyDoor.png" />
+    <None Include="res\Stop.png" />
+    <None Include="res\Pause.png" />
+    <None Include="res\Start.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

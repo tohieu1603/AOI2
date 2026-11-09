@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{FF80071C-B31B-4170-AC7A-DF2C4A46E82C}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Autoframe PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Autoframe/UI/Form_Auto.cs">
+    <Files>
+      <File FileName="Autoframe/Station/StationUnloadGantryEx.cs" Line="305" Column="58" />
+      <File FileName="Autoframe/Station/TraySwapHelper.cs" Line="1691" Column="62" />
+      <File FileName="Autoframe/DBExtend/RedisHelperEx.cs" />
+      <File FileName="Autoframe/Station/StationLoading.cs" />
+      <File FileName="Autoframe/UI/Form_Auto.cs" Line="281" Column="58" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Autoframe" expanded="True">
+            <Node name="Autoframe" expanded="True">
+              <Node name="DBExtend" expanded="True" />
+              <Node name="Station" expanded="True" />
+              <Node name="UI" expanded="True">
+                <Node name="Form_Auto.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

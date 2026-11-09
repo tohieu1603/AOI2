@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ke Hoach Nang Cap Toan Dien Async/Await (Khong Dung Wrapper) - Autoframe</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --card-bg: #161b22;
+            --border: #30363d;
+            --text-main: #c9d1d9;
+            --text-muted: #8b949e;
+            --accent-blue: #58a6ff;
+            --accent-green: #3fb950;
+            --accent-red: #f85149;
+            --accent-yellow: #d29922;
+            --accent-purple: #bc8cff;
+            --code-bg: #0b0e14;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1250px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 35px;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 26px;
+            color: var(--accent-blue);
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            color: var(--text-muted);
+        }
+
+        .alert-info {
+            background-color: rgba(88, 166, 255, 0.08);
+            border: 1px solid var(--accent-blue);
+            border-radius: 8px;
+            padding: 18px 20px;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .alert-info b {
+            color: var(--accent-blue);
+        }
+
+        .summary-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 35px;
+        }
+
+        .summary-card h2 {
+            font-size: 18px;
+            color: var(--accent-yellow);
+            margin-bottom: 15px;
+        }
+
+        table.summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13.5px;
+        }
+
+        table.summary-table th, table.summary-table td {
+            border: 1px solid var(--border);
+            padding: 12px 14px;
+            text-align: left;
+        }
+
+        table.summary-table th {
+            background-color: #21262d;
+            color: #ffffff;
+        }
+
+        table.summary-table tr:hover {
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .badge-red { background: rgba(248, 81, 73, 0.15); color: var(--accent-red); border: 1px solid var(--accent-red); }
+        .badge-green { background: rgba(63, 185, 80, 0.15); color: var(--accent-green); border: 1px solid var(--accent-green); }
+        .badge-yellow { background: rgba(210, 153, 34, 0.15); color: var(--accent-yellow); border: 1px solid var(--accent-yellow); }
+        .badge-purple { background: rgba(188, 140, 255, 0.15); color: var(--accent-purple); border: 1px solid var(--accent-purple); }
+
+        .section-item {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin-bottom: 35px;
+            overflow: hidden;
+        }
+
+        .section-header {
+            padding: 16px 20px;
+            background-color: #21262d;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .section-title {
+            font-size: 15.5px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .section-body {
+            padding: 24px;
+        }
+
+        .diff-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 950px) {
+            .diff-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .diff-box {
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+        }
+
+        .diff-header {
+            padding: 10px 14px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .diff-header.old {
+            background-color: rgba(248, 81, 73, 0.15);
+            color: var(--accent-red);
+            border-bottom: 1px solid rgba(248, 81, 73, 0.3);
+        }
+
+        .diff-header.new {
+            background-color: rgba(63, 185, 80, 0.15);
+            color: var(--accent-green);
+            border-bottom: 1px solid rgba(63, 185, 80, 0.3);
+        }
+
+        pre {
+            background-color: var(--code-bg);
+            padding: 16px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 12.5px;
+            line-height: 1.5;
+            overflow-x: auto;
+            color: #e6edf3;
+        }
+
+        .desc-text {
+            font-size: 14px;
+            color: var(--text-main);
+            margin-bottom: 10px;
+        }
+
+        .benefit-box {
+            margin-top: 15px;
+            padding: 12px 16px;
+            background-color: rgba(63, 185, 80, 0.08);
+            border-left: 3px solid var(--accent-green);
+            font-size: 13.5px;
+        }
+
+        .benefit-title {
+            font-weight: 600;
+            color: var(--accent-green);
+            margin-bottom: 4px;
+        }
+
+        .warning-box {
+            margin-top: 35px;
+            padding: 20px;
+            background-color: rgba(210, 153, 34, 0.1);
+            border: 1px solid var(--accent-yellow);
+            border-radius: 8px;
+        }
+
+        .warning-box h3 {
+            color: var(--accent-yellow);
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .warning-box ul {
+            padding-left: 20px;
+            font-size: 14px;
+        }
+
+        .warning-box li {
+            margin-bottom: 6px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>KE HOACH NANG CAP TOAN DIEN ASYNC / AWAIT (KHONG DUNG WRAPPER)</h1>
+        <div class="subtitle">Bang tong hop day du tat ca cac module duoc nang cap: MES, Tram do khay, UI Form, SFC Query, Hive PDCA va He thong Ghi File Log.</div>
+    </header>
+
+    <div class="alert-info">
+        <b>Nguyen tac trien khai:</b>
+        Loai bo hoan toan ham wrapper dong bo trung gian <code>SaveTestData</code>. Toan bo he thong se giao tiep qua phuong thuc thuan <code>Task&lt;(bool, string)&gt; SaveTestDataAsync</code>. Cac vi tri con lai nhu SFC Query, Hive PDCA va File Log deu duoc giu nguyen va nang cap dong bo theo mo hinh bat dong bo.
+    </div>
+
+    <!-- BANG TONG HOP TOAN BO -->
+    <div class="summary-card">
+        <h2>BANG TONG HOP TAT CA CAC MODULE NANG CAP ASYNC/AWAIT</h2>
+        <table class="summary-table">
+            <thead>
+                <tr>
+                    <th style="width: 5%;">#</th>
+                    <th style="width: 25%;">Module / Ten File</th>
+                    <th style="width: 15%;">Vi Tri Dong</th>
+                    <th style="width: 25%;">Hien Trang Dong Bo</th>
+                    <th style="width: 30%;">Giai Phap Async (Khong Wrapper)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><b>Autoframe/MesMgr.cs</b><br>API Ban Du Lieu MES</td>
+                    <td>Dong 147 - 224</td>
+                    <td>HttpWebRequest chan luong, tao JObject thu cong</td>
+                    <td><b>Dung duy nhat SaveTestDataAsync</b> voi HttpClient singleton, loai bo wrapper</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><b>Autoframe/Station/StationUnloadBinEx.cs</b><br>Tram Do Khay San Xuat</td>
+                    <td>Dong 743 - 758</td>
+                    <td>Goi ham wrapper SaveTestData(...)</td>
+                    <td>Goi truc tiep <b>SaveTestDataAsync(...).GetAwaiter().GetResult()</b> tren Worker Thread</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><b>Autoframe/UI/Form_UnloadInfo.cs</b><br>Nut Kiem Tra MES Tren Form</td>
+                    <td>Dong 368 - 402</td>
+                    <td>Goi wrapper dong bo lam do chuot giao dien</td>
+                    <td>Chuyen su kien thanh <b>async void</b> ket hop tu khoa <b>await</b></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><b>Autoframe/Communicate/SFCQuery.cs</b><br>Truy Van SFC Qua Socket</td>
+                    <td>Dong 95 - 123</td>
+                    <td>Thread.Sleep(100) va Thread.Sleep(200) lam block CPU</td>
+                    <td>Chuyen sang <b>SemaphoreSlim</b> ket hop <b>await Task.Delay(...)</b></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><b>Autoframe/UI/Form_Auto.cs</b><br>Upload Du Lieu Hive / PDCA</td>
+                    <td>Dong 284 - 309</td>
+                    <td>Task.Run vo to chuc, khong quan ly duoc ngoai le</td>
+                    <td>Goi ham async rieng biet <b>UploadHiveDataSafelyAsync</b> voi try/catch</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><b>Autoframe/MesMgr.cs</b><br>Ghi File Log Ra O Dia</td>
+                    <td>Dong 359 - 393</td>
+                    <td>File.AppendAllText dong bo, de xung dot khoa file</td>
+                    <td>Dung <b>FileStream (useAsync: true)</b> ket hop <b>SemaphoreSlim</b></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- MUC 1: MESMGR.CS (KHONG WRAPPER) -->
+    <div class="section-item">
+        <div class="section-header">
+            <div class="section-title">MUC 1: Autoframe/MesMgr.cs - API Ban Du Lieu MES (Thuan Async, Khong Wrapper)</div>
+            <span class="badge badge-purple">Uu tien cao: Xoa bo wrapper</span>
+        </div>
+        <div class="section-body">
+            <div class="desc-text">
+                <b>Vi tri sua:</b> Thay the toan bo ham dong bo tu <b>Dong 147 den Dong 224</b> bang duy nhat mot ham thuan bat dong bo <code>SaveTestDataAsync</code>.
+            </div>
+
+            <div class="diff-container">
+                <div class="diff-box">
+                    <div class="diff-header old">MA NGUON CU (DONG 147 - 224)</div>
+                    <pre><code>public static bool SaveTestData(MesUploadDataModel data, out string strMsg)
+{
+    if (!Parameter.GetBit("MesEnable"))
+    {
+        strMsg = "Disable Mes";
+        return true;
+    }
+    // ... Tao JObject, JArray thu cong 75 dong ...
+    string sendJson = JsonConvert.SerializeObject(obj);
+    string sendUrl = DataGroup.GetGroupData("MesConfig", "SaveTestDataURL").m_dbOffset.S;
+    string strRes = "";
+
+    // Dung HttpWebRequest dong bo gay block luong
+    if (HttpHelper.Post(sendUrl, sendJson, out strRes))
+    {
+        MesResponseModel reciveData = JsonConvert.DeserializeObject&lt;MesResponseModel&gt;(strRes);
+        // ... if else ...
+    }
+    return bRet;
+}</code></pre>
+                </div>
+
+                <div class="diff-box">
+                    <div class="diff-header new">MA NGUON MOI FULL (DUY NHAT HAM ASYNC)</div>
+                    <pre><code>// 1. Khoi tao HttpClient duy nhat dung chung
+private static readonly HttpClient _httpClient = new HttpClient
+{
+    Timeout = TimeSpan.FromSeconds(10)
+};
+
+// 2. Ham Async duy nhat - Khong ton tai ham wrapper dong bo
+public static async Task&lt;(bool success, string message)&gt; SaveTestDataAsync(MesUploadDataModel data)
+{
+    if (!Parameter.GetBit("MesEnable"))
+        return (true, "Disable Mes");
+
+    data.domainId = Parameter.GetString("domainId");
+    data.machineNo = Parameter.GetString("machineNo");
+    data.model = Parameter.GetString("model");
+
+    string sendJson = JsonConvert.SerializeObject(data);
+    string sendUrl = DataGroup.GetGroupData("MesConfig", "SaveTestDataURL").m_dbOffset.S;
+    string strRes = "";
+    bool isHttpOk = false;
+
+    try
+    {
+        var content = new StringContent(sendJson, Encoding.UTF8, "application/json");
+        // ASYNC: Khong giu chan luong CPU
+        HttpResponseMessage response = await _httpClient.PostAsync(sendUrl, content).ConfigureAwait(false);
+        strRes = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+        isHttpOk = response.IsSuccessStatusCode;
+    }
+    catch (Exception ex)
+    {
+        strRes = ex.Message;
+        isHttpOk = false;
+    }
+
+    var reciveData = JsonConvert.DeserializeObject&lt;MesResponseModel&lt;object&gt;&gt;(strRes);
+    bool bRet = isHttpOk && (reciveData?.success ?? false);
+    string strMsg = reciveData?.message ?? strRes;
+
+    RecordMgr.SaveTxtLog(RecordMode.Mes_SaveTestData, sendUrl, sendJson, strRes);
+    return (bRet, strMsg);
+}</code></pre>
+                </div>
+            </div>
+
+            <div class="benefit-box">
+                <div class="benefit-title">Loi ich ky thuat:</div>
+                Tiet kiem hon 50 dong ma lenh, khong cap phat JObject trung gian. Mo hinh giao tiep hoan toan thuan Async, khong ton tai nguy co Deadlock do loi goi dong bo trung gian.
+            </div>
+        </div>
+    </div>
+
+    <!-- MUC 2: STATIONUNLOADBINEX.CS -->
+    <div class="section-item">
+        <div class="section-header">
+            <div class="section-title">MUC 2: Autoframe/Station/StationUnloadBinEx.cs - Tram Do Khay Goi Truc Tiep Ham Async</div>
+            <span class="badge badge-green">An toan 100% tren Worker Thread</span>
+        </div>
+        <div class="section-body">
+            <div class="desc-text">
+                <b>Vi tri sua:</b> Tai buoc <code>case "UploadData"</code> o <b>Dong 743 den Dong 758</b>. Do khong con wrapper, ta goi truc tiep <code>SaveTestDataAsync</code> tai day.
+            </div>
+
+            <div class="diff-container">
+                <div class="diff-box">
+                    <div class="diff-header old">MA NGUON CU (DONG 743 - 758)</div>
+                    <pre><code>case "UploadData": // [San xuat] Upload du lieu khay len he thong MES                  
+    if (Parameter.GetBit("MesEnable")) 
+    {
+        string strMsg = "";
+        // CU: Goi ham wrapper dong bo
+        if (!MesMgr.SaveTestData(currentBinTray.ConvertToMesData(), out strMsg)) 
+        {
+            int iRet = ShowMessage($"MES上传数据失败:{strMsg}", "MesUploadFail", 
+                        new string[] { "重新上传".txtTrans(TransType.Trans), "跳过".txtTrans(TransType.Trans) });
+            if (iRet == 0) 
+                return "UploadData"; 
+            else
+                Logger.Process(this.Name, "MES upload fail!"); 
+        }
+        else
+            Logger.Process(this.Name, "MES upload successfully!"); 
+    }                  
+    return "UpdateData";</code></pre>
+                </div>
+
+                <div class="diff-box">
+                    <div class="diff-header new">MA NGUON MOI FULL (GOI ASYNC TAI TRAM MAY)</div>
+                    <pre><code>case "UploadData": // [San xuat] Upload du lieu khay len he thong MES                  
+    if (Parameter.GetBit("MesEnable")) 
+    {
+        // MOI: Goi truc tiep ham Async vi khong con wrapper.
+        // Vi ProduceRun chay tren Dedicated Worker Thread doc lap
+        // nen GetAwaiter().GetResult() tai day AN TOAN TUYET DOI (Khong the deadlock)
+        var (isSuccess, strMsg) = MesMgr.SaveTestDataAsync(currentBinTray.ConvertToMesData())
+                                        .GetAwaiter()
+                                        .GetResult();
+
+        if (!isSuccess) 
+        {
+            int iRet = ShowMessage($"MES上传数据失败:{strMsg}", "MesUploadFail", 
+                        new string[] { "重新上传".txtTrans(TransType.Trans), "跳过".txtTrans(TransType.Trans) });
+            if (iRet == 0) 
+                return "UploadData"; // Nguoi van hanh chon gui lai
+            else
+                Logger.Process(this.Name, "MES upload fail!"); 
+        }
+        else
+        {
+            Logger.Process(this.Name, "MES upload successfully!"); 
+        }
+    }                  
+    return "UpdateData";</code></pre>
+                </div>
+            </div>
+
+            <div class="benefit-box">
+                <div class="benefit-title">Diem luu y ve luong may:</div>
+                Luong tram may la luong background thuan tuy cua CLR (khong co SynchronizationContext), do do viec block tai luong nay de cho ket qua tu server MES la quy trinh hoan toan tieu chuan va an toan trong tu dong hoa cong nghiep.
+            </div>
+        </div>
+    </div>
+
+    <!-- MUC 3: FORM_UNLOADINFO.CS -->
+    <div class="section-item">
+        <div class="section-header">
+            <div class="section-title">MUC 3: Autoframe/UI/Form_UnloadInfo.cs - Nut Kiem Tra MES Tren Form Test</div>
+            <span class="badge badge-yellow">Dung tu khoa await</span>
+        </div>
+        <div class="section-body">
+            <div class="desc-text">
+                <b>Vi tri sua:</b> Sua su kien nut bam <code>button5_Click</code> tai <b>Dong 368 den Dong 402</b>. Chuyen sang <code>async void</code> va dung <code>await</code> truc tiep.
+            </div>
+
+            <div class="diff-container">
+                <div class="diff-box">
+                    <div class="diff-header old">MA NGUON CU (DONG 368 - 402)</div>
+                    <pre><code>// CU: Ham dong bo lam treo chuot UI
+private void button5_Click(object sender, EventArgs e)
+{
+    MesUploadDataModel model = new MesUploadDataModel();
+    model.reportTime = DateTime.Now.ToString("yyyy-MM-dd");
+    model.testStartTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+    model.testEndTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+    model.executionDuration = 300;
+    model.inputQty = 36;
+    model.totalPassQty = 30;
+    model.totalFailQty = 6;
+    model.itemList.Add(new DefectItem() { errorCode = "D01", errorDesc = "不良1", failQty = 1 });
+    model.itemList.Add(new DefectItem() { errorCode = "D02", errorDesc = "不良2", failQty = 2 });
+    model.itemList.Add(new DefectItem() { errorCode = "D03", errorDesc = "不良3", failQty = 3 });
+    
+    string msg = "";
+    // NGUY HIEM: Chan luong UI
+    MesMgr.SaveTestData(model, out msg);
+}</code></pre>
+                </div>
+
+                <div class="diff-box">
+                    <div class="diff-header new">MA NGUON MOI FULL (ASYNC VOID VOI AWAIT)</div>
+                    <pre><code>// MOI: Them tu khoa 'async'
+private async void button5_Click(object sender, EventArgs e)
+{
+    button5.Enabled = false; // Khoa nut chong click double
+    try
+    {
+        MesUploadDataModel model = new MesUploadDataModel();
+        model.reportTime = DateTime.Now.ToString("yyyy-MM-dd");
+        model.testStartTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+        model.testEndTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+        model.executionDuration = 300;
+        model.inputQty = 36;
+        model.totalPassQty = 30;
+        model.totalFailQty = 6;
+        model.itemList.Add(new DefectItem() { errorCode = "D01", errorDesc = "不良1", failQty = 1 });
+        model.itemList.Add(new DefectItem() { errorCode = "D02", errorDesc = "不良2", failQty = 2 });
+        model.itemList.Add(new DefectItem() { errorCode = "D03", errorDesc = "不良3", failQty = 3 });
+
+        // MOI: Dung AWAIT truc tiep, khong can wrapper
+        var (isSuccess, strMsg) = await MesMgr.SaveTestDataAsync(model);
+
+        if (isSuccess)
+            MessageBox.Show("Gui MES thanh cong!");
+        else
+            MessageBox.Show($"Gui MES that bai: {strMsg}");
+    }
+    catch (Exception ex)
+    {
+        MessageBox.Show($"Loi: {ex.Message}");
+    }
+    finally
+    {
+        button5.Enabled = true; // Mo lai nut
+    }
+}</code></pre>
+                </div>
+            </div>
+
+            <div class="benefit-box">
+                <div class="benefit-title">Ket qua dat duoc:</div>
+                Giao dien form hoan toan khong bi do hay "Not Responding" du mang co bi ngat hay server MES bi tre 10 giay.
+            </div>
+        </div>
+    </div>
+
+    <!-- MUC 4: SFCQUERY.CS -->
+    <div class="section-item">
+        <div class="section-header">
+            <div class="section-title">MUC 4: Autoframe/Communicate/SFCQuery.cs - Giai Phong Luong Cho Vong Lap SFC</div>
+            <span class="badge badge-yellow">Uu tien 4: Loai bo Thread.Sleep</span>
+        </div>
+        <div class="section-body">
+            <div class="desc-text">
+                <b>Vi tri sua:</b> Trong ham <code>SendAndReceive</code> tai <b>Dong 95 den Dong 123</b>. Thay the <code>Thread.Sleep</code> bang <code>Task.Delay</code> de giai phong CPU.
+            </div>
+
+            <div class="diff-container">
+                <div class="diff-box">
+                    <div class="diff-header old">MA NGUON CU (DONG 95 - 123)</div>
+                    <pre><code>lock (objLock)
+{
+    int failCount = 0;
+    while (true)
+    {
+        failCount++;
+        try
+        {
+            Connect();
+            SendMessage(strSend);
+            Thread.Sleep(100); // CHUA TOT: Lam dong bang luong 100ms
+            link.ReadLine(out strReveive, "}@\n");
+            break;
+        }
+        catch
+        {
+            Disconnect();
+            Thread.Sleep(200); // CHUA TOT: Lam dong bang luong 200ms
+        }
+        // ...
+    }
+}</code></pre>
+                </div>
+
+                <div class="diff-box">
+                    <div class="diff-header new">MA NGUON MOI FULL (DUNG SEMAPHORESLIM VA TASK.DELAY)</div>
+                    <pre><code>private static readonly SemaphoreSlim _sfcLock = new SemaphoreSlim(1, 1);
+
+public static async Task&lt;(bool success, string send, string receive)&gt; SendAndReceiveAsync(SFCMode mode, string cardId)
+{
+    string strSend = "";
+    string strReceive = "";
+    if (cardId != null) cardId = cardId.Replace("+", "%2B");
+
+    // Dinh dang chuoi gui theo mode (giu nguyen)
+    // ...
+
+    await _sfcLock.WaitAsync().ConfigureAwait(false);
+    try
+    {
+        int failCount = 0;
+        while (true)
+        {
+            failCount++;
+            try
+            {
+                Connect();
+                SendMessage(strSend);
+                // DUNG TASK.DELAY: Giai phong luong CPU trong 100ms
+                await Task.Delay(100).ConfigureAwait(false);
+                link.ReadLine(out strReceive, "}@\n");
+                break;
+            }
+            catch
+            {
+                Disconnect();
+                await Task.Delay(200).ConfigureAwait(false);
+            }
+
+            if (failCount >= 3)
+            {
+                Disconnect();
+                return (false, strSend, strReceive);
+            }
+        }
+    }
+    finally
+    {
+        _sfcLock.Release();
+    }
+
+    return (true, strSend.Trim('\n'), (strReceive ?? "").Trim('\n'));
+}</code></pre>
+                </div>
+            </div>
+
+            <div class="benefit-box">
+                <div class="benefit-title">Ket qua dat duoc:</div>
+                Thay the <code>lock</code> bang <code>SemaphoreSlim</code> bat dong bo, <code>Task.Delay</code> hoan toan khong tieu hao CPU cycles trong suot thoi gian cho thiet bi.
+            </div>
+        </div>
+    </div>
+
+    <!-- MUC 5: FORM_AUTO.CS HIVE -->
+    <div class="section-item">
+        <div class="section-header">
+            <div class="section-title">MUC 5: Autoframe/UI/Form_Auto.cs - Chuan Hoa Goi Ban Du Lieu Hive / PDCA</div>
+            <span class="badge badge-yellow">Uu tien 5: Quan ly ngoai le an toan</span>
+        </div>
+        <div class="section-body">
+            <div class="desc-text">
+                <b>Vi tri sua:</b> Tai <b>Dong 284 den Dong 309</b> trong phuong thuc <code>OnShowProductData</code>. Chuyen tu <code>Task.Run</code> sang ham async rieng biet co co che bat ngoai le.
+            </div>
+
+            <div class="diff-container">
+                <div class="diff-box">
+                    <div class="diff-header old">MA NGUON CU (DONG 284 - 309)</div>
+                    <pre><code>if (HiveMgr.Enable)
+{
+    // Fire-and-forget kieu cu: neu gap loi se kho bat
+    Task.Run(() => 
+    {
+        HiveTool.MachineDataParameters machineDataParameters = new HiveTool.MachineDataParameters();                    
+        // ... switch case thiet lap mode ...
+        HiveMgr.OnSendProductData(machineDataParameters);
+    });
+}</code></pre>
+                </div>
+
+                <div class="diff-box">
+                    <div class="diff-header new">MA NGUON MOI FULL (ASYNC METHOD VOI TRY/CATCH)</div>
+                    <pre><code>if (HiveMgr.Enable)
+{
+    // Goi ham Async rieng biet co try/catch an toan
+    _ = UploadHiveDataSafelyAsync();
+}
+
+private async Task UploadHiveDataSafelyAsync()
+{
+    try
+    {
+        HiveTool.MachineDataParameters parameters = new HiveTool.MachineDataParameters();
+        switch (StationEx.Process)
+        {
+            case AutoProcess.正常生产:
+                parameters.Mode = Parameter.GetBit("Enable_PDCA") 
+                    ? ProcessingMode.NormalRunWithPdcaSfc 
+                    : ProcessingMode.NormalRunNotWithPdcaSfc;
+                break;
+            case AutoProcess.空跑:
+                parameters.Mode = ProcessingMode.DryRun;
+                break;
+            case AutoProcess.CPK:
+                parameters.Mode = ProcessingMode.CPK;
+                break;
+            default: break;
+        }
+
+        // Chay bat dong bo va bat ngoai le neu co
+        await Task.Run(() => HiveMgr.OnSendProductData(parameters)).ConfigureAwait(false);
+    }
+    catch (Exception ex)
+    {
+        Logger.Process("HIVE", "Loi upload Hive: " + ex.Message);
+    }
+}</code></pre>
+                </div>
+            </div>
+
+            <div class="benefit-box">
+                <div class="benefit-title">Ket qua dat duoc:</div>
+                Tach bach ro rang khoi ma xu ly tham so, bat moi ngoai le giup bao ve ung dung khong bi crash ngam.
+            </div>
+        </div>
+    </div>
+
+    <!-- MUC 6: RECORDMGR SAVETXTLOG -->
+    <div class="section-item">
+        <div class="section-header">
+            <div class="section-title">MUC 6: Autoframe/MesMgr.cs - Ghi File Log Bat Dong Bo (Non-blocking File I/O)</div>
+            <span class="badge badge-green">Uu tien 6: Ghi dia bang IOCP</span>
+        </div>
+        <div class="section-body">
+            <div class="desc-text">
+                <b>Vi tri sua:</b> Tai <b>Dong 359 den Dong 393</b> trong ham <code>SaveTxtLog</code>. Thay the <code>AppendAllText</code> dong bo bang <code>FileStream</code> voi co <code>useAsync: true</code>.
+            </div>
+
+            <div class="diff-container">
+                <div class="diff-box">
+                    <div class="diff-header old">MA NGUON CU (DONG 359 - 393)</div>
+                    <pre><code>public static void SaveTxtLog(RecordMode mode, string url, string request, string response)
+{
+    string strPath = MesPath + "\\MesLog" + DateTime.Now.ToString("yyyyMMdd") + ".txt";
+    // ...
+    try
+    {
+        // GHI CHU: Ham dong bo lam cham tre o dia
+        System.IO.File.AppendAllText(strPath, strLog);
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex.Message);
+    }
+}</code></pre>
+                </div>
+
+                <div class="diff-box">
+                    <div class="diff-header new">MA NGUON MOI FULL (FILESTREAM USEASYNC + SEMAPHORE)</div>
+                    <pre><code>private static readonly SemaphoreSlim _logSemaphore = new SemaphoreSlim(1, 1);
+
+public static async Task SaveTxtLogAsync(RecordMode mode, string url, string request, string response)
+{
+    try
+    {
+        string dir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Log", "MesLog");
+        if (!Directory.Exists(dir))
+        {
+            Directory.CreateDirectory(dir);
+        }
+
+        string strPath = Path.Combine(dir, $"MesLog_{DateTime.Now:yyyyMMdd}.txt");
+        string strLog = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss:fff} -----> {mode} --> {url}\\r\\n"
+                      + $"REQUEST  ---> {request}\\r\\n"
+                      + $"RESPONSE ---> {response}\\r\\n\\r\\n";
+
+        // Khoa bat dong bo tranh xung dot ghi file
+        await _logSemaphore.WaitAsync().ConfigureAwait(false);
+        try
+        {
+            byte[] encodedText = Encoding.UTF8.GetBytes(strLog);
+            using (var sourceStream = new FileStream(strPath, 
+                FileMode.Append, FileAccess.Write, FileShare.Read, 
+                bufferSize: 4096, useAsync: true))
+            {
+                await sourceStream.WriteAsync(encodedText, 0, encodedText.Length).ConfigureAwait(false);
+            }
+        }
+        finally
+        {
+            _logSemaphore.Release();
+        }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine("Loi ghi log: " + ex.Message);
+    }
+}</code></pre>
+                </div>
+            </div>
+
+            <div class="benefit-box">
+                <div class="benefit-title">Ket qua dat duoc:</div>
+                Ghi file thuc hien truc tiep qua I/O Completion Ports (IOCP) cua he dieu hanh, khong gay nghe luong CPU luc he thong dang ghi file dung luong lon.
+            </div>
+        </div>
+    </div>
+
+    <!-- KHUYEN CAO AN TOAN -->
+    <div class="warning-box">
+        <h3>CAC VI TRI TUYET DOI KHONG SU DUNG ASYNC / AWAIT TRONG DU AN NAY</h3>
+        <ul>
+            <li><b>StationUnloadBinEx.ProduceRun va cac lop ke thua StationBase:</b> Vong lap chuyen buoc san xuat <code>override string ProduceRun(string strStep)</code> la ham dong bo duoc thiet ke boi DLL framework <code>AF.Station.dll</code>. Khong duoc sua chu ky tram thanh async vi se lam vo co che Template Method.</li>
+            <li><b>Cac ham cho phan cung (WaitAxis, WaitCylIn, WaitCylOut, WaitRegBit):</b> Cac ham nay can do doc tin hieu I/O card lien tuc tren luong Dedicated rieng cua may. Su dung async tai day se lam sai lech do tre thoi gian thuc cua cac sensor va motor.</li>
+            <li><b>Nguyen tac tranh Deadlock:</b> Khi goi ham async trong WinForms (Form UI), khong bao gio duoc dung <code>.Result</code> hoac <code>.GetAwaiter().GetResult()</code> tren luong chinh UI. Hay tuan thu nguyen tac dung tu khoa <code>await</code>.</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>

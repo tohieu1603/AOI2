@@ -1,0 +1,180 @@
+================================================================================
+TÀI LIỆU CHI TIẾT VỀ TRẠM KIỂM TRA NGOẠI QUAN CAMERA: StationAOIExDown1.cs
+================================================================================
+
+PHẦN 1: BẢN CHẤT CỦA TRẠM VÀ PHÂN CHIA 3 TRẠM TRÊN DÂY CHUYỀN
+File StationAOIExDown1.cs là một class dùng chung cho 3 trạm kiểm tra camera:
+1. Trạm Hạ AOI 1 (下相机AOI1站):
+   - Ký hiệu trạm trên Redis: S3
+   - Camera sử dụng: CCD2
+   - Vị trí: Soi bề mặt dưới của sản phẩm (nửa khay sau hoặc nửa khay bên phải).
+2. Trạm Thượng AOI (上相机AOI站):
+   - Ký hiệu trạm trên Redis: S4
+   - Camera sử dụng: CCD3
+   - Vị trí: Soi bề mặt trên của sản phẩm (soi toàn bộ khay 100%).
+3. Trạm Hạ AOI 2 (下相机AOI2站):
+   - Ký hiệu trạm trên Redis: S5
+   - Camera sử dụng: CCD4
+   - Vị trí: Soi bề mặt dưới của sản phẩm (nửa khay đầu hoặc nửa khay bên trái).
+
+Tại sao có 2 trạm soi dưới (AOI1 và AOI2)?
+Vì việc kiểm tra mặt dưới tốn nhiều thời gian lấy nét, nếu để 1 trạm làm cả khay
+thì máy sẽ bị nghẽn. Do đó khay được chia làm 2 nửa để AOI1 và AOI2 cùng gánh việc.
+
+--------------------------------------------------------------------------------
+PHẦN 2: DANH SÁCH CÁC CÔNG THỨC TOÁN VÀ VỊ TRÍ DÒNG CODE TRONG FILE
+
+1. Công thức tính số thứ tự ô khay thực tế (curcavity) - Dòng 668:
+   curcavity = currentcol + (currentrow + redisStartRowCount) * Global.trayTotalCol;
+   - currentcol: Cột hiện tại đang đo (đếm từ 0).
+   - currentrow: Lượt chạy hàng của trạm (đếm từ 0).
+   - redisStartRowCount: Số hàng bắt đầu của trạm đó trên khay thực tế.
+   - Global.trayTotalCol: Tổng số cột của khay (ví dụ 10 cột).
+   Ý nghĩa: Quy đổi tọa độ (Hàng, Cột) cục bộ của trạm thành chỉ số ô thực tế
+   từ 0 đến 59 của toàn bộ khay để đọc/ghi đúng ô trên Redis.
+
+2. Công thức tọa độ trục Y chạy theo từng cột - Dòng 703:
+   Ypos = POINT.穴位1检测聚焦位1.GetPos(AXIS检测Y轴, this) - Math.Abs(Global.trayColGap) * currentcol;
+   - POINT.穴位1检测聚焦位1: Tọa độ gốc dạy điểm của cột 0.
+   - Global.trayColGap: Khoảng cách giữa 2 cột liền kề (bước cột).
+   - currentcol: Số thứ tự cột đang đo (0, 1, 2, ...).
+   Ý nghĩa: Tính ra tọa độ mm để trục Y mang camera chạy đến đúng tâm từng ô.
+
+3. Công thức tính cao độ trục Z và bù trừ theo cảm biến Laser S2 - Dòng 771 đến 785:
+   Mỗi con liệu có độ dày hơi khác nhau, đã được đo ở trạm Laser S2 (lưu tại d_sgData).
+   - Đối với Trạm Thượng AOI (Camera ở trên nhìn xuống):
+     Zpos = Z_chuẩn - d_sgData[curcavity] + sgcalibheight;
+     (Liệu dày hơn -> mặt trên cao hơn -> camera trên phải lùi lên cao để giữ nét).
+   - Đối với Trạm Hạ AOI (Camera ở dưới nhìn lên):
+     Zpos = Z_chuẩn + d_sgData[curcavity] - sgcalibheight;
+     (Liệu thay đổi độ dày -> camera dưới dịch chuyển tương ứng để giữ nét).
+   Trong đó:
+   - Z_chuẩn: Tọa độ gốc lấy nét (Dòng 717: POINT.穴位1检测聚焦位1).
+   - d_sgData: Độ cao thực tế của con liệu đo được từ Laser S2.
+   - sgcalibheight: Độ cao chuẩn khi hiệu chuẩn máy (Calibration Height).
+
+--------------------------------------------------------------------------------
+PHẦN 3: CÁCH CHIA KHAY GIỮA AOI 1 VÀ AOI 2 (DÒNG 183 ĐẾN 300 VÀ DÒNG 630 ĐẾN 663)
+
+Mục đích: Chia đôi khối lượng công việc khay cho 2 trạm Hạ AOI1 và Hạ AOI2.
+Có 2 trường hợp xảy ra tùy vào số hàng của khay là CHẴN hay LẺ:
+
+================================================================================
+TRƯỜNG HỢP A: KHAY CÓ SỐ HÀNG LÀ SỐ CHẴN (VÍ DỤ KHAY 6 HÀNG X 10 CỘT = 60 Ô)
+================================================================================
+Thông số hệ thống:
+- Global.trayTotalRow = 6
+- Global.trayTotalCol = 10
+- sharerow = 6 % 2 == 0 ? false : true -> sharerow = FALSE (Không có hàng dùng chung).
+
+Cài đặt trong code:
+1. Trạm Hạ AOI 2 (S5) - Dòng 284 đến 292:
+   - redisStartRowCount = 0 (Bắt đầu từ hàng 0)
+   - endrow = (6 + 1) / 2 = 3 (Đo 3 hàng: Hàng 0, Hàng 1, Hàng 2)
+   - totalcol = 10 (Mỗi hàng đo đủ 10 cột, từ cột 0 đến cột 9)
+   -> Trạm AOI 2 đo 30 ô đầu tiên: Từ ô 0 đến ô 29.
+
+2. Trạm Hạ AOI 1 (S3) - Dòng 198 đến 210:
+   - redisStartRowCount = 6 / 2 = 3 (Bắt đầu từ hàng 3)
+   - endrow = (6 + 1) / 2 = 3 (Đo 3 hàng: Hàng 3, Hàng 4, Hàng 5)
+   - totalcol = 10 (Mỗi hàng đo đủ 10 cột, từ cột 0 đến cột 9)
+   -> Trạm AOI 1 đo 30 ô tiếp theo: Từ ô 30 đến ô 59.
+
+Bảng phân chia cụ thể Trường Hợp A:
+- Hàng 0 (Ô 0  đến Ô 9 ): Trạm AOI 2 đo toàn bộ 10 cột
+- Hàng 1 (Ô 10 đến Ô 19): Trạm AOI 2 đo toàn bộ 10 cột
+- Hàng 2 (Ô 20 đến Ô 29): Trạm AOI 2 đo toàn bộ 10 cột
+- Hàng 3 (Ô 30 đến Ô 39): Trạm AOI 1 đo toàn bộ 10 cột
+- Hàng 4 (Ô 40 đến Ô 49): Trạm AOI 1 đo toàn bộ 10 cột
+- Hàng 5 (Ô 50 đến Ô 59): Trạm AOI 1 đo toàn bộ 10 cột
+Tổng: AOI 2 đo đúng 30 ô, AOI 1 đo đúng 30 ô. Không chồng lấn, không bỏ sót.
+
+================================================================================
+TRƯỜNG HỢP B: KHAY CÓ SỐ HÀNG LÀ SỐ LẺ (VÍ DỤ KHAY 5 HÀNG X 10 CỘT = 50 Ô)
+================================================================================
+Khi 5 hàng chia cho 2 trạm, không thể chia 2.5 hàng.
+Lúc này hàng ở chính giữa (Hàng số 2) sẽ được CẮT ĐÔI THEO CỘT.
+
+Thông số hệ thống:
+- Global.trayTotalRow = 5
+- Global.trayTotalCol = 10
+- sharerow = 5 % 2 == 0 ? false : true -> sharerow = TRUE (BẬT CỜ HÀNG DÙNG CHUNG!)
+- sharerowindx = 5 / 2 = 2 (Hàng số 2 là hàng dùng chung)
+
+Cài đặt trong code:
+1. Trạm Hạ AOI 2 (S5) - Dòng 284 đến 292:
+   - redisStartRowCount = 0
+   - endrow = (5 + 1) / 2 = 3 (Chạy 3 lượt hàng: Lượt 0, Lượt 1, Lượt 2)
+   - endcol = (10 + 1) / 2 = 5 (Khi đến hàng dùng chung thì chỉ đo 5 cột đầu)
+
+   Diễn biến thực tế của AOI 2:
+   - Lượt 1 (currentrow = 0, Hàng 0 khay): isShareRow = false -> Đo đủ 10 cột (Cột 0 đến 9) -> Ô 0 đến Ô 9.
+   - Lượt 2 (currentrow = 1, Hàng 1 khay): isShareRow = false -> Đo đủ 10 cột (Cột 0 đến 9) -> Ô 10 đến Ô 19.
+   - Lượt 3 (currentrow = 2, Hàng 2 khay): isShareRow = (2 + 0 == 2) -> TRUE!
+     Đoạn code dòng 635 chạy: totalcol = endcol = 5, currentcol = 0.
+     -> Chỉ đo 5 cột bên trái: Từ Cột 0 đến Cột 4 -> Ứng với Ô 20 đến Ô 24.
+   Tổng số ô AOI 2 đo = 10 + 10 + 5 = 25 ô.
+
+2. Trạm Hạ AOI 1 (S3) - Dòng 198 đến 210:
+   - redisStartRowCount = 5 / 2 = 2 (Bắt đầu từ Hàng 2 của khay)
+   - startcol = (10 + 1) / 2 = 5 (Khi gặp hàng dùng chung thì bắt đầu từ Cột 5)
+   - endrow = (5 + 1) / 2 = 3 (Chạy 3 lượt hàng: Lượt 0, Lượt 1, Lượt 2)
+
+   Diễn biến thực tế của AOI 1:
+   - Lượt 1 (currentrow = 0, ứng với Hàng 0 + 2 = Hàng 2 của khay):
+     isShareRow = (0 + 2 == 2) -> TRUE!
+     Đoạn code dòng 645 chạy: currentcol = startcol = 5, totalcol = 10.
+     -> Bỏ qua cột 0, 1, 2, 3, 4! Nhảy thẳng vào đo từ Cột 5 đến Cột 9 -> Ứng với Ô 25 đến Ô 29.
+   - Lượt 2 (currentrow = 1, ứng với Hàng 1 + 2 = Hàng 3 của khay):
+     isShareRow = (1 + 2 == 2) -> FALSE!
+     Đoạn code dòng 648 chạy: currentcol = 0, totalcol = 10.
+     -> Đo đủ 10 cột (Cột 0 đến 9) -> Ứng với Ô 30 đến Ô 39.
+   - Lượt 3 (currentrow = 2, ứng với Hàng 2 + 2 = Hàng 4 của khay):
+     isShareRow = (2 + 2 == 2) -> FALSE!
+     Đoạn code dòng 648 chạy: currentcol = 0, totalcol = 10.
+     -> Đo đủ 10 cột (Cột 0 đến 9) -> Ứng với Ô 40 đến Ô 49.
+   Tổng số ô AOI 1 đo = 5 + 10 + 10 = 25 ô.
+
+Bảng phân chia cụ thể Trường Hợp B (Khay 50 ô):
+- Hàng 0 (10 ô): AOI 2 đo toàn bộ (Cột 0 đến Cột 9) -> Ô 0 đến Ô 9
+- Hàng 1 (10 ô): AOI 2 đo toàn bộ (Cột 0 đến Cột 9) -> Ô 10 đến Ô 19
+- Hàng 2 (10 ô): CHIA ĐÔI:
+  + Nửa trái (5 ô): AOI 2 đo (Cột 0 đến Cột 4) -> Ô 20 đến Ô 24
+  + Nửa phải (5 ô): AOI 1 đo (Cột 5 đến Cột 9) -> Ô 25 đến Ô 29
+- Hàng 3 (10 ô): AOI 1 đo toàn bộ (Cột 0 đến Cột 9) -> Ô 30 đến Ô 39
+- Hàng 4 (10 ô): AOI 1 đo toàn bộ (Cột 0 đến Cột 9) -> Ô 40 đến Ô 49
+Tổng cộng: AOI 2 đo đúng 25 ô, AOI 1 đo đúng 25 ô. Tỉ lệ hoàn hảo 50% - 50%.
+
+--------------------------------------------------------------------------------
+PHẦN 4: LOGIC BẢO VỆ CHỐNG VA VỠ CAMERA (DÒNG 671 ĐẾN 684)
+
+Trong case "当前穴位判断":
+if (d_sgData[curcavity] > 5 || d_sgData[curcavity] <= 0)
+{
+    redisdata[currentcol] = "NG";
+    currentcol++;
+    return "当前穴位判断";
+}
+Ý nghĩa:
+- Nếu độ cao Laser S2 đo được <= 0: Lỗi cảm biến hoặc mất sản phẩm.
+- Nếu độ cao Laser S2 > 5 mm: Cực kỳ nguy hiểm! Có thể sản phẩm bị xếp chồng 2 con,
+  hoặc sản phẩm bị vênh dựng đứng, hoặc có vật thể lạ rơi vào.
+- Nếu hạ camera xuống lấy nét ở cự ly gần sẽ đâm thẳng vào sản phẩm gây vỡ thấu kính.
+- Do đó: Phần mềm tự động gán ô đó là NG, BỎ QUA KHÔNG CHỤP, nhảy ngay sang ô kế tiếp.
+
+--------------------------------------------------------------------------------
+PHẦN 5: CHỤP ĐA TIÊU CỰ VÀ CHẠY ĐÓN TRƯỚC TRỤC Y (DÒNG 841 ĐẾN 877)
+
+1. Chụp đa tiêu cự (Multi-focus):
+   - Mỗi ô sản phẩm được chụp từ 4 đến 6 lần (focuscount = 4 hoặc 6).
+   - Biến ccdcurrnum đếm từ 1 đến focuscount.
+   - Mỗi lần chụp, trục Z nhảy đến các điểm tiêu cự khác nhau (聚焦位1, 聚焦位2, 聚焦位3)
+     và phát xung trigger 20ms: camera.Camtrigger(cmdccd, true).
+
+2. Kỹ thuật chạy đón trước trục Y (Pipelined Move) - Dòng 876:
+   - Khi vừa chụp xong ô hiện tại, camera cần thời gian xử lý ảnh (khoảng 100ms - 200ms).
+   - Phần mềm lập tức phát lệnh cho trục Y chạy trước sang ô tiếp theo:
+     AXIS检测Y轴.AbsMove(Ypos, 100);
+   - Trong lúc trục Y di chuyển cơ khí thì camera vừa kịp tính toán xong kết quả.
+   - Nhờ đó triệt tiêu được thời gian chết, mỗi khay tiết kiệm được vài giây chu kỳ máy.
+================================================================================

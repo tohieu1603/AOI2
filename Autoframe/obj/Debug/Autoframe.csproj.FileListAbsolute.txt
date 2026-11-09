@@ -1,0 +1,335 @@
+E:/Projects/git new/release/autoframe_release/exe/AutoFrame.exe.config
+E:/Projects/git new/release/autoframe_release/exe/AutoFrame.xml
+E:/Projects/git new/release/autoframe_release/exe/AutoFrame.exe
+E:/Projects/git new/release/autoframe_release/exe/AutoFrame.pdb
+E:/Projects/git new/release/autoframe_release/Autoframe/obj/Debug/Autoframe.csprojAssemblyReference.cache
+E:/Projects/git new/release/autoframe_release/Autoframe/obj/Debug/AutoFrame.exe.config
+E:/Projects/git new/release/autoframe_release/Autoframe/obj/Debug/Autoframe.UI.Form_Auto.resources
+E:/Projects/git new/release/autoframe_release/Autoframe/obj/Debug/Autoframe.UI.Form_Main.resources
+E:/Projects/git new/release/autoframe_release/Autoframe/obj/Debug/AutoFrame.Properties.Resources.resources
+E:/Projects/git new/release/autoframe_release/Autoframe/obj/Debug/Autoframe.UI.Form_Test.resources
+E:/Projects/git new/release/autoframe_release/Autoframe/obj/Debug/Autoframe.csproj.GenerateResource.cache
+E:/Projects/git new/release/autoframe_release/Autoframe/obj/Debug/Autoframe.csproj.CoreCompileInputs.cache
+E:/Projects/git new/release/autoframe_release/Autoframe/obj/Debug/Autoframe.csproj.CopyComplete
+E:/Projects/git new/release/autoframe_release/Autoframe/obj/Debug/AutoFrame.exe
+E:/Projects/git new/release/autoframe_release/Autoframe/obj/Debug/AutoFrame.pdb
+E:/Projects/git new/release/autoframe_release/Autoframe/obj/Debug/Autoframe.UI.Form_Auto_CustomPanel.resources
+D:/M/2. Project/3. Other/autoframe_release/exe/AutoFrame.exe.config
+D:/M/2. Project/3. Other/autoframe_release/exe/AutoFrame.xml
+D:/M/2. Project/3. Other/autoframe_release/exe/AutoFrame.exe
+D:/M/2. Project/3. Other/autoframe_release/exe/AutoFrame.pdb
+D:/M/2. Project/3. Other/autoframe_release/Autoframe/obj/Debug/Autoframe.csproj.AssemblyReference.cache
+D:/M/2. Project/3. Other/autoframe_release/Autoframe/obj/Debug/Autoframe.csproj.SuggestedBindingRedirects.cache
+D:/M/2. Project/3. Other/autoframe_release/Autoframe/obj/Debug/AutoFrame.exe.config
+D:/M/2. Project/3. Other/autoframe_release/Autoframe/obj/Debug/Autoframe.UI.Form_Auto.resources
+D:/M/2. Project/3. Other/autoframe_release/Autoframe/obj/Debug/Autoframe.UI.Form_Auto_CustomPanel.resources
+D:/M/2. Project/3. Other/autoframe_release/Autoframe/obj/Debug/Autoframe.UI.Form_Main.resources
+D:/M/2. Project/3. Other/autoframe_release/Autoframe/obj/Debug/AutoFrame.Properties.Resources.resources
+D:/M/2. Project/3. Other/autoframe_release/Autoframe/obj/Debug/Autoframe.UI.Form_Test.resources
+D:/M/2. Project/3. Other/autoframe_release/Autoframe/obj/Debug/Autoframe.csproj.GenerateResource.cache
+D:/M/2. Project/3. Other/autoframe_release/Autoframe/obj/Debug/Autoframe.csproj.CoreCompileInputs.cache
+D:/M/2. Project/3. Other/autoframe_release/Autoframe/obj/Debug/Autoframe.csproj.CopyComplete
+D:/M/2. Project/3. Other/autoframe_release/Autoframe/obj/Debug/AutoFrame.exe
+D:/M/2. Project/3. Other/autoframe_release/Autoframe/obj/Debug/AutoFrame.pdb
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_ASide_20260929_update unloadLogic/Autoframe/obj/Debug/Autoframe.csproj.AssemblyReference.cache
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_ASide_20260929_update unloadLogic/Autoframe/obj/Debug/Autoframe.csproj.SuggestedBindingRedirects.cache
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_ASide_20260929_update unloadLogic/Autoframe/obj/Debug/AutoFrame.exe.config
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_ASide_20260929_update unloadLogic/Autoframe/obj/Debug/AutoFrame.PLCExtend.ModbusTestWindow.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_ASide_20260929_update unloadLogic/Autoframe/obj/Debug/Autoframe.UI.Form_Auto.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_ASide_20260929_update unloadLogic/Autoframe/obj/Debug/Autoframe.UI.Form_Auto_CustomPanel.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_ASide_20260929_update unloadLogic/Autoframe/obj/Debug/AutoFrame.Form_InspectInfo.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_ASide_20260929_update unloadLogic/Autoframe/obj/Debug/Autoframe.UI.Form_Main.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_ASide_20260929_update unloadLogic/Autoframe/obj/Debug/AutoFrame.Properties.Resources.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_ASide_20260929_update unloadLogic/Autoframe/obj/Debug/AutoFrame.Form_MaintenanceLogin.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_ASide_20260929_update unloadLogic/Autoframe/obj/Debug/Autoframe.Form_ModifyDb.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_ASide_20260929_update unloadLogic/Autoframe/obj/Debug/Autoframe.UI.Form_Test.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_ASide_20260929_update unloadLogic/Autoframe/obj/Debug/AutoFrame.Form_UnloadInfo.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_ASide_20260929_update unloadLogic/Autoframe/obj/Debug/AutoFrame.UI.Frm_SG.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_ASide_20260929_update unloadLogic/Autoframe/obj/Debug/AutoFrame.UI.HandleCyForm.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_ASide_20260929_update unloadLogic/Autoframe/obj/Debug/Autoframe.csproj.GenerateResource.cache
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_ASide_20260929_update unloadLogic/Autoframe/obj/Debug/Autoframe.csproj.CoreCompileInputs.cache
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_ASide_20260929_update unloadLogic/Autoframe/obj/Debug/AutoFrame.exe
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_ASide_20260929_update unloadLogic/Autoframe/obj/Debug/AutoFrame.pdb
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_ASide_20260929_update unloadLogic/exe/AutoFrame.exe.config
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_ASide_20260929_update unloadLogic/exe/AutoFrame.xml
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_ASide_20260929_update unloadLogic/exe/AutoFrame.exe
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_ASide_20260929_update unloadLogic/exe/AutoFrame.pdb
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_ASide_20260929_update unloadLogic/Autoframe/obj/Debug/Autoframe.csproj.CopyComplete
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_ASide_20260929_update unloadLogic/Autoframe/obj/Debug/Autoframe.Form_TraySetting.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20260930_update unloadLogic/exe/AutoFrame.exe.config
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20260930_update unloadLogic/exe/AutoFrame.xml
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20260930_update unloadLogic/exe/AutoFrame.exe
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20260930_update unloadLogic/exe/AutoFrame.pdb
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20260930_update unloadLogic/Autoframe/obj/Debug/Autoframe.csproj.AssemblyReference.cache
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20260930_update unloadLogic/Autoframe/obj/Debug/Autoframe.csproj.SuggestedBindingRedirects.cache
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20260930_update unloadLogic/Autoframe/obj/Debug/AutoFrame.exe.config
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20260930_update unloadLogic/Autoframe/obj/Debug/AutoFrame.PLCExtend.ModbusTestWindow.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20260930_update unloadLogic/Autoframe/obj/Debug/Autoframe.UI.Form_Auto.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20260930_update unloadLogic/Autoframe/obj/Debug/Autoframe.UI.Form_Auto_CustomPanel.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20260930_update unloadLogic/Autoframe/obj/Debug/AutoFrame.Form_InspectInfo.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20260930_update unloadLogic/Autoframe/obj/Debug/Autoframe.UI.Form_Main.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20260930_update unloadLogic/Autoframe/obj/Debug/AutoFrame.Properties.Resources.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20260930_update unloadLogic/Autoframe/obj/Debug/AutoFrame.Form_MaintenanceLogin.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20260930_update unloadLogic/Autoframe/obj/Debug/Autoframe.Form_ModifyDb.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20260930_update unloadLogic/Autoframe/obj/Debug/Autoframe.UI.Form_Test.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20260930_update unloadLogic/Autoframe/obj/Debug/AutoFrame.Form_UnloadInfo.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20260930_update unloadLogic/Autoframe/obj/Debug/AutoFrame.UI.Frm_SG.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20260930_update unloadLogic/Autoframe/obj/Debug/AutoFrame.UI.HandleCyForm.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20260930_update unloadLogic/Autoframe/obj/Debug/Autoframe.Form_TraySetting.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20260930_update unloadLogic/Autoframe/obj/Debug/Autoframe.csproj.GenerateResource.cache
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20260930_update unloadLogic/Autoframe/obj/Debug/Autoframe.csproj.CoreCompileInputs.cache
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20260930_update unloadLogic/Autoframe/obj/Debug/Autoframe.csproj.CopyComplete
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20260930_update unloadLogic/Autoframe/obj/Debug/AutoFrame.exe
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20260930_update unloadLogic/Autoframe/obj/Debug/AutoFrame.pdb
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20261001_update unloadLogic/exe/AutoFrame.exe.config
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20261001_update unloadLogic/exe/AutoFrame.xml
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20261001_update unloadLogic/exe/AutoFrame.exe
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20261001_update unloadLogic/exe/AutoFrame.pdb
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/Autoframe.csproj.AssemblyReference.cache
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/Autoframe.csproj.SuggestedBindingRedirects.cache
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/AutoFrame.exe.config
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/AutoFrame.PLCExtend.ModbusTestWindow.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/Autoframe.UI.Form_Auto.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/Autoframe.UI.Form_Auto_CustomPanel.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/AutoFrame.Form_InspectInfo.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/Autoframe.UI.Form_Main.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/AutoFrame.Properties.Resources.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/AutoFrame.Form_MaintenanceLogin.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/Autoframe.Form_ModifyDb.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/Autoframe.UI.Form_Test.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/AutoFrame.Form_UnloadInfo.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/AutoFrame.UI.Frm_SG.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/AutoFrame.UI.HandleCyForm.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/Autoframe.Form_TraySetting.resources
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/Autoframe.csproj.GenerateResource.cache
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/Autoframe.csproj.CoreCompileInputs.cache
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/Autoframe.csproj.CopyComplete
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/AutoFrame.exe
+D:/M/9.Secote/AOI组立/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/AutoFrame.pdb
+E:/AOI组立/Code/1.RUNNING/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/Autoframe.csproj.AssemblyReference.cache
+E:/AOI组立/Code/1.RUNNING/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/Autoframe.csproj.SuggestedBindingRedirects.cache
+E:/AOI组立/Code/1.RUNNING/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/AutoFrame.exe.config
+E:/AOI组立/Code/1.RUNNING/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/AutoFrame.PLCExtend.ModbusTestWindow.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/Autoframe.UI.Form_Auto.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/Autoframe.UI.Form_Auto_CustomPanel.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/AutoFrame.Form_InspectInfo.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/Autoframe.UI.Form_Main.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/AutoFrame.Properties.Resources.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/AutoFrame.Form_MaintenanceLogin.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/Autoframe.Form_ModifyDb.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/Autoframe.UI.Form_Test.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/AutoFrame.Form_UnloadInfo.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/AutoFrame.UI.Frm_SG.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/AutoFrame.UI.HandleCyForm.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/Autoframe.Form_TraySetting.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/Autoframe.csproj.GenerateResource.cache
+E:/AOI组立/Code/1.RUNNING/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/Autoframe.csproj.CoreCompileInputs.cache
+E:/AOI组立/Code/1.RUNNING/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/AutoFrame.exe
+E:/AOI组立/Code/1.RUNNING/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/AutoFrame.pdb
+E:/AOI组立/Code/1.RUNNING/AOI组立_newFrame_BSide_20261001_update unloadLogic/exe/AutoFrame.exe.config
+E:/AOI组立/Code/1.RUNNING/AOI组立_newFrame_BSide_20261001_update unloadLogic/exe/AutoFrame.xml
+E:/AOI组立/Code/1.RUNNING/AOI组立_newFrame_BSide_20261001_update unloadLogic/exe/AutoFrame.exe
+E:/AOI组立/Code/1.RUNNING/AOI组立_newFrame_BSide_20261001_update unloadLogic/exe/AutoFrame.pdb
+E:/AOI组立/Code/1.RUNNING/AOI组立_newFrame_BSide_20261001_update unloadLogic/Autoframe/obj/Debug/Autoframe.csproj.CopyComplete
+E:/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.AssemblyReference.cache
+E:/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.SuggestedBindingRedirects.cache
+E:/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.exe.config
+E:/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.PLCExtend.ModbusTestWindow.resources
+E:/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.UI.Form_Auto.resources
+E:/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.UI.Form_Auto_CustomPanel.resources
+E:/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Form_InspectInfo.resources
+E:/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.UI.Form_Main.resources
+E:/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Properties.Resources.resources
+E:/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Form_MaintenanceLogin.resources
+E:/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.Form_ModifyDb.resources
+E:/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.UI.Form_Test.resources
+E:/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Form_UnloadInfo.resources
+E:/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.UI.Frm_SG.resources
+E:/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.UI.HandleCyForm.resources
+E:/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.Form_TraySetting.resources
+E:/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.GenerateResource.cache
+E:/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.CoreCompileInputs.cache
+E:/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.exe
+E:/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.pdb
+E:/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/exe/AutoFrame.exe.config
+E:/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/exe/AutoFrame.xml
+E:/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/exe/AutoFrame.exe
+E:/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/exe/AutoFrame.pdb
+E:/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Form_MonitorMover.resources
+E:/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.CopyComplete
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/exe/AutoFrame.exe.config
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/exe/AutoFrame.xml
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/exe/AutoFrame.exe
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/exe/AutoFrame.pdb
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.AssemblyReference.cache
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.SuggestedBindingRedirects.cache
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.exe.config
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.PLCExtend.ModbusTestWindow.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.UI.Form_Auto.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.UI.Form_Auto_CustomPanel.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Form_InspectInfo.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.UI.Form_Main.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Properties.Resources.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Form_MaintenanceLogin.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.Form_ModifyDb.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Form_MonitorMover.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.UI.Form_Test.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Form_UnloadInfo.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.UI.Frm_SG.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.UI.HandleCyForm.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.Form_TraySetting.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.GenerateResource.cache
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.CoreCompileInputs.cache
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.CopyComplete
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.exe
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.pdb
+E:/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.AssemblyReference.cache
+E:/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.SuggestedBindingRedirects.cache
+E:/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.exe.config
+E:/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.exe
+E:/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.pdb
+E:/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.PLCExtend.ModbusTestWindow.resources
+E:/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.UI.Form_Auto.resources
+E:/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.UI.Form_Auto_CustomPanel.resources
+E:/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Form_InspectInfo.resources
+E:/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.UI.Form_Main.resources
+E:/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Properties.Resources.resources
+E:/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Form_MaintenanceLogin.resources
+E:/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.Form_ModifyDb.resources
+E:/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Form_MonitorMover.resources
+E:/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.UI.Form_Test.resources
+E:/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Form_UnloadInfo.resources
+E:/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.UI.Frm_SG.resources
+E:/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.UI.HandleCyForm.resources
+E:/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.Form_TraySetting.resources
+E:/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.GenerateResource.cache
+E:/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.CoreCompileInputs.cache
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.AssemblyReference.cache
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.SuggestedBindingRedirects.cache
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.exe.config
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.PLCExtend.ModbusTestWindow.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.UI.Form_Auto.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.UI.Form_Auto_CustomPanel.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Form_InspectInfo.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.UI.Form_Main.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Properties.Resources.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Form_MaintenanceLogin.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.Form_ModifyDb.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Form_MonitorMover.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.UI.Form_Test.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Form_UnloadInfo.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.UI.Frm_SG.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.UI.HandleCyForm.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.Form_TraySetting.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.GenerateResource.cache
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.CoreCompileInputs.cache
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/exe/AutoFrame.exe.config
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/exe/AutoFrame.xml
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/exe/AutoFrame.exe
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/exe/AutoFrame.pdb
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.CopyComplete
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.exe
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.pdb
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.AssemblyReference.cache
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.SuggestedBindingRedirects.cache
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.exe.config
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.PLCExtend.ModbusTestWindow.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.UI.Form_Auto.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.UI.Form_Auto_CustomPanel.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Form_InspectInfo.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.UI.Form_Main.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Properties.Resources.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Form_MaintenanceLogin.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.Form_ModifyDb.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.UI.Form_Test.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Form_UnloadInfo.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.UI.Frm_SG.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.UI.HandleCyForm.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.Form_TraySetting.resources
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.GenerateResource.cache
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.CoreCompileInputs.cache
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.exe
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.pdb
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/exe/AutoFrame.exe.config
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/exe/AutoFrame.xml
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/exe/AutoFrame.exe
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/exe/AutoFrame.pdb
+D:/装机软件/HAI/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.CopyComplete
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/exe/AutoFrame.exe.config
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/exe/AutoFrame.xml
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/exe/AutoFrame.exe
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/exe/AutoFrame.pdb
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.AssemblyReference.cache
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.SuggestedBindingRedirects.cache
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.exe.config
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.PLCExtend.ModbusTestWindow.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.UI.Form_Auto.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.UI.Form_Auto_CustomPanel.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Form_InspectInfo.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.UI.Form_Main.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Properties.Resources.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Form_MaintenanceLogin.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.Form_ModifyDb.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.UI.Form_Test.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.Form_UnloadInfo.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.UI.Frm_SG.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.UI.HandleCyForm.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.Form_TraySetting.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.GenerateResource.cache
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.CoreCompileInputs.cache
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/Autoframe.csproj.CopyComplete
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.exe
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘/Autoframe/obj/Debug/AutoFrame.pdb
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261008_Update-清料模式/exe/AutoFrame.exe.config
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261008_Update-清料模式/exe/AutoFrame.xml
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261008_Update-清料模式/exe/AutoFrame.exe
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261008_Update-清料模式/exe/AutoFrame.pdb
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261008_Update-清料模式/Autoframe/obj/Debug/Autoframe.csproj.AssemblyReference.cache
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261008_Update-清料模式/Autoframe/obj/Debug/Autoframe.csproj.SuggestedBindingRedirects.cache
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261008_Update-清料模式/Autoframe/obj/Debug/AutoFrame.exe.config
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261008_Update-清料模式/Autoframe/obj/Debug/AutoFrame.PLCExtend.ModbusTestWindow.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261008_Update-清料模式/Autoframe/obj/Debug/Autoframe.UI.Form_Auto.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261008_Update-清料模式/Autoframe/obj/Debug/Autoframe.UI.Form_Auto_CustomPanel.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261008_Update-清料模式/Autoframe/obj/Debug/AutoFrame.Form_InspectInfo.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261008_Update-清料模式/Autoframe/obj/Debug/Autoframe.UI.Form_Main.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261008_Update-清料模式/Autoframe/obj/Debug/AutoFrame.Properties.Resources.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261008_Update-清料模式/Autoframe/obj/Debug/AutoFrame.Form_MaintenanceLogin.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261008_Update-清料模式/Autoframe/obj/Debug/Autoframe.Form_ModifyDb.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261008_Update-清料模式/Autoframe/obj/Debug/Autoframe.UI.Form_Test.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261008_Update-清料模式/Autoframe/obj/Debug/AutoFrame.Form_UnloadInfo.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261008_Update-清料模式/Autoframe/obj/Debug/AutoFrame.UI.Frm_SG.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261008_Update-清料模式/Autoframe/obj/Debug/AutoFrame.UI.HandleCyForm.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261008_Update-清料模式/Autoframe/obj/Debug/Autoframe.Form_TraySetting.resources
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261008_Update-清料模式/Autoframe/obj/Debug/Autoframe.csproj.GenerateResource.cache
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261008_Update-清料模式/Autoframe/obj/Debug/Autoframe.csproj.CoreCompileInputs.cache
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261008_Update-清料模式/Autoframe/obj/Debug/Autoframe.csproj.CopyComplete
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261008_Update-清料模式/Autoframe/obj/Debug/AutoFrame.exe
+E:/AOI组立/Code/1.RUNNING/AOI组立_NewFrame_BSide_20261008_Update-清料模式/Autoframe/obj/Debug/AutoFrame.pdb
+D:/Test/exe/AutoFrame.exe.config
+D:/Test/exe/AutoFrame.xml
+D:/Test/exe/AutoFrame.exe
+D:/Test/exe/AutoFrame.pdb
+D:/Test/Autoframe/obj/Debug/Autoframe.csproj.AssemblyReference.cache
+D:/Test/Autoframe/obj/Debug/Autoframe.csproj.SuggestedBindingRedirects.cache
+D:/Test/Autoframe/obj/Debug/AutoFrame.exe.config
+D:/Test/Autoframe/obj/Debug/AutoFrame.PLCExtend.ModbusTestWindow.resources
+D:/Test/Autoframe/obj/Debug/Autoframe.UI.Form_Auto.resources
+D:/Test/Autoframe/obj/Debug/Autoframe.UI.Form_Auto_CustomPanel.resources
+D:/Test/Autoframe/obj/Debug/AutoFrame.Form_InspectInfo.resources
+D:/Test/Autoframe/obj/Debug/Autoframe.UI.Form_Main.resources
+D:/Test/Autoframe/obj/Debug/AutoFrame.Properties.Resources.resources
+D:/Test/Autoframe/obj/Debug/AutoFrame.Form_MaintenanceLogin.resources
+D:/Test/Autoframe/obj/Debug/Autoframe.Form_ModifyDb.resources
+D:/Test/Autoframe/obj/Debug/Autoframe.UI.Form_Test.resources
+D:/Test/Autoframe/obj/Debug/AutoFrame.Form_UnloadInfo.resources
+D:/Test/Autoframe/obj/Debug/AutoFrame.UI.Frm_SG.resources
+D:/Test/Autoframe/obj/Debug/AutoFrame.UI.HandleCyForm.resources
+D:/Test/Autoframe/obj/Debug/Autoframe.Form_TraySetting.resources
+D:/Test/Autoframe/obj/Debug/Autoframe.csproj.GenerateResource.cache
+D:/Test/Autoframe/obj/Debug/Autoframe.csproj.CoreCompileInputs.cache
+D:/Test/Autoframe/obj/Debug/Autoframe.csproj.CopyComplete
+D:/Test/Autoframe/obj/Debug/AutoFrame.exe
+D:/Test/Autoframe/obj/Debug/AutoFrame.pdb
+/Users/admin/HieuTo/Test/exe/AutoFrame.xml
+/Users/admin/HieuTo/Test/Autoframe/obj/Debug/AutoFrame.exe
+/Users/admin/HieuTo/Test/Autoframe/obj/Debug/AutoFrame.pdb

@@ -1,0 +1,336 @@
+E:\Projects\git new\autoframe2 - Hive\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.GenerateResource.cache
+E:\Projects\git new\autoframe2 - Hive\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CoreCompileInputs.cache
+E:\Projects\git new\autoframe2 - Hive\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Login.resources
+E:\Projects\git new\autoframe2 - Hive\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithMaintenance.resources
+E:\Projects\git new\autoframe2 - Hive\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OffboardMsg.resources
+E:\Projects\git new\autoframe2 - Hive\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OperationMsg.resources
+E:\Projects\git new\autoframe2 - Hive\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResOnboard.resources
+E:\Projects\git new\autoframe2 - Hive\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Resume.resources
+E:\Projects\git new\autoframe2 - Hive\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeInput.resources
+E:\Projects\git new\autoframe2 - Hive\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeMsg.resources
+E:\Projects\git new\autoframe2 - Hive\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_SafetyStatusMonitor.resources
+E:\Projects\git new\autoframe2 - Hive\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Warning.resources
+E:\Projects\git new\autoframe2 - Hive\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithRepair.resources
+E:\Projects\git new\autoframe2 - Hive\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Operation.resources
+E:\Projects\git new\autoframe2 - Hive\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Properties.Resources.resources
+E:\Projects\git new\autoframe2 - Hive\Exe\AF.Upload.Hive.dll.config
+E:\Projects\git new\autoframe2 - Hive\Exe\AF.Upload.Hive.xml
+E:\Projects\git new\autoframe2 - Hive\Exe\AF.Upload.Hive.dll
+E:\Projects\git new\autoframe2 - Hive\Exe\AF.Upload.Hive.pdb
+E:\Projects\git new\autoframe2 - Hive\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CopyComplete
+E:\Projects\git new\autoframe2 - Hive\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.dll
+E:\Projects\git new\autoframe2 - Hive\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.pdb
+E:\Projects\git new\autoframe2 - Hive\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csprojAssemblyReference.cache
+E:\Projects\git new\autoframe2 - Hive\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_HiveOnboard.resources
+E:\Projects\git new\release\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Login.resources
+E:\Projects\git new\release\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithMaintenance.resources
+E:\Projects\git new\release\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OffboardMsg.resources
+E:\Projects\git new\release\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OperationMsg.resources
+E:\Projects\git new\release\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResOnboard.resources
+E:\Projects\git new\release\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Resume.resources
+E:\Projects\git new\release\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeInput.resources
+E:\Projects\git new\release\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeMsg.resources
+E:\Projects\git new\release\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_SafetyStatusMonitor.resources
+E:\Projects\git new\release\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Warning.resources
+E:\Projects\git new\release\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithRepair.resources
+E:\Projects\git new\release\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Operation.resources
+E:\Projects\git new\release\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Properties.Resources.resources
+E:\Projects\git new\release\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.GenerateResource.cache
+E:\Projects\git new\release\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CoreCompileInputs.cache
+E:\Projects\git new\release\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.dll
+E:\Projects\git new\release\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.pdb
+E:\Projects\git new\release\autoframe_release\Exe\AF.Upload.Hive.dll.config
+E:\Projects\git new\release\autoframe_release\Exe\AF.Upload.Hive.xml
+E:\Projects\git new\release\autoframe_release\Exe\AF.Upload.Hive.dll
+E:\Projects\git new\release\autoframe_release\Exe\AF.Upload.Hive.pdb
+E:\Projects\git new\release\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CopyComplete
+E:\Projects\git new\release\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csprojAssemblyReference.cache
+E:\Projects\git new\release\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_HiveOnboard.resources
+D:\M\2. Project\3. Other\autoframe_release\Exe\AF.Upload.Hive.dll.config
+D:\M\2. Project\3. Other\autoframe_release\Exe\AF.Upload.Hive.xml
+D:\M\2. Project\3. Other\autoframe_release\Exe\AF.Upload.Hive.dll
+D:\M\2. Project\3. Other\autoframe_release\Exe\AF.Upload.Hive.pdb
+D:\M\2. Project\3. Other\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.AssemblyReference.cache
+D:\M\2. Project\3. Other\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_HiveOnboard.resources
+D:\M\2. Project\3. Other\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Login.resources
+D:\M\2. Project\3. Other\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithMaintenance.resources
+D:\M\2. Project\3. Other\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OffboardMsg.resources
+D:\M\2. Project\3. Other\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OperationMsg.resources
+D:\M\2. Project\3. Other\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResOnboard.resources
+D:\M\2. Project\3. Other\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Resume.resources
+D:\M\2. Project\3. Other\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeInput.resources
+D:\M\2. Project\3. Other\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeMsg.resources
+D:\M\2. Project\3. Other\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_SafetyStatusMonitor.resources
+D:\M\2. Project\3. Other\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Warning.resources
+D:\M\2. Project\3. Other\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithRepair.resources
+D:\M\2. Project\3. Other\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Operation.resources
+D:\M\2. Project\3. Other\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Properties.Resources.resources
+D:\M\2. Project\3. Other\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.GenerateResource.cache
+D:\M\2. Project\3. Other\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CoreCompileInputs.cache
+D:\M\2. Project\3. Other\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CopyComplete
+D:\M\2. Project\3. Other\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.dll
+D:\M\2. Project\3. Other\autoframe_release\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.pdb
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\Exe\AF.Upload.Hive.dll.config
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\Exe\AF.Upload.Hive.xml
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\Exe\AF.Upload.Hive.dll
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\Exe\AF.Upload.Hive.pdb
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.AssemblyReference.cache
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_HiveOnboard.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Login.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithMaintenance.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OffboardMsg.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OperationMsg.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResOnboard.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Resume.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeInput.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeMsg.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_SafetyStatusMonitor.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Warning.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithRepair.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Operation.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Properties.Resources.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.GenerateResource.cache
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CoreCompileInputs.cache
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CopyComplete
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.dll
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.pdb
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\Exe\AF.Upload.Hive.dll.config
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\Exe\AF.Upload.Hive.xml
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\Exe\AF.Upload.Hive.dll
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\Exe\AF.Upload.Hive.pdb
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.AssemblyReference.cache
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_HiveOnboard.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Login.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithMaintenance.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OffboardMsg.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OperationMsg.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResOnboard.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Resume.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeInput.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeMsg.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_SafetyStatusMonitor.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Warning.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithRepair.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Operation.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Properties.Resources.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.GenerateResource.cache
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CoreCompileInputs.cache
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CopyComplete
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.dll
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.pdb
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\Exe\AF.Upload.Hive.dll.config
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\Exe\AF.Upload.Hive.xml
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\Exe\AF.Upload.Hive.dll
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\Exe\AF.Upload.Hive.pdb
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.AssemblyReference.cache
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_HiveOnboard.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Login.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithMaintenance.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OffboardMsg.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OperationMsg.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResOnboard.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Resume.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeInput.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeMsg.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_SafetyStatusMonitor.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Warning.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithRepair.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Operation.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Properties.Resources.resources
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.GenerateResource.cache
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CoreCompileInputs.cache
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CopyComplete
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.dll
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.pdb
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\Exe\AF.Upload.Hive.dll.config
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\Exe\AF.Upload.Hive.xml
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\Exe\AF.Upload.Hive.dll
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\Exe\AF.Upload.Hive.pdb
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.AssemblyReference.cache
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_HiveOnboard.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Login.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithMaintenance.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OffboardMsg.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OperationMsg.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResOnboard.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Resume.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeInput.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeMsg.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_SafetyStatusMonitor.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Warning.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithRepair.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Operation.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Properties.Resources.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.GenerateResource.cache
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CoreCompileInputs.cache
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CopyComplete
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.dll
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.pdb
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\Exe\AF.Upload.Hive.dll.config
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\Exe\AF.Upload.Hive.xml
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\Exe\AF.Upload.Hive.dll
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\Exe\AF.Upload.Hive.pdb
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.AssemblyReference.cache
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_HiveOnboard.resources
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Login.resources
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithMaintenance.resources
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OffboardMsg.resources
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OperationMsg.resources
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResOnboard.resources
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Resume.resources
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeInput.resources
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeMsg.resources
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_SafetyStatusMonitor.resources
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Warning.resources
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithRepair.resources
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Operation.resources
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Properties.Resources.resources
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.GenerateResource.cache
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CoreCompileInputs.cache
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CopyComplete
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.dll
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.pdb
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\Exe\AF.Upload.Hive.dll.config
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\Exe\AF.Upload.Hive.xml
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\Exe\AF.Upload.Hive.dll
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\Exe\AF.Upload.Hive.pdb
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.AssemblyReference.cache
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_HiveOnboard.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Login.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithMaintenance.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OffboardMsg.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OperationMsg.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResOnboard.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Resume.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeInput.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeMsg.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_SafetyStatusMonitor.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Warning.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithRepair.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Operation.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Properties.Resources.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.GenerateResource.cache
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CoreCompileInputs.cache
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CopyComplete
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.dll
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.pdb
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\Exe\AF.Upload.Hive.dll.config
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\Exe\AF.Upload.Hive.xml
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\Exe\AF.Upload.Hive.dll
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\Exe\AF.Upload.Hive.pdb
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.AssemblyReference.cache
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_HiveOnboard.resources
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Login.resources
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithMaintenance.resources
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OffboardMsg.resources
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OperationMsg.resources
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResOnboard.resources
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Resume.resources
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeInput.resources
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeMsg.resources
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_SafetyStatusMonitor.resources
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Warning.resources
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithRepair.resources
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Operation.resources
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Properties.Resources.resources
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.GenerateResource.cache
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CoreCompileInputs.cache
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CopyComplete
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.dll
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.pdb
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.AssemblyReference.cache
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\Exe\AF.Upload.Hive.dll.config
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\Exe\AF.Upload.Hive.xml
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\Exe\AF.Upload.Hive.dll
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\Exe\AF.Upload.Hive.pdb
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_HiveOnboard.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Login.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithMaintenance.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OffboardMsg.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OperationMsg.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResOnboard.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Resume.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeInput.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeMsg.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_SafetyStatusMonitor.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Warning.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithRepair.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Operation.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Properties.Resources.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.GenerateResource.cache
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CoreCompileInputs.cache
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CopyComplete
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.dll
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.pdb
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\Exe\AF.Upload.Hive.dll.config
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\Exe\AF.Upload.Hive.xml
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\Exe\AF.Upload.Hive.dll
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\Exe\AF.Upload.Hive.pdb
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.AssemblyReference.cache
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_HiveOnboard.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Login.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithMaintenance.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OffboardMsg.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OperationMsg.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResOnboard.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Resume.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeInput.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeMsg.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_SafetyStatusMonitor.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Warning.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithRepair.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Operation.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Properties.Resources.resources
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.GenerateResource.cache
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CoreCompileInputs.cache
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CopyComplete
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.dll
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.pdb
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\Exe\AF.Upload.Hive.dll.config
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\Exe\AF.Upload.Hive.xml
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\Exe\AF.Upload.Hive.dll
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\Exe\AF.Upload.Hive.pdb
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.AssemblyReference.cache
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_HiveOnboard.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Login.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithMaintenance.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OffboardMsg.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OperationMsg.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResOnboard.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Resume.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeInput.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeMsg.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_SafetyStatusMonitor.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Warning.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithRepair.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Operation.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Properties.Resources.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.GenerateResource.cache
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CoreCompileInputs.cache
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CopyComplete
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.dll
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.pdb
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\Exe\AF.Upload.Hive.dll.config
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\Exe\AF.Upload.Hive.xml
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\Exe\AF.Upload.Hive.dll
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\Exe\AF.Upload.Hive.pdb
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.AssemblyReference.cache
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_HiveOnboard.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Login.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithMaintenance.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OffboardMsg.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_OperationMsg.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResOnboard.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Resume.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeInput.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_ResumeMsg.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_SafetyStatusMonitor.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Warning.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_MsgWithRepair.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Form_Operation.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.Properties.Resources.resources
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.GenerateResource.cache
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CoreCompileInputs.cache
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.csproj.CopyComplete
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.dll
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\AF.Upload.Hive\obj\Debug\AF.Upload.Hive.pdb

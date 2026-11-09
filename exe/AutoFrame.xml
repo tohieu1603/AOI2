@@ -1,0 +1,3605 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AutoFrame</name>
+    </assembly>
+    <members>
+        <member name="F:Autoframe.TcpCommu_Camera_AOI.CCD2Cavity">
+            <summary>
+            结果
+            </summary>
+        </member>
+        <member name="F:Autoframe.TcpCommu_Camera_AOI.ccd2Data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="M:Autoframe.TcpCommu_Camera_AOI.Camtrigger(System.Object,System.Boolean)">
+            <summary>
+            触发相机拍照
+            </summary>
+            <param name="nCmdIdx">命令索引</param>
+            <param name="param">命令参数</param>
+            <param name="bEnable">打开关闭</param>
+            <returns></returns> b
+        </member>
+        <member name="M:Autoframe.TcpCommu_Camera_AOI.GetSendString(System.Object,System.Object[])">
+            <summary>
+            获取发送指令文本
+            </summary>
+            <param name="nCmdIdx">命令索引</param>
+            <param name="param">命令参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.TcpCommu_Camera_AOI.AnalyzeRcvString(System.Object)">
+            <summary>
+            接受数据解析
+            </summary>
+            <param name="nCmdIdx">命令索引</param>
+        </member>
+        <member name="F:Autoframe.TcpCommu_Camera_CCD1.result">
+            <summary>
+            结果
+            </summary>
+        </member>
+        <member name="F:Autoframe.TcpCommu_Camera_CCD1.resultHaveProductTakePhotoIsSuccess">
+            <summary>
+            料盘检测拍照是否成功
+            </summary>
+        </member>
+        <member name="F:Autoframe.TcpCommu_Camera_CCD1.resultHaveProduct">
+            <summary>
+            拍照料盘有无结果   0:无料，1有料
+            </summary>
+        </member>
+        <member name="M:Autoframe.TcpCommu_Camera_CCD1.Camtrigger(System.Object,System.Boolean)">
+            <summary>
+            触发相机拍照
+            </summary>
+            <param name="nCmdIdx">命令索引</param>
+            <param name="param">命令参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.TcpCommu_Camera_CCD1.GetSendString(System.Object,System.Object[])">
+            <summary>
+            获取发送指令文本
+            </summary>
+            <param name="nCmdIdx">命令索引</param>
+            <param name="param">命令参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.TcpCommu_Camera_CCD1.AnalyzeRcvString(System.Object)">
+            <summary>
+            接受数据解析
+            </summary>
+            <param name="nCmdIdx">命令索引</param>
+        </member>
+        <member name="F:Autoframe.TcpCommu_Robot.result">
+            <summary>
+            结果
+            </summary>
+        </member>
+        <member name="M:Autoframe.TcpCommu_Robot.GetSendString(System.Object,System.Object[])">
+            <summary>
+            获取发送指令文本
+            </summary>
+            <param name="nCmdIdx">命令索引</param>
+            <param name="param">命令参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.TcpCommu_Robot.AnalyzeRcvString(System.Object)">
+            <summary>
+            接受数据解析
+            </summary>
+            <param name="nCmdIdx">命令索引</param>
+        </member>
+        <member name="F:Autoframe.TcpCommu_Camera.CCD5result">
+            <summary>
+            结果
+            </summary>
+        </member>
+        <member name="F:Autoframe.TcpCommu_Camera.CCD5CalibResult">
+            <summary>
+            ccd5 9点标定结果
+            </summary>
+        </member>
+        <member name="F:Autoframe.TcpCommu_Camera.CCD6CalibResult">
+            <summary>
+            ccd6 9点标定结果
+            </summary>
+        </member>
+        <member name="F:Autoframe.TcpCommu_Camera.CCD5RegisterTemplateResult">
+             <summary>
+            CCD5注册模版结果
+             </summary>
+        </member>
+        <member name="F:Autoframe.TcpCommu_Camera.CCD6RegisterTemplateResult">
+             <summary>
+            CCD6注册模版结果
+             </summary>
+        </member>
+        <member name="M:Autoframe.TcpCommu_Camera.Camtrigger(System.Object,System.Boolean)">
+            <summary>
+            触发相机拍照
+            </summary>
+            <param name="nCmdIdx">命令索引</param>
+            <param name="param">命令参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.TcpCommu_Camera.GetSendString(System.Object,System.Object[])">
+            <summary>
+            获取发送指令文本
+            </summary>
+            <param name="nCmdIdx">命令索引</param>
+            <param name="param">命令参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.TcpCommu_Camera.AnalyzeRcvString(System.Object)">
+            <summary>
+            接受数据解析
+            </summary>
+            <param name="nCmdIdx">命令索引</param>
+        </member>
+        <member name="T:Autoframe.DI">
+            <summary>
+            数字量输入
+            </summary>
+        </member>
+        <member name="T:Autoframe.AI">
+            <summary>
+            模拟量输入枚举
+            </summary>
+        </member>
+        <member name="T:Autoframe.Cylinder">
+            <summary>
+            气缸
+            </summary>
+        </member>
+        <member name="T:Autoframe.AXIS">
+            <summary>
+            轴
+            </summary>
+        </member>
+        <member name="T:Autoframe.TCP_Client">
+            <summary>
+            TCP客户端
+            </summary>
+        </member>
+        <member name="T:Autoframe.TCP_Server">
+            <summary>
+            TCP服务器
+            </summary>
+        </member>
+        <member name="T:Autoframe.COM">
+            <summary>
+            串口
+            </summary>
+        </member>
+        <member name="T:Autoframe.RegBit">
+            <summary>
+            位寄存器
+            </summary>
+        </member>
+        <member name="T:Autoframe.RegInt">
+            <summary>
+            整型寄存器
+            </summary>
+        </member>
+        <member name="F:Autoframe.RegInt.Int_Process_Step">
+            <summary>
+            站位运行进度百分比，用于界面显示进度条      
+            </summary>
+        </member>
+        <member name="T:Autoframe.RegDouble">
+            <summary>
+            浮点型寄存器
+            </summary>
+        </member>
+        <member name="T:Autoframe.RegString">
+            <summary>
+            字符串寄存器
+            </summary>
+        </member>
+        <member name="T:Autoframe.Material">
+            <summary>
+            生产主料枚举
+            </summary>
+        </member>
+        <member name="T:Autoframe.ThrowReason">
+            <summary>
+            抛料原因
+            </summary>
+        </member>
+        <member name="T:Autoframe.PlannedDown">
+            <summary>
+            计划停机枚举
+            </summary>
+        </member>
+        <member name="T:Autoframe.ErrCustom">
+            <summary>
+            非计划停机枚举
+            </summary>
+        </member>
+        <member name="T:Autoframe.AutoProcess">
+            <summary>
+            自动流程
+            </summary>
+        </member>
+        <member name="F:Autoframe.Global.trayTotalRow">
+            <summary>
+            料盘行数
+            </summary>
+        </member>
+        <member name="F:Autoframe.Global.trayTotalCol">
+            <summary>
+            料盘列数
+            </summary>
+        </member>
+        <member name="F:Autoframe.Global.trayRowGap">
+            <summary>
+            料盘行间距
+            </summary>
+        </member>
+        <member name="F:Autoframe.Global.trayColGap">
+            <summary>
+            料盘列间距
+            </summary>
+        </member>
+        <member name="F:Autoframe.Global.IsPickProduct">
+            <summary>
+            流道模式开关
+            </summary>
+        </member>
+        <member name="F:Autoframe.Global.IsClearAllProduct">
+            <summary>
+            清料模式开关
+            </summary>
+        </member>
+        <member name="F:Autoframe.Global.m_plcHelper">
+             <summary>
+            PLC
+             </summary>
+             
+        </member>
+        <member name="F:Autoframe.Global.moveidnum">
+            <summary>
+            料盘动子号
+            </summary>
+        </member>
+        <member name="T:Autoframe.RotaryFixture">
+            <summary>
+            转盘工位枚举
+            </summary>
+        </member>
+        <member name="M:Autoframe.MyRotaryFixture.Get(Autoframe.RotaryFixture)">
+            <summary>
+            获取转盘夹具
+            </summary>
+            <param name="rotaryFixture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.MyRotaryFixture.Init">
+            <summary>
+            初始化，填充RotaryFixture
+            </summary>
+        </member>
+        <member name="T:Autoframe.ProductData">
+            <summary>
+            产品数据，可添加定制化属性
+            </summary>
+        </member>
+        <member name="P:Autoframe.ProductData.DtStartTime">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:Autoframe.ProductData.DtEndTime">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:Autoframe.ProductData.NGReason">
+            <summary>
+            NG原因
+            </summary>
+        </member>
+        <member name="P:Autoframe.ProductData.Cavity">
+            <summary>
+            位置
+            </summary>
+        </member>
+        <member name="P:Autoframe.ProductData.Temp">
+            <summary>
+            暂存
+            </summary>
+        </member>
+        <member name="P:Autoframe.TrayData.DtEndTime">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="T:Autoframe.CavityData">
+            <summary>
+            穴位数据
+            </summary>
+        </member>
+        <member name="M:Autoframe.HandleEx.Get(Autoframe.DI)">
+            <summary>
+            获取输入信号状态
+            </summary>
+            <param name="enumDI">DI枚举中成员</param>
+            <returns>DI当前状态</returns>
+        </member>
+        <member name="M:Autoframe.HandleEx.Get(Autoframe.DO)">
+            <summary>
+            获取输出信号状态
+            </summary>
+            <param name="enumDO">DO枚举中成员</param>
+            <returns>DO当前状态</returns>
+        </member>
+        <member name="M:Autoframe.HandleEx.Set(Autoframe.DO,System.Boolean)">
+            <summary>
+            设置输出信号状态
+            </summary>
+            <param name="enumDO">DO枚举中成员</param>
+            <param name="bBit">输出状态</param>
+        </member>
+        <member name="M:Autoframe.HandleEx.Out(Autoframe.Cylinder)">
+            <summary>
+            气缸伸出
+            </summary>
+            <returns>其它：执行时间 0:不等待到位 -1：超时</returns>
+        </member>
+        <member name="M:Autoframe.HandleEx.Back(Autoframe.Cylinder)">
+            <summary>
+            气缸缩回
+            </summary>
+            <returns>其它：执行时间 0:不等待到位 -1：超时</returns>
+        </member>
+        <member name="M:Autoframe.HandleEx.GetPos(Autoframe.AXIS)">
+            <summary>
+            获取轴位置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.HandleEx.ServoOn(Autoframe.AXIS,System.Boolean)">
+            <summary>
+            伺服使能
+            </summary>
+            <param name="bServoOn">使能或断使能</param>
+        </member>
+        <member name="M:Autoframe.HandleEx.Stop(Autoframe.AXIS)">
+            <summary>
+            伺服正常停止
+            </summary>
+        </member>
+        <member name="M:Autoframe.HandleEx.SetParam(Autoframe.AXIS,System.Int32,System.Double)">
+            <summary>
+            设置单轴的某一运动参数(浮点)
+            </summary>
+            <param name="nParam">参数:自定义扩展</param>
+            <param name="fData">参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.HandleEx.AbsMove(Autoframe.AXIS,System.Double,System.Double,System.Double,System.Double,System.Boolean)">
+            <summary>
+            绝对位置移动：不受系统速度影响
+            </summary>
+            <param name="nPos">目标点位：mm</param>
+            <param name="dbSpeed">速度：mm/s</param>
+            <param name="dbAcc">加速度：s，设为0 使用配置文档</param>
+            <param name="dbDec">减速度：s，设为0 使用配置文档</param>
+            <param name="bPause">是否响应暂停</param>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.HandleEx.AbsMove(Autoframe.AXIS,System.Double,System.Int32,System.Double,System.Double,System.Boolean)">
+            <summary>
+            绝对位置移动：受系统速度影响
+            </summary>
+            <param name="fPos">位置：mm</param> 
+            <param name="nSpeedPercent">速度百分比</param>
+            <param name="dbAcc">加速度：s，设为0 使用配置文档</param>
+            <param name="dbDec">减速度：s，设为0 使用配置文档</param>
+            <param name="bPause">是否响应暂停</param>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.HandleEx.RelativeMove(Autoframe.AXIS,System.Double,System.Double,System.Double,System.Double,System.Boolean)">
+            <summary>
+            相对位置移动：不受系统速度影响
+            </summary>
+            <param name="axis">轴号</param>
+            <param name="fPos">相对位置：mm</param>
+            <param name="dbSpeed">绝对值速度</param>
+            <param name="dbAcc">加速度：s，设为0 使用配置文档</param>
+            <param name="dbDec">减速度：s，设为0 使用配置文档</param>
+            <param name="bPause">是否响应暂停</param>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.HandleEx.RelativeMove(Autoframe.AXIS,System.Double,System.Int32,System.Double,System.Double,System.Boolean)">
+            <summary>
+            相对位置移动：受系统速度影响
+            </summary>
+            <param name="axis">轴号</param>
+            <param name="fPos">相对位置：mm</param>
+            <param name="nSpeedPercent">速度百分比</param>
+            <param name="dbAcc">加速度：s，设为0 使用配置文档</param>
+            <param name="dbDec">减速度：s，设为0 使用配置文档</param>
+            <param name="bPause">是否响应暂停</param>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.HandleEx.Home(Autoframe.AXIS,System.Int32,System.Boolean)">
+            <summary>
+            回原点
+            </summary>
+            <param name="axis">自动运行</param>
+            <param name="bPause">是否响应暂停</param>
+            <param name="nHomeIndex">缺省值-1：使用轴配置</param>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.HandleEx.IsStop(Autoframe.AXIS)">
+            <summary>
+            轴是否正常停止
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.HandleEx.IsPEL(Autoframe.AXIS)">
+            <summary>
+            是否在正限位
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.HandleEx.IsMEL(Autoframe.AXIS)">
+            <summary>
+            是否在负限位
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.HandleEx.IsOrg(Autoframe.AXIS)">
+            <summary>
+            是否在原点
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.HandleEx.GetStation``1(System.String)">
+            <summary>
+            获取站位
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Autoframe.StationAOIExDown1.moverid">
+            <summary>
+            动子ID号
+            </summary>
+        </member>
+        <member name="F:Autoframe.StationAOIExDown1.curcavity">
+            <summary>
+            当前穴位号
+            </summary>
+        </member>
+        <member name="F:Autoframe.StationAOIExDown1.ccdngcount">
+            <summary>
+            ccd视觉反馈NG计数
+            </summary>
+        </member>
+        <member name="F:Autoframe.StationAOIExDown1.ccdcurrnum">
+            <summary>
+            当前穴位CCD拍照次数
+            </summary>
+        </member>
+        <member name="F:Autoframe.StationAOIExDown1.focuscount">
+            <summary>
+            相机聚焦次数
+            </summary>
+        </member>
+        <member name="F:Autoframe.StationAOIExDown1.ccdConnectNgCount">
+            <summary>
+            相机连接失败次数
+            </summary>
+        </member>
+        <member name="F:Autoframe.StationAOIExDown1.grrruncount">
+            <summary>
+            相机GRR运行次数
+            </summary>
+        </member>
+        <member name="F:Autoframe.StationAOIExDown1.curstation">
+            <summary>
+            当前工站
+            </summary>
+        </member>
+        <member name="F:Autoframe.StationAOIExDown1.frontstation">
+            <summary>
+            前一工站
+            </summary>
+        </member>
+        <member name="M:Autoframe.StationAOIExDown1.CamResult">
+            <summary>
+            返回工站视觉结果
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.StationAOIExDown1.#ctor(System.String)">
+            <summary>
+            构造函数，需要设置站位当前的IO输入，IO输出，轴方向及轴名称，以显示在手动页面方便操作
+            </summary>
+            <param name="strName"></param>
+        </member>
+        <member name="T:Autoframe.StationAOIExDown1.POINT">
+            <summary>
+            站位内的点位枚举
+            </summary>
+        </member>
+        <member name="T:Autoframe.StationAOIExDown1.CONTAINER">
+            <summary>
+            产品穴位
+            </summary>
+        </member>
+        <member name="M:Autoframe.StationAOIExDown1.Preinit">
+            <summary>
+            初始化时设置站位安全状态，用来设备初始化时各站位之间相互卡站，
+            控制各站位先后动作顺序用，比如流水线组装，肯定需要组装的Z轴升
+            起后，流水线才能动作这种情况
+            </summary>
+        </member>
+        <member name="T:Autoframe.StationFeedTrans">
+            <summary>
+            入料接驳站
+            </summary>
+        </member>
+        <member name="M:Autoframe.StationFeedTrans.#ctor(System.String)">
+            <summary>
+            构造函数，需要设置站位当前的IO输入，IO输出，轴方向及轴名称，以显示在手动页面方便操作
+            </summary>
+            <param name="strName"></param>
+        </member>
+        <member name="T:Autoframe.StationFeedTrans.POINT">
+            <summary>
+            站位内的点位枚举
+            </summary>
+        </member>
+        <member name="T:Autoframe.StationFeedTrans.CONTAINER">
+            <summary>
+            产品穴位
+            </summary>
+        </member>
+        <member name="M:Autoframe.StationFeedTrans.Preinit">
+            <summary>
+            初始化时设置站位安全状态，用来设备初始化时各站位之间相互卡站，
+            控制各站位先后动作顺序用，比如流水线组装，肯定需要组装的Z轴升
+            起后，流水线才能动作这种情况
+            </summary>
+        </member>
+        <member name="T:Autoframe.StationLaserDisp">
+            <summary>
+            激光位移检测站
+            </summary>
+        </member>
+        <member name="M:Autoframe.StationLaserDisp.#ctor(System.String)">
+            <summary>
+            构造函数，需要设置站位当前的IO输入，IO输出，轴方向及轴名称，以显示在手动页面方便操作
+            </summary>
+            <param name="strName"></param>
+        </member>
+        <member name="T:Autoframe.StationLaserDisp.POINT">
+            <summary>
+            站位内的点位枚举
+            </summary>
+        </member>
+        <member name="T:Autoframe.StationLaserDisp.CONTAINER">
+            <summary>
+            产品穴位
+            </summary>
+        </member>
+        <member name="M:Autoframe.StationLaserDisp.Preinit">
+            <summary>
+            初始化之前调用
+            1.设置初始化流程和自动流程的初始步
+            2.复位寄存器
+            </summary>
+        </member>
+        <member name="T:Autoframe.StationLoading">
+            <summary>
+            上料仓站
+            </summary>
+        </member>
+        <member name="M:Autoframe.StationLoading.#ctor(System.String)">
+            <summary>
+            构造函数，需要设置站位当前的IO输入，IO输出，轴方向及轴名称，以显示在手动页面方便操作
+            </summary>
+            <param name="strName"></param>
+        </member>
+        <member name="T:Autoframe.StationLoading.POINT">
+            <summary>
+            站位内的点位枚举
+            </summary>
+        </member>
+        <member name="T:Autoframe.StationLoading.CONTAINER">
+            <summary>
+            产品穴位
+            </summary>
+        </member>
+        <member name="M:Autoframe.StationLoading.Preinit">
+            <summary>
+            初始化之前调用
+            1.设置初始化流程和自动流程的初始步
+            2.复位寄存器
+            </summary>
+        </member>
+        <member name="T:Autoframe.StationLoadingPickEx">
+            <summary>
+            上料取放站
+            </summary>
+        </member>
+        <member name="M:Autoframe.StationLoadingPickEx.CreateMatrix(System.Int32,System.Int32)">
+            <summary>
+            创建 M行N列 字符串二维数组，全部初始值为 "NA"
+            </summary>
+            <param name="nRow">M 行数</param>
+            <param name="nCol">N 列数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.StationLoadingPickEx.#ctor(System.String)">
+            <summary>
+            构造函数，需要设置站位当前的IO输入，IO输出，轴方向及轴名称，以显示在手动页面方便操作
+            </summary>
+            <param name="strName"></param>
+        </member>
+        <member name="T:Autoframe.StationLoadingPickEx.POINT">
+            <summary>
+            站位内的点位枚举
+            </summary>
+        </member>
+        <member name="T:Autoframe.StationLoadingPickEx.CONTAINER">
+            <summary>
+            产品穴位
+            </summary>
+        </member>
+        <member name="M:Autoframe.StationLoadingPickEx.Preinit">
+            <summary>
+            初始化之前调用
+            1.设置初始化流程和自动流程的初始步
+            2.复位寄存器
+            </summary>
+        </member>
+        <member name="T:Autoframe.StationOutputTrans">
+            <summary>
+            StationOutputTrans
+            </summary>
+        </member>
+        <member name="M:Autoframe.StationOutputTrans.#ctor(System.String)">
+            <summary>
+            构造函数，需要设置站位当前的IO输入，IO输出，轴方向及轴名称，以显示在手动页面方便操作
+            </summary>
+            <param name="strName"></param>
+        </member>
+        <member name="T:Autoframe.StationOutputTrans.POINT">
+            <summary>
+            站位内的点位枚举
+            </summary>
+        </member>
+        <member name="T:Autoframe.StationOutputTrans.CONTAINER">
+            <summary>
+            产品穴位
+            </summary>
+        </member>
+        <member name="M:Autoframe.StationOutputTrans.Preinit">
+            <summary>
+            初始化之前调用
+            1.设置初始化流程和自动流程的初始步
+            2.复位寄存器
+            </summary>
+        </member>
+        <member name="T:Autoframe.StationTransferPick">
+            <summary>
+            StationTransferPick
+            </summary>
+        </member>
+        <member name="M:Autoframe.StationTransferPick.#ctor(System.String)">
+            <summary>
+            构造函数，需要设置站位当前的IO输入，IO输出，轴方向及轴名称，以显示在手动页面方便操作
+            </summary>
+            <param name="strName"></param>
+        </member>
+        <member name="T:Autoframe.StationTransferPick.POINT">
+            <summary>
+            站位内的点位枚举
+            </summary>
+        </member>
+        <member name="T:Autoframe.StationTransferPick.CONTAINER">
+            <summary>
+            产品穴位
+            </summary>
+        </member>
+        <member name="M:Autoframe.StationTransferPick.Preinit">
+            <summary>
+            初始化之前调用
+            1.设置初始化流程和自动流程的初始步
+            2.复位寄存器
+            </summary>
+        </member>
+        <member name="M:Autoframe.StationUnloadBinEx.#ctor(System.String)">
+            <summary>
+            构造函数，需要设置站位当前的IO输入，IO输出，轴方向及轴名称，以显示在手动页面方便操作
+            </summary>
+            <param name="strName"></param>
+        </member>
+        <member name="T:Autoframe.StationUnloadBinEx.POINT">
+            <summary>
+            站位内的点位枚举
+            </summary>
+        </member>
+        <member name="T:Autoframe.StationUnloadBinEx.CONTAINER">
+            <summary>
+            产品穴位
+            </summary>
+        </member>
+        <member name="M:Autoframe.StationUnloadBinEx.Preinit">
+            <summary>
+            初始化时设置站位安全状态，用来设备初始化时各站位之间相互卡站，
+            控制各站位先后动作顺序用，比如流水线组装，肯定需要组装的Z轴升
+            起后，流水线才能动作这种情况
+            </summary>
+        </member>
+        <member name="M:Autoframe.StationUnloadGantryEx.#ctor(System.String)">
+            <summary>
+            构造函数，需要设置站位当前的IO输入，IO输出，轴方向及轴名称，以显示在手动页面方便操作
+            </summary>
+            <param name="strName"></param>
+        </member>
+        <member name="T:Autoframe.StationUnloadGantryEx.POINT">
+            <summary>
+            站位内的点位枚举
+            </summary>
+        </member>
+        <member name="T:Autoframe.StationUnloadGantryEx.CONTAINER">
+            <summary>
+            产品穴位
+            </summary>
+        </member>
+        <member name="M:Autoframe.StationUnloadGantryEx.Preinit">
+            <summary>
+            初始化时设置站位安全状态，用来设备初始化时各站位之间相互卡站，
+            控制各站位先后动作顺序用，比如流水线组装，肯定需要组装的Z轴升
+            起后，流水线才能动作这种情况
+            </summary>
+        </member>
+        <member name="M:Autoframe.StationUnloadGantryEx.AllAxisZGotoSecurityPosition">
+            <summary>
+            所有Z轴回到安全位
+            </summary>
+        </member>
+        <member name="M:Autoframe.StationUnloadGantryEx.InitRun(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="F:Autoframe.StationUnloadGantryEx.CameraTriggerTimeClosed">
+            <summary>
+            相机硬触发触发延时关闭时间
+            </summary>
+        </member>
+        <member name="F:Autoframe.StationUnloadGantryEx.ProduceRunStepName">
+            <summary>
+            等待视觉结果延时
+            </summary>
+        </member>
+        <member name="F:Autoframe.StationUnloadGantryEx.CalibNeedJudge">
+            <summary>
+            每次标定前是否需要跳弹窗停一下
+            </summary>
+        </member>
+        <member name="M:Autoframe.StationUnloadGantryEx.NinePointCalib(System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            九点标定
+            </summary>
+            <param name="cameraName"></param>
+            <param name="ProcessID"></param>
+            <param name="point"></param>
+            <param name="nozzelID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.StationUnloadGantryEx.NozzleRotate5PointCalib(System.String,System.Int32,System.Int32)">
+            <summary>
+            吸嘴5点旋转标定
+            以九点标定第5点(base5x/base5y)为XY基准，U轴左右各旋转30°共5个角度点位
+            </summary>
+            <param name="cameraName">相机名称 CCD5/CCD6</param>
+            <param name="point">当前旋转点位 1~5</param>
+            <param name="nozzelID">吸嘴编号 1/2/3/4</param>
+            <returns>0成功 1失败</returns>
+        </member>
+        <member name="M:Autoframe.StationUnloadGantryEx.NozzelStaticTest(Autoframe.StationUnloadGantryEx.CameraName,Autoframe.StationUnloadGantryEx.NozzelID)">
+            <summary>
+            相机静态测试
+            </summary>
+            <param name="cameraName"></param>
+            <param name="nozzelID"></param>
+        </member>
+        <member name="M:Autoframe.StationUnloadGantryEx.NozzelDynamicTest(Autoframe.StationUnloadGantryEx.CameraName,Autoframe.StationUnloadGantryEx.NozzelID)">
+            <summary>
+            相机动态测试
+            </summary>
+            <param name="cameraName"></param>
+            <param name="nozzelID"></param>
+        </member>
+        <member name="M:Autoframe.StationUnloadGantryEx.RegisterNozzelTemplate(Autoframe.StationUnloadGantryEx.CameraName,System.Int32,Autoframe.StationUnloadGantryEx.NozzelID)">
+            <summary>
+            注册吸嘴模板
+            </summary>
+            <param name="cameraName">相机名称</param>
+            <param name="processId">流程ID</param>
+            <param name="nozzelID">吸嘴ID</param>
+        </member>
+        <member name="M:Autoframe.StationUnloadGantryEx.CCD7CameraStaticTest">
+            <summary>
+            CCD7静态测试
+            </summary>
+            <param name="cameraName"></param>
+        </member>
+        <member name="M:Autoframe.StationUnloadGantryEx.CCD7CameraDynamicTest">
+            <summary>
+            相机7 动态测试
+            </summary>
+        </member>
+        <member name="T:Autoframe.TrayMatrix">
+            <summary>
+            TrayMatrix data
+            </summary>
+        </member>
+        <member name="T:Autoframe.BinInfo">
+            <summary>
+            Bin Tray information
+            </summary>
+        </member>
+        <member name="M:Autoframe.BinInfo.LockGantry">
+            <summary>
+            Gantry chiếm quyền thao tác với bin
+            </summary>
+        </member>
+        <member name="M:Autoframe.BinInfo.UnlockGantry">
+            <summary>
+            Trả quyền điều khiển bin cho bin station
+            </summary>
+        </member>
+        <member name="M:Autoframe.BinInfo.CanMove">
+            <summary>
+            Bin có được phép chạy trục không
+            </summary>
+        </member>
+        <member name="T:Autoframe.IPairEvaluator">
+            <summary>
+            Base evaluate
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Autoframe.OKNGEvaluator" -->
+        <!-- Badly formed XML comment ignored for member "T:Autoframe.OKOKEvaluator" -->
+        <member name="T:Autoframe.VacuumTask">
+            <summary>
+            Vaccum work information
+            </summary>
+        </member>
+        <member name="T:Autoframe.SwapStack">
+            <summary>
+            Swap stack infomation
+            </summary>
+        </member>
+        <member name="T:Autoframe.SwapTrayHelper">
+            <summary>
+            Generate pair and swapstack helper
+            </summary>
+        </member>
+        <member name="T:Autoframe.SwapController">
+            <summary>
+            GENERATE SWAP PLANNER
+            </summary>
+        </member>
+        <member name="M:Autoframe.SystemInit.Init">
+             <summary>
+            系统初始化
+             </summary>
+        </member>
+        <member name="M:Autoframe.SystemInit.AddStation">
+             <summary>
+            添加站位
+             </summary>
+        </member>
+        <member name="M:Autoframe.SystemInit.IsAxisSafe(System.Int32,System.Nullable{System.Double},System.String@)">
+            <summary>
+            轴运动安全判定
+            </summary>
+            <param name="nAxis">轴号</param>
+            <param name="dbTargetPos">目标位置，回原、Jog会传null</param>
+            <param name="strMsg">危险操作信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.SystemInit.IsDoSafe(System.Int32,System.String@)">
+            <summary>
+            DO操作安全判定
+            </summary>
+            <param name="nIndex">DO序号</param>
+            <param name="strMsg">危险操作信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.SystemInit.InitRecipe">
+            <summary>
+            设置生产配方，能快按生产场景切参数
+            </summary>
+        </member>
+        <member name="M:Autoframe.SystemInit.InitHomeMode">
+            <summary>
+            自定义回原模式
+            </summary>
+        </member>
+        <member name="M:Autoframe.SystemInit.InitPDCA">
+            <summary>
+            PDCA初始化
+            </summary>
+        </member>
+        <member name="T:Autoframe.ProgramToolEx">
+            <summary>
+            工具类
+            </summary>
+        </member>
+        <member name="M:Autoframe.ProgramToolEx.ConnectShareFolder(System.String,System.String,System.String,System.String@)">
+            <summary>
+            连接共享文件夹
+            </summary>
+            <param name="path">共享路径</param>
+            <param name="user">用户名</param>
+            <param name="password">密码</param>
+            <param name="error">输出错误</param>
+            <returns></returns>
+            <remarks>
+            Windows 网络共享文件夹连接验证
+            </remarks>
+        </member>
+        <member name="T:Autoframe.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:Autoframe.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:Autoframe.Properties.Resources.Culture">
+            <summary>
+              重写当前线程的 CurrentUICulture 属性，对
+              使用此强类型资源类的所有资源查找执行重写。
+            </summary>
+        </member>
+        <member name="M:Autoframe.UI.Form_Auto.AddPage(System.Windows.Forms.Form[])">
+            <summary>
+            添加自定义TabPage
+            </summary>
+            <param name="form"></param>
+        </member>
+        <member name="M:Autoframe.UI.Form_Auto.SetCustomPanel(System.Object[],System.Object[])">
+            <summary>
+            添加自定义面板
+            </summary>
+            <param name="arrayDI"></param>
+            <param name="arrayDO"></param>
+        </member>
+        <member name="M:Autoframe.UI.Form_Auto.SetCustomPanel(System.Windows.Forms.UserControl)">
+            <summary>
+            添加自定义面板
+            </summary>
+            <param name="uc">自定义</param>
+        </member>
+        <member name="M:Autoframe.UI.Form_Auto.InitProductDataGridViewHead">
+            <summary>
+            初始化界面生产数据表
+            </summary>
+        </member>
+        <member name="F:Autoframe.UI.Form_Auto.ShowCount">
+            <summary>
+            界面最大显示100行物料数据
+            </summary>
+        </member>
+        <member name="M:Autoframe.UI.Form_Auto.OnShowProductData(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            生产数据展示
+            </summary>
+            <param name="dicProduct"></param>
+        </member>
+        <member name="M:Autoframe.UI.Form_Auto.OnGetHiveStationInfo">
+            <summary>
+            获取Hive站位信息
+            </summary>
+        </member>
+        <member name="M:Autoframe.UI.Form_Auto.OnGetHiveUserInfo(AF.Upload.Hive.HiveUserInfo@)">
+            <summary>
+            获取Hive用户信息
+            </summary>
+        </member>
+        <member name="M:Autoframe.UI.Form_Auto.UpdateProductCounter">
+            <summary>
+            更新计数器显示
+            </summary>
+        </member>
+        <member name="F:Autoframe.UI.Form_Auto.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:Autoframe.UI.Form_Auto.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:Autoframe.UI.Form_Auto.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:Autoframe.UI.Form_Auto_CustomPanel.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:Autoframe.UI.Form_Auto_CustomPanel.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:Autoframe.UI.Form_Auto_CustomPanel.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:Autoframe.UI.Form_Main">
+            <summary>
+            主界面
+            </summary>
+        </member>
+        <member name="P:Autoframe.UI.Form_Main.__blacklist">
+            <summary>
+            翻译黑名单
+            </summary>
+        </member>
+        <member name="F:Autoframe.UI.Form_Main.m_dicForm">
+            <summary>
+            界面字典
+            </summary>
+        </member>
+        <member name="F:Autoframe.UI.Form_Main.m_currentForm">
+            <summary>
+            当前界面
+            </summary>
+        </member>
+        <member name="F:Autoframe.UI.Form_Main.m_currentButton">
+            <summary>
+            当前界面按钮
+            </summary>
+        </member>
+        <member name="M:Autoframe.UI.Form_Main.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Autoframe.UI.Form_Main.OnControlDisposed(System.Object,System.EventArgs)">
+            <summary>
+            控件/窗体销毁：取消订阅，释放
+            </summary>
+        </member>
+        <member name="F:Autoframe.UI.Form_Main.SoftwareVersion">
+            <summary>
+            软件版本
+            </summary>
+        </member>
+        <member name="M:Autoframe.UI.Form_Main.SetPermission">
+            <summary>
+            设置Control权限
+            </summary>
+        </member>
+        <member name="M:Autoframe.UI.Form_Main.RoundButton_Start_Click(System.Object,System.EventArgs)">
+            <summary>
+            开始自动流程,如果是暂停则恢复运行
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Autoframe.UI.Form_Main.RoundButton_Pause_Click(System.Object,System.EventArgs)">
+            <summary>
+            暂停
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Autoframe.UI.Form_Main.RoundButton_Stop_Click(System.Object,System.EventArgs)">
+            <summary>
+            结束自动流程
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Autoframe.UI.Form_Main.Form_Main_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+            <summary>
+            关闭程序,清空报警类数据
+            </summary>
+            <param name="sender">事件源</param>
+            <param name="e">附带数据的对象</param>
+        </member>
+        <member name="M:Autoframe.UI.Form_Main.SwitchWnd(AF.Common.UI.RoundButton)">
+            <summary>
+            根据权限来登录点击的界面
+            </summary>
+            <param name="btn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.UI.Form_Main.UseFromZuli">
+            <summary>
+            组立AOI项目使用
+            </summary>
+        </member>
+        <member name="F:Autoframe.UI.Form_Main.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Autoframe.UI.Form_Main.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Autoframe.UI.Form_Main.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Autoframe.UI.Form_Test.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Autoframe.UI.Form_Test.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Autoframe.UI.Form_Test.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Autoframe.Program.Main(System.String[])">
+            <summary>
+            应用程序的主入口点。
+            </summary>
+        </member>
+        <member name="M:Autoframe.Program.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="T:Autoframe.StationEx">
+            <summary>
+            站位
+            </summary>
+        </member>
+        <member name="E:Autoframe.StationEx.StationProcessChanged">
+            <summary>
+            自动流程改变
+            </summary>
+        </member>
+        <member name="P:Autoframe.StationEx.IsNormalRun">
+            <summary>
+            是否正常生产流程
+            </summary>
+        </member>
+        <member name="P:Autoframe.StationEx.IsDryRun">
+            <summary>
+            是否空跑流程
+            </summary>
+        </member>
+        <member name="P:Autoframe.StationEx.IsCpkRun">
+            <summary>
+            是否CPK流程
+            </summary>
+        </member>
+        <member name="P:Autoframe.StationEx.IsGrrRun">
+            <summary>
+            是否Grr流程
+            </summary>
+        </member>
+        <member name="P:Autoframe.StationEx.Process">
+            <summary>
+            自动流程
+            </summary>
+        </member>
+        <member name="M:Autoframe.StationEx.LoadContainer``2">
+            <summary>
+            加载当站Container信息
+            </summary>
+            <typeparam name="EContainer">容器枚举</typeparam>
+            <typeparam name="TContainer">容器类型</typeparam>
+        </member>
+        <member name="M:Autoframe.StationEx.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="strName"></param>
+        </member>
+        <member name="M:Autoframe.StationEx.OnStepChanged(System.String)">
+            <summary>
+            响应流程步改变
+            </summary>
+            <param name="strStep"></param>
+        </member>
+        <member name="M:Autoframe.StationEx.StepRun(System.String,System.Boolean)">
+            <summary>
+            流程步运行
+            </summary>
+            <param name="strStep">步名</param>
+            <param name="bInit">是否是初始化步</param>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.StationEx.InitRun(System.String)">
+            <summary>
+            初始化流程运行
+            </summary>
+            <param name="strStep"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.StationEx.ProduceRun(System.String)">
+            <summary>
+            生产流程运行
+            </summary>
+            <param name="strStep"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.StationEx.CalibRun(System.String)">
+            <summary>
+            标定流程运行
+            </summary>
+            <param name="strStep"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.StationEx.GrrRun(System.String)">
+            <summary>
+            GRR流程运行
+            </summary>
+            <param name="strStep"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.StationEx.OtherRun(System.String)">
+            <summary>
+            其他流程运行
+            </summary>
+            <param name="strStep"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.StationEx.WaitRegBit(Autoframe.RegBit,System.Boolean,System.Int32,System.Boolean)">
+            <summary>
+            等待Bit寄存器有效
+            </summary>
+            <param name="regBit">Bit寄存器枚举</param>
+            <param name="bValue">有效值</param>
+            <param name="nTimeOutS">超时时间(以秒为单位)，-1:一直等待， 0：使用系统参数设置时间， 其它：特定时间</param>
+            <param name="bPause">是否响应暂停状态</param>
+        </member>
+        <member name="M:Autoframe.StationEx.WaitRegBit(Autoframe.RegBit[],System.Boolean,System.Int32,System.Boolean)">
+            <summary>
+            等待任意Bit寄存器值有效
+            </summary>
+            <param name="regBit">Bit寄存器枚举数组</param>
+            <param name="bValue">有效值</param>
+            <param name="nTimeOutS">超时时间(以秒为单位)，-1:一直等待， 0：使用系统参数设置时间， 其它：特定时间</param>
+            <param name="bPause">是否响应暂停</param>
+            <returns>有效的寄存器</returns>
+        </member>
+        <member name="M:Autoframe.StationEx.WaitRegBitAll(Autoframe.RegBit[],System.Boolean,System.Int32,System.Boolean)">
+            <summary>
+            等待所有Bit寄存器值有效
+            </summary>
+            <param name="regBit">Bit寄存器枚举数组</param>
+            <param name="bValue">有效值</param>
+            <param name="nTimeOutS">超时时间(以秒为单位)，-1:一直等待， 0：使用系统参数设置时间， 其它：特定时间</param>
+            <param name="bPause">是否响应暂停</param>
+        </member>
+        <member name="M:Autoframe.StationEx.WaitDI(Autoframe.DI,System.Boolean,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            等待IO输入点有效
+            </summary>
+            <param name="enumDI">DI枚举</param>
+            <param name="bValue">有效值</param>
+            <param name="nTimeOutS">超时时间(以秒为单位)，-1:一直等待， 0：使用系统参数设置时间， 其它：特定时间</param>
+            <param name="bTimeOutReturn">设置为true 超时返回，跳出循环；设置为false 超时不返回，卡在循环里</param>
+            <param name="bPause">是否响应暂停</param>
+            <returns>true:未超时  false:超时  </returns>
+        </member>
+        <member name="M:Autoframe.StationEx.WaitDI(Autoframe.DI[],System.Boolean,System.Int32,System.Boolean)">
+            <summary>
+            等待任意DI有效
+            </summary>
+            <param name="enumDI">DI枚举数组</param>
+            <param name="bValue">有效值</param>
+            <param name="nTimeOutS">超时时间(以秒为单位)，-1:一直等待， 0：使用系统参数设置时间， 其它：特定时间</param>
+            <param name="bPause">是否响应暂停</param>
+            <returns>有效的DI</returns>
+        </member>
+        <member name="M:Autoframe.StationEx.WaitDiAll(Autoframe.DI[],System.Boolean,System.Int32,System.Boolean)">
+            <summary>
+            等待所有DI有效
+            </summary>
+            <param name="enumDI">DI枚举数组</param>
+            <param name="bValue">有效值</param>
+            <param name="nTimeOutS">超时时间(以秒为单位)，-1:一直等待， 0：使用系统参数设置时间， 其它：特定时间</param>
+            <param name="bPause">是否响应暂停</param>
+        </member>
+        <member name="M:Autoframe.StationEx.WaitBegin">
+            <summary>
+            等待启动
+            </summary>
+        </member>
+        <member name="M:Autoframe.StationEx.CylinderOut(Autoframe.Cylinder,System.Boolean,System.Int32,System.Boolean)">
+            <summary>
+            气缸伸出
+            </summary>
+            <param name="cylinder">气缸枚举</param>
+            <param name="wait">是否等待气缸到位信号</param>
+            <param name="nTimeOutS">等待到位超时时间(以秒为单位)，-1:一直等待， 0：使用系统参数设置时间， 其它：特定时间</param>
+            <param name="bPause">是否响应暂停</param>
+        </member>
+        <member name="M:Autoframe.StationEx.CylinderBack(Autoframe.Cylinder,System.Boolean,System.Int32,System.Boolean)">
+            <summary>
+            气缸缩回
+            </summary>
+            <param name="cylinder">气缸枚举</param>
+            <param name="wait">是否等待气缸到位信号</param>
+            <param name="nTimeOutS">等待到位超时时间(以秒为单位)，-1:一直等待， 0：使用系统参数设置时间， 其它：特定时间</param>
+            <param name="bPause">是否响应暂停</param>
+        </member>
+        <member name="M:Autoframe.StationEx.WaitCylOut(Autoframe.Cylinder,System.Int32,System.Boolean)">
+            <summary>
+            等待气缸伸出到位
+            </summary>
+            <param name="cylinder">气缸枚举</param>
+            <param name="nTimeOutS">超时时间(以秒为单位)，-1:一直等待， 0：使用系统参数设置时间， 其它：特定时间</param>
+            <param name="bPause">是否响应暂停</param>
+        </member>
+        <member name="M:Autoframe.StationEx.WaitCylBack(Autoframe.Cylinder,System.Int32,System.Boolean)">
+            <summary>
+            等待气缸缩回到位
+            </summary>
+            <param name="cylinder">气缸枚举</param>
+            <param name="nTimeOutS">超时时间(以秒为单位)，-1:一直等待， 0：使用系统参数设置时间， 其它：特定时间</param>
+            <param name="bPause">是否响应暂停</param>
+        </member>
+        <member name="M:Autoframe.StationEx.AxisSingleTo``1(Autoframe.AXIS,``0,System.Int32,System.Double,System.Double,System.Boolean)">
+            <summary>
+            单轴跑点位
+            </summary>
+            <param name="enumAxis">轴枚举</param>
+            <param name="enumPoint">点位枚举</param>
+            <param name="nSpeedPercent">速度百分比</param>
+            <param name="dbAcc">加速度：s，设为0 使用配置文档</param>
+            <param name="dbDec">减速度：s，设为0 使用配置文档</param>
+            <param name="bAllowInterrupt">允许中断</param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:Autoframe.StationEx.AxisSingleTo``1(``0,Autoframe.AXIS,System.Int32,System.Double,System.Double,System.Boolean)">
+            <summary>
+            单轴跑点位
+            </summary>
+            <param name="enumAxis">轴枚举</param>
+            <param name="enumPoint">点位枚举</param>
+            <param name="nSpeedPercent">速度百分比</param>
+            <param name="dbAcc">加速度：s，设为0 使用配置文档</param>
+            <param name="dbDec">减速度：s，设为0 使用配置文档</param>
+            <param name="bAllowInterrupt">允许中断</param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:Autoframe.StationEx.AxisSingleTo(Autoframe.AXIS,System.Double,System.Int32,System.Double,System.Double,System.Boolean)">
+            <summary>
+            单轴跑位置
+            </summary>
+            <param name="enumAxis">轴枚举</param>
+            <param name="fPos">目标位置</param>
+            <param name="nSpeedPercent">速度百分比</param>
+            <param name="dbAcc">加速度：s，设为0 使用配置文档</param>
+            <param name="dbDec">减速度：s，设为0 使用配置文档</param>
+            <param name="bAllowInterrupt">允许中断</param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:Autoframe.StationEx.AxisGoto``1(Autoframe.AXIS[],``0,System.Int32,System.Boolean)">
+            <summary>
+            多轴跑点位
+            </summary>
+            <param name="enumAxis">要参与运动的轴 数组，如果为 null 所有轴一起跑</param>
+            <param name="enumPoint">点位枚举</param>
+            <param name="nSpeedPercent">速度百分比</param>
+            <param name="bAllowInterrupt">允许中断</param>
+            <returns></returns>
+        </member>
+        <member name="M:Autoframe.StationEx.AxisGoto(Autoframe.AXIS[],System.Double[],System.Int32,System.Boolean)">
+            <summary>
+            多轴跑位置
+            </summary>
+            <param name="enumAxis">要参与运动的轴 数组，如果为 null 所有轴一起跑</param>
+            <param name="fPos">目标位置数组</param>
+            <param name="nSpeedPercent">速度百分比</param>
+            <param name="bAllowInterrupt">允许中断</param>
+        </member>
+        <member name="M:Autoframe.StationEx.WaitAxis(Autoframe.AXIS,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            等轴待运动完成
+            </summary>
+            <param name="enumAxis">轴枚举</param>
+            <param name="nInPosError"> 到位误差[脉冲值]：小于0 使用系统配置，大于0 实际误差值</param>
+            <param name="nTimeOutS">超时时间(以秒为单位)，-1:一直等待， 0：使用系统参数设置时间， 其它：特定时间</param>
+            <param name="bPause">是否响应暂停</param>
+        </member>
+        <member name="M:Autoframe.StationEx.WaitAxisInterpolation(System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            等待插补运动完成
+            </summary>
+            <param name="nCardIndex">卡号</param>
+            <param name="nPointTableIndex">插补缓存表序号</param>
+            <param name="nTimeOutS">超时时间(以秒为单位)，-1:一直等待， 0：使用系统参数设置时间， 其它：特定时间</param>
+            <param name="bPause">是否响应暂停</param>
+        </member>
+        <member name="M:Autoframe.StationEx.WaitTcp(AF.Communicate.TcpClient,System.String@,System.String,System.String,System.Int32,System.Boolean)">
+            <summary>
+            等待网络回复以某字符串开头和某字符串结尾的字符串数据
+            </summary>
+            <param name="tcplink">TCP对象</param>
+            <param name="strReceive">接收到的数据</param>
+            <param name="strStartWith">开头字符串</param>
+            <param name="strEndWith">结尾字符串</param>
+            <param name="nTimeOutS">超时时间，单位秒 0:系统时间 -1:一直等待 其他:其他时间</param>
+            <param name="bTimeOutReturn">设置为true 超时返回，跳出循环；设置为false 超时不返回，卡在循环里</param>
+            <returns>true:未超时  false:超时</returns>
+        </member>
+        <member name="M:Autoframe.StationEx.WaitCom(AF.Communicate.ComPort,System.String@,System.String,System.String,System.Int32,System.Boolean)">
+            <summary>
+            等待串口回复以某字符串开头和某字符串结尾的字符串数据
+            </summary>
+            <param name="comLink">TCP对象</param>
+            <param name="strReceive">接收到的数据</param>
+            <param name="strStartWith">开头字符串</param>
+            <param name="strEndWith">结尾字符串</param>
+            <param name="nTimeOutS">超时时间，单位秒 0:系统时间 -1:一直等待 其他:其他时间</param>
+            <param name="bTimeOutReturn">设置为true 超时返回，跳出循环；设置为false 超时不返回，卡在循环里</param>
+            <returns>true:未超时  false:超时  </returns>
+        </member>
+        <member name="M:Autoframe.StationEx.WaitMaterial(Autoframe.Material,System.String,System.Nullable{Autoframe.DI})">
+            <summary>
+            缺料
+            </summary>
+            <param name="material"></param>
+            <param name="strMsg"></param>
+            <param name="di"></param>
+        </member>
+        <member name="F:Autoframe.Form_ModifyDb.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Autoframe.Form_ModifyDb.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Autoframe.Form_ModifyDb.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Autoframe.Form_TraySetting.BindControlEvents">
+            <summary>绑定所有控件事件</summary>
+        </member>
+        <member name="M:Autoframe.Form_TraySetting.LoadConfigData">
+            <summary>加载XML配置赋值控件</summary>
+        </member>
+        <member name="M:Autoframe.Form_TraySetting.MatchComboFromRowCol(System.String,System.Int32,System.Int32)">
+            <summary>行列匹配下拉选项</summary>
+        </member>
+        <member name="M:Autoframe.Form_TraySetting.Cbx_Style_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>下拉选择规格自动回填行列</summary>
+        </member>
+        <member name="M:Autoframe.Form_TraySetting.Btn_Save_Click(System.Object,System.EventArgs)">
+            <summary>保存写入XML</summary>
+        </member>
+        <member name="M:Autoframe.Form_TraySetting.GetResultConfig">
+            <summary>对外暴露最终配置</summary>
+        </member>
+        <member name="F:Autoframe.Form_TraySetting.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Autoframe.Form_TraySetting.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Autoframe.Form_TraySetting.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Autoframe.TrayGridConfig">
+            <summary>托盘网格配置实体，支持XML序列化</summary>
+        </member>
+        <member name="P:Autoframe.TrayGridConfig.RowCount">
+            <summary>托盘行数</summary>
+        </member>
+        <member name="P:Autoframe.TrayGridConfig.ColumnCount">
+            <summary>托盘列数</summary>
+        </member>
+        <member name="P:Autoframe.TrayGridConfig.RowGap">
+            <summary>托盘行间距</summary>
+        </member>
+        <member name="P:Autoframe.TrayGridConfig.ColumnGap">
+            <summary>托盘列间距</summary>
+        </member>
+        <member name="F:Autoframe.TrayGridConfig._xmlPath">
+            <summary>XML配置文件路径（exe同级目录）</summary>
+        </member>
+        <member name="M:Autoframe.TrayGridConfig.SaveToXml">
+            <summary>保存配置到本地XML</summary>
+        </member>
+        <member name="M:Autoframe.TrayGridConfig.LoadFromXml">
+            <summary>加载本地XML配置；文件不存在返回默认8*8</summary>
+        </member>
+        <member name="T:Autoframe.TraySlotControl.SlotItem">
+            <summary>单个槽位数据</summary>
+        </member>
+        <member name="M:Autoframe.TraySlotControl.RebuildSlotData">
+            <summary>【极速】重建槽位内存数据，不创建任何子控件，无卡顿</summary>
+        </member>
+        <member name="M:Autoframe.TraySlotControl.SetSlotContent(System.Int32,System.String,System.String)">
+            <summary>设置槽位内容（索引从1开始）</summary>
+        </member>
+        <member name="F:Autoframe.TraySlotControl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:Autoframe.TraySlotControl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:Autoframe.TraySlotControl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:AutoFrame.DBExtend.RedisHelperEx.connDict">
+            <summary>存储不同服务器序号对应的 ConnectionMultiplexer 对象</summary>
+        </member>
+        <member name="M:AutoFrame.DBExtend.RedisHelperEx.AddConnection(System.String,System.String,System.String,System.String)">
+            <summary>
+            添加一个新的 Redis 连接。
+            </summary>
+            <param name="serverNo">服务器序号，作为连接标识</param>
+            <param name="ip">Redis 服务器 IP</param>
+            <param name="port">Redis 服务器端口</param>
+        </member>
+        <member name="M:AutoFrame.DBExtend.RedisHelperEx.IsConnected(System.String,StackExchange.Redis.ConnectionMultiplexer@)">
+            <summary>
+            检查指定服务器序号的 Redis 连接是否可用。
+            </summary>
+            <param name="serverNo">服务器序号</param>
+            <returns>如果连接存在且已连接，返回 true；否则返回 false。</returns>
+        </member>
+        <member name="M:AutoFrame.DBExtend.RedisHelperEx.WaitForConnectionReady(System.String,System.Int32)">
+            <summary>
+            等待指定服务器序号的 Redis 连接完全就绪（通过发送 PING 验证）。
+            </summary>
+            <param name="serverNo">服务器序号</param>
+            <param name="timeoutMilliseconds">超时时间（毫秒），默认 5000</param>
+            <returns>连接是否就绪</returns>
+        </member>
+        <member name="M:AutoFrame.DBExtend.RedisHelperEx.GetDatabase(System.String)">
+            <summary>
+            根据服务器序号获取对应的 IDatabase 对象。
+            </summary>
+            <param name="serverNo">服务器序号</param>
+            <returns>IDatabase 实例，若连接不存在则返回 null</returns>
+        </member>
+        <member name="M:AutoFrame.DBExtend.RedisHelperEx.HashSet(System.String,System.String,System.String,System.String)">
+            <summary>
+            设置 Hash 中指定字段的值。
+            </summary>
+            <param name="serverNo">服务器序号</param>
+            <param name="key">Hash 的键</param>
+            <param name="field">字段名</param>
+            <param name="value">字段值</param>
+            <returns>是否设置成功（连接不存在时返回 false）</returns>
+        </member>
+        <member name="M:AutoFrame.DBExtend.RedisHelperEx.HashGet(System.String,System.String,System.String)">
+            <summary>
+            获取 Hash 中指定字段的值。
+            </summary>
+            <param name="serverNo">服务器序号</param>
+            <param name="key">Hash 的键</param>
+            <param name="field">字段名</param>
+            <returns>字段值，若字段不存在或连接失败则返回 null</returns>
+        </member>
+        <member name="M:AutoFrame.DBExtend.RedisHelperEx.HashDelete(System.String,System.String,System.String)">
+            <summary>
+            删除 Hash 中的指定字段
+            </summary>
+            <param name="serverNo">服务器序号</param>
+            <param name="key">Hash 的键</param>
+            <param name="field">要删除的字段名</param>
+            <returns>是否成功删除（字段是否存在）</returns>
+        </member>
+        <member name="M:AutoFrame.DBExtend.RedisHelperEx.HashGetAll(System.String,System.String)">
+            <summary>
+            获取 Hash 中的所有字段及值
+            </summary>
+        </member>
+        <member name="M:AutoFrame.DBExtend.RedisHelperEx.Keycheck(System.String,System.String)">
+            <summary>
+            检查键是否存在
+            </summary>
+        </member>
+        <member name="M:AutoFrame.DBExtend.RedisHelperEx.StringSet(System.String,System.String,System.String)">
+            <summary>
+            设置字符串键值
+            </summary>
+        </member>
+        <member name="M:AutoFrame.DBExtend.RedisHelperEx.StringGet(System.String,System.String)">
+            <summary>
+            获取字符串值
+            </summary>
+        </member>
+        <member name="M:AutoFrame.DBExtend.RedisHelperEx.KeyDelete(System.String,System.String)">
+            <summary>
+            删除键
+            </summary>
+        </member>
+        <member name="M:AutoFrame.DBExtend.RedisHelperEx.ListLeftPush(System.String,System.String,System.String)">
+            <summary>
+            向列表左侧插入一个元素。
+            </summary>
+            <param name="serverNo">服务器序号</param>
+            <param name="key">列表的键</param>
+            <param name="value">要插入的值</param>
+            <returns>插入后列表的长度，若连接失败则返回 0</returns>
+        </member>
+        <member name="M:AutoFrame.DBExtend.RedisHelperEx.ListRightPop(System.String,System.String)">
+            <summary>
+            从列表右侧弹出一个元素。
+            </summary>
+            <param name="serverNo">服务器序号</param>
+            <param name="key">列表的键</param>
+            <returns>弹出的元素值，若列表为空或连接失败则返回 null</returns>
+        </member>
+        <member name="M:AutoFrame.SqlLiteHelperEx.ExecuteNonQuery(System.String)">
+            <summary>
+            执行非查询的数据库操作
+            </summary>
+            <param name="sqlString">要执行的sql语句</param>
+            <returns>返回受影响的条数</returns>
+        </member>
+        <member name="M:AutoFrame.SqlLiteHelperEx.ExecuteReader(System.String,System.Collections.Generic.List{System.Object[]}@)">
+            <summary>
+            查询多条数据
+            </summary>
+            <param name="strCmd">SQL语句</param>
+            <param name="lsValues">查询结果集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SqlLiteHelperEx.GetSqlString_Update``1(``0,System.String[],System.String)">
+            <summary>
+            获取更新表格SQL语句
+            </summary>
+            <typeparam name="T">对象类型</typeparam>
+            <param name="obj">更新对象</param>
+            <param name="strPropertys">要更新的列</param>
+            <param name="strTableName">表名字</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SqlLiteHelperEx.GetSqlString_Update``1(System.Collections.Generic.List{``0},System.String[],System.String)">
+            <summary>
+            获取更新表格SQL语句
+            </summary>
+            <typeparam name="T">对象类型</typeparam>
+            <param name="lsObject">更新对象的集合</param>
+            <param name="strPropertys">要更新的列</param>
+            <param name="strTableName">表名字</param>
+            <returns></returns>
+        </member>
+        <member name="T:AutoFrame.PLCExtend.IEEE754Hleper">
+            <summary>
+            IEEE754和浮点数的相互转化
+            </summary>
+        </member>
+        <member name="M:AutoFrame.PLCExtend.IEEE754Hleper.FloatToHex(System.Single)">
+            <summary>
+            把一个浮点数转化成16进制字符串
+            </summary>
+            <param name="paraFloat">要转化的浮点数</param>
+            <returns>返回的字符串</returns>
+        </member>
+        <member name="M:AutoFrame.PLCExtend.IEEE754Hleper.HexToFloat(System.String)">
+            <summary>
+            把4个字节的16进制字符串转化成一个浮点数
+            </summary>
+            <param name="hexStr">待转化字符串</param>
+            <returns>返回浮点数（转化失败返回浮点数最小值）</returns>
+        </member>
+        <member name="F:AutoFrame.PLCExtend.ModbusTestWindow.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AutoFrame.PLCExtend.ModbusTestWindow.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AutoFrame.PLCExtend.ModbusTestWindow.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:AutoFrame.PLCExtend.PLCAdress.WritePLC3D">
+            <summary>
+            二次定位站写前站PLC
+            </summary>
+        </member>
+        <member name="T:AutoFrame.PLCExtend.PLCAdress.WritePLCUnLoad">
+            <summary>
+            检测平台二站写后站PLC
+            </summary>
+        </member>
+        <member name="T:AutoFrame.PLCExtend.PlcHelper.ShowLogHandler1">
+            <summary>
+            ShowLog委托
+            </summary>
+        </member>
+        <member name="M:AutoFrame.PLCExtend.PlcHelper.InitPlcClients">
+            <summary>
+            初始化PLC客户端列表
+            </summary>
+        </member>
+        <member name="M:AutoFrame.PLCExtend.PlcHelper.IsConnected(System.Int32)">
+            <summary>
+            检查指定序号的PLC是否连接
+            </summary>
+        </member>
+        <member name="M:AutoFrame.PLCExtend.PlcHelper.ConnectPLC(System.Int32)">
+            <summary>
+            连接指定序号的PLC（1=3D，2=下料）
+            </summary>
+        </member>
+        <member name="M:AutoFrame.PLCExtend.PlcHelper.DisConnectPLC(System.Int32)">
+            <summary>
+            断开指定序号的PLC连接
+            </summary>
+        </member>
+        <member name="M:AutoFrame.PLCExtend.PlcHelper.一次性读取寄存器数据(System.Int32)">
+            <summary>
+            持续读取指定序号PLC的寄存器数据
+            </summary>
+        </member>
+        <member name="M:AutoFrame.PLCExtend.PlcHelper.ReadData_ALLString(System.Int32,System.Int32[],System.Int32,System.Int32[]@,AutoFrame.PLCExtend.PlcHelper.ShowLogHandler1)">
+            <summary>
+            一次性读取指定序号PLC的寄存器
+            </summary>
+        </member>
+        <member name="M:AutoFrame.PLCExtend.PlcHelper.ConvertToIntAddress(System.String)">
+            <summary>
+            PLC寄存器地址转 Modbus地址
+            </summary>
+        </member>
+        <member name="M:AutoFrame.PLCExtend.PlcHelper.WriteData_String(System.Int32,System.Int32[],System.String,AutoFrame.PLCExtend.PlcHelper.ShowLogHandler1)">
+            <summary>
+            向指定序号PLC写入字符串
+            </summary>
+        </member>
+        <member name="M:AutoFrame.PLCExtend.PlcHelper.WriteData_Bool(System.Int32,System.String,System.Boolean,AutoFrame.PLCExtend.PlcHelper.ShowLogHandler1)">
+            <summary>
+            向指定序号PLC写入布尔型数据
+            </summary>
+        </member>
+        <member name="M:AutoFrame.PLCExtend.PlcHelper.WriteData_String(System.Int32,System.String,System.String,AutoFrame.PLCExtend.PlcHelper.ShowLogHandler1)">
+            <summary>
+            向指定序号PLC写入字符串
+            </summary>
+        </member>
+        <member name="M:AutoFrame.PLCExtend.PlcHelper.ReadData_Int16(System.Int32,System.Int32[],AutoFrame.PLCExtend.PlcHelper.ShowLogHandler1)">
+            <summary>
+            从指定序号PLC读取整型数
+            </summary>
+        </member>
+        <member name="M:AutoFrame.PLCExtend.PlcHelper.WriteData_Int16(System.Int32,System.Int32[],System.Int32,AutoFrame.PLCExtend.PlcHelper.ShowLogHandler1)">
+            <summary>
+            向指定序号PLC写入整型数
+            </summary>
+        </member>
+        <member name="F:AutoFrame.PLCExtend.PlcMgrEx.m_strNETItem">
+            <summary>
+            连接地址
+            </summary>
+        </member>
+        <member name="F:AutoFrame.PLCExtend.PlcMgrEx.m_dicNET_SN">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:AutoFrame.PLCExtend.PlcMgrEx.m_dicNET_Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:AutoFrame.PLCExtend.PlcMgrEx.m_strRegItem">
+            <summary>
+            交互寄存器属性
+            </summary>
+        </member>
+        <member name="F:AutoFrame.PLCExtend.PlcMgrEx.m_dicReg_SN">
+            <summary>
+            交互寄存器 元件类型
+            </summary>
+        </member>
+        <member name="F:AutoFrame.PLCExtend.PlcMgrEx.m_dicReg_ControlType">
+            <summary>
+            交互寄存器 元件类型
+            </summary>
+        </member>
+        <member name="F:AutoFrame.PLCExtend.PlcMgrEx.m_dicReg_UintType">
+            <summary>
+            交互寄存器 元件类型
+            </summary>
+        </member>
+        <member name="F:AutoFrame.PLCExtend.PlcMgrEx.m_dicReg_StartAdress">
+            <summary>
+            交互寄存器 起始地址
+            </summary>
+        </member>
+        <member name="F:AutoFrame.PLCExtend.PlcMgrEx.m_dicReg_Translate">
+            <summary>
+            交互寄存器 名称翻译
+            </summary>
+        </member>
+        <member name="F:AutoFrame.PLCExtend.PlcMgrEx.m_strArrayReg">
+            <summary>
+            交互寄存器名称向量
+            </summary>
+        </member>
+        <member name="M:AutoFrame.PLCExtend.PlcMgrEx.#ctor">
+            <summary>
+            类构造函数
+            </summary>
+        </member>
+        <member name="M:AutoFrame.PLCExtend.PlcMgrEx.LoadCfgFile(System.String)">
+            <summary>
+            读取系统配置
+            </summary>
+            <param name="strFile">配置文件 </param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.PLCExtend.PlcMgrEx.ReadRegCfgFromXml(System.Xml.XmlDocument)">
+             <summary>
+            读取系统配置文件里PLC 寄存器单元配置 
+             </summary>
+             <param name="doc"></param>
+        </member>
+        <member name="T:AutoFrame.SG.SGHelper">
+            <summary>
+            用于深视点激光的使用
+            </summary>
+        </member>
+        <member name="P:AutoFrame.SG.SGHelper.SGIP">
+            <summary>
+            点激光的IP
+            </summary>
+        </member>
+        <member name="M:AutoFrame.SG.SGHelper.Open">
+            <summary>
+            与点激光建立连接
+            </summary>
+            <returns>是否正常打开</returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGHelper.Close">
+            <summary>
+            断开连接
+            </summary>
+            <returns>是否断开</returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGHelper.SetCommonicateMode(System.Int32)">
+            <summary>
+            设置通信模式
+            </summary>
+            <param name="mode">0:一般模式  1:通信模式</param>
+        </member>
+        <member name="M:AutoFrame.SG.SGHelper.GetSingleData(System.Int32)">
+            <summary>
+            获取单次数据
+            </summary>
+            <param name="mOutNo">获取哪个口输出的数据</param>
+            <returns></returns>
+        </member>
+        <member name="T:AutoFrame.SG.RC">
+            <summary>
+            错误码
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.RC.RC_OK">
+            <summary>
+            执行OK
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.RC.RC_NAK_COMMAND">
+            <summary>
+            指令错误
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.RC.RC_NAK_COMMAND_LENGTH">
+            <summary>
+            指令长度错误
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.RC.RC_NAK_TIMEOUT">
+            <summary>
+            指令超时
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.RC.RC_NAK_CHECKSUM">
+            <summary>
+            参数计数错误
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.RC.RC_NAK_INVALID_STATE">
+            <summary>
+            状态错误
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.RC.RC_NAK_OTHER">
+            <summary>
+            其他错误
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.RC.RC_NAK_PARAMETER">
+            <summary>
+            参数错误
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.RC.RC_NAK_OUT_STAGE">
+            <summary>
+            计算中重复使用一个OUT值的次数超出限制
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.RC.RC_NAK_OUT_HEAD_NUM">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_DEVICE_TYPE">
+            <summary>
+            设备型号/设备类别
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_FLOATRESULT">
+            <summary>
+            数据类型
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_FLOATRESULT.SGIF_FLOATRESULT_VALID">
+            <summary>
+            有效数据
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_FLOATRESULT.SGIF_FLOATRESULT_RANGEOVER_P">
+            <summary>
+            超上限的值
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_FLOATRESULT.SGIF_FLOATRESULT_RANGEOVER_N">
+            <summary>
+            超下限的值
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_FLOATRESULT.SGIF_FLOATRESULT_WAITING">
+            <summary>
+            等待比较器结果
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_FLOATRESULT.SGIF_FLOATRESULT_ALARM">
+            <summary>
+            错误值
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_FLOATRESULT.SGIF_FLOATRESULT_INVALID">
+            <summary>
+            无效数据
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_ABLEMODE">
+            <summary>
+            光亮模式
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_ABLEMODE.SGIF_ABLEMODE_AUTO">
+            <summary>
+            自动
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_ABLEMODE.SGIF_ABLEMODE_MANUAL">
+            <summary>
+            手动
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_CALCMODE">
+            <summary>
+            保持模式
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_CALCMODE.SGIF_CALCMODE_NORMAL">
+            <summary>
+            标准
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_CALCMODE.SGIF_CALCMODE_PEAKHOLD">
+            <summary>
+            峰值保持
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_CALCMODE.SGIF_CALCMODE_BOTTOMHOLD">
+            <summary>
+            谷值保持
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_CALCMODE.SGIF_CALCMODE_PEAKTOPEAKHOLD">
+            <summary>
+            峰值至峰值保持
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_CALCMODE.SGIF_CALCMODE_SAMPLEHOLD">
+            <summary>
+            采样保持
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_MEASUREMODE">
+            <summary>
+            测量方法
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_MEASUREMODE.SGIF_MEASUREMODE_NORMAL">
+            <summary>
+            标准
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_MEASUREMODE.SGIF_MEASUREMODE_HALF_T">
+            <summary>
+            半透明对象表面
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_MEASUREMODE.SGIF_MEASUREMODE_TRAN_1">
+            <summary>
+            透明对象
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_MEASUREMODE.SGIF_MEASUREMODE_TRAN_2">
+            <summary>
+            透明对象2
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_MEASUREMODE.SGIF_MEASUREMODE_MRS">
+            <summary>
+            反光树脂
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_MEASUREMODE.SGIF_MEASUREMODE_OPAQUE">
+            <summary>
+            运算
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_BASICPOINT">
+            <summary>
+            基点
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_BASICPOINT.SGIF_BASICPOINT_NEAR">
+            <summary>
+            NEAR
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_BASICPOINT.SGIF_BASICPOINT_FAR">
+            <summary>
+            FAR
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_REFLECTIONMODE">
+            <summary>
+            反射类型
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_REFLECTIONMODE.SGIF_REFLECTIONMODE_DIFFUSION">
+            <summary>
+            漫反射
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_REFLECTIONMODE.SGIF_REFLECTIONMODE_MIRROR">
+            <summary>
+            镜面反射
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_MEDIAN">
+            <summary>
+            中位数
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_MEDIAN.SGIF_MEDIAN_OFF">
+            <summary>
+            关闭
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_MEDIAN.SGIF_MEDIAN_7">
+            <summary>
+            7
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_MEDIAN.SGIF_MEDIAN_15">
+            <summary>
+            15
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_MEDIAN.SGIF_MEDIAN_31">
+            <summary>
+            31
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_LASER_CTRL_GROUP">
+            <summary>
+            LASER CTRL组
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_LASER_CTRL_GROUP.SGIF_LASER_CTRL_GROUP_1">
+            <summary>
+            LASER CTRL 1
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_LASER_CTRL_GROUP.SGIF_LASER_CTRL_GROUP_2">
+            <summary>
+            LASER CTRL 2
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_RANGE">
+            <summary>
+            ？区域？
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_RANGE.SGIF_RANGE_CENTER">
+            <summary>
+            中心
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_RANGE.SGIF_RANGE_FAR">
+            <summary>
+            远端
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_FILTERMODE">
+            <summary>
+            滤波方式
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_FILTERMODE.SGIF_FILTERMODE_MOVING_AVERAGE">
+            <summary>
+            移动平均
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_FILTERPARA">
+            <summary>
+            移动平均
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_FILTERPARA.SGIF_FILTERPARA_AVE_1">
+            <summary>
+            1
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_FILTERPARA.SGIF_FILTERPARA_AVE_4">
+            <summary>
+            4
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_FILTERPARA.SGIF_FILTERPARA_AVE_16">
+            <summary>
+            16
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_FILTERPARA.SGIF_FILTERPARA_AVE_64">
+            <summary>
+            64
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_FILTERPARA.SGIF_FILTERPARA_AVE_256">
+            <summary>
+            256
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_FILTERPARA.SGIF_FILTERPARA_AVE_1024">
+            <summary>
+            1024
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_FILTERPARA.SGIF_FILTERPARA_AVE_4096">
+            <summary>
+            4096
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_FILTERPARA.SGIF_FILTERPARA_AVE_16384">
+            <summary>
+            16384
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_FILTERPARA.SGIF_FILTERPARA_AVE_65536">
+            <summary>
+            65536
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_FILTERPARA.SGIF_FILTERPARA_AVE_262144">
+            <summary>
+            262144
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_TRIGGERMODE">
+            <summary>
+            外部触发模式
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_TRIGGERMODE.SGIF_TRIGGERMODE_EXT1">
+            <summary>
+            ?外部触发1?
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_TRIGGERMODE.SGIF_TRIGGERMODE_EXT2">
+            <summary>
+            ?外部触发1?
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_DISPLAYUNIT">
+            <summary>
+            最小显示单位
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_DISPLAYUNIT.SGIF_DISPLAYUNIT_0000_01MM">
+            <summary>
+            0.01mm
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_DISPLAYUNIT.SGIF_DISPLAYUNIT_000_001MM">
+            <summary>
+            0.001mm
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_DISPLAYUNIT.SGIF_DISPLAYUNIT_00_0001MM">
+            <summary>
+            0.0001mm
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_DISPLAYUNIT.SGIF_DISPLAYUNIT_0_00001MM">
+            <summary>
+            0.00001mm
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_DISPLAYUNIT.SGIF_DISPLAYUNIT_00000_1UM">
+            <summary>
+            0.1um
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_DISPLAYUNIT.SGIF_DISPLAYUNIT_0000_01UM">
+            <summary>
+            0.01um
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_DISPLAYUNIT.SGIF_DISPLAYUNIT_000_001UM">
+            <summary>
+            0.001um
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_OUTNO">
+            <summary>
+            OUT同步设定
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_OUTNO.SGIF_OUTNO_01">
+            <summary>
+            OUT1
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_OUTNO.SGIF_OUTNO_02">
+            <summary>
+            OUT2
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_OUTNO.SGIF_OUTNO_03">
+            <summary>
+            OUT3
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_OUTNO.SGIF_OUTNO_04">
+            <summary>
+            OUT4
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_OUTNO.SGIF_OUTNO_ALL">
+            <summary>
+            全选
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_STORAGECYCLE">
+            <summary>
+            采样周期
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_STORAGECYCLE.SGIF_STORAGECYCLE_1">
+            <summary>
+            1X
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_STORAGECYCLE.SGIF_STORAGECYCLE_2">
+            <summary>
+            2X
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_STORAGECYCLE.SGIF_STORAGECYCLE_5">
+            <summary>
+            5X
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_STORAGECYCLE.SGIF_STORAGECYCLE_10">
+            <summary>
+            10X
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_STORAGECYCLE.SGIF_STORAGECYCLE_20">
+            <summary>
+            20X
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_STORAGECYCLE.SGIF_STORAGECYCLE_50">
+            <summary>
+            50X
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_STORAGECYCLE.SGIF_STORAGECYCLE_100">
+            <summary>
+            100X
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_STORAGECYCLE.SGIF_STORAGECYCLE_200">
+            <summary>
+            200X
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_STORAGECYCLE.SGIF_STORAGECYCLE_500">
+            <summary>
+            500X
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_STORAGECYCLE.SGIF_STORAGECYCLE_1000">
+            <summary>
+            1000X
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_STORAGECYCLE.SGIF_STORAGECYCLE_TIMING">
+            <summary>
+            同步输入
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_SAMPLINGCYCLE">
+            <summary>
+            采样频率
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_SAMPLINGCYCLE.SGIF_5000_SAMPLINGCYCLE_590KHZ">
+            <summary>
+            SG5000-590KHZ
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_SAMPLINGCYCLE.SGIF_5000_SAMPLINGCYCLE_400KHZ">
+            <summary>
+            SG5000-400KHZ
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_SAMPLINGCYCLE.SGIF_5000_SAMPLINGCYCLE_200KHZ">
+            <summary>
+            SG5000-200KHZ
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_SAMPLINGCYCLE.SGIF_5000_SAMPLINGCYCLE_88KHZ">
+            <summary>
+            SG5000-88KHZ
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_SAMPLINGCYCLE.SGIF_5000_SAMPLINGCYCLE_50KHZ">
+            <summary>
+            SG5000-50KHZ
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_SAMPLINGCYCLE.SGIF_5000_SAMPLINGCYCLE_20KHZ">
+            <summary>
+            SG5000-20KHZ
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_SAMPLINGCYCLE.SGIF_5000_SAMPLINGCYCLE_10KHZ">
+            <summary>
+            SG5000-10KHZ
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_SAMPLINGCYCLE.SGIF_5000_SAMPLINGCYCLE_5KHZ">
+            <summary>
+            SG5000-5KHZ
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_SAMPLINGCYCLE.SGIF_5000_SAMPLINGCYCLE_1KHZ">
+            <summary>
+            SG5000-1KHZ
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_SAMPLINGCYCLE.SGIF_3000_SAMPLINGCYCLE_88KHZ">
+            <summary>
+            SG3000-88KHZ
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_SAMPLINGCYCLE.SGIF_3000_SAMPLINGCYCLE_50KHZ">
+            <summary>
+            SG3000-88KHZ
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_SAMPLINGCYCLE.SGIF_3000_SAMPLINGCYCLE_20KHZ">
+            <summary>
+            SG3000-20KHZ
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_SAMPLINGCYCLE.SGIF_3000_SAMPLINGCYCLE_10KHZ">
+            <summary>
+            SG3000-10KHZ
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_SAMPLINGCYCLE.SGIF_3000_SAMPLINGCYCLE_5KHZ">
+            <summary>
+            SG3000-5KHZ
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_SAMPLINGCYCLE.SGIF_3000_SAMPLINGCYCLE_1KHZ">
+            <summary>
+            SG3000-1KHZ
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_MUTUAL_INTERFERENCE_PREVENTION">
+            <summary>
+            防干扰模式
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_MUTUAL_INTERFERENCE_PREVENTION.SGIF_MUTUAL_INTERFERENCE_PREVENTION_OFF">
+            <summary>
+            OFF
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_MUTUAL_INTERFERENCE_PREVENTION.SGIF_MUTUAL_INTERFERENCE_PREVENTION_AB_ON">
+            <summary>
+            AB-ON
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_MUTUAL_INTERFERENCE_PREVENTION.SGIF_MUTUAL_INTERFERENCE_PREVENTION_ABC_ON">
+            <summary>
+            ABC-ON
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_STOROBETIME">
+            <summary>
+            选通时间
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_STOROBETIME.SGIF_STOROBETIME_2MS">
+            <summary>
+            2ms
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_STOROBETIME.SGIF_STOROBETIME_5MS">
+            <summary>
+            5ms
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_STOROBETIME.SGIF_STOROBETIME_10MS">
+            <summary>
+            10ms
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_STOROBETIME.SGIF_STOROBETIME_20MS">
+            <summary>
+            20ms
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_MODE">
+            <summary>
+            操作模式
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_MODE.SGIF_MODE_NORMAL">
+            <summary>
+            一般模式
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_MODE.SGIF_MODE_COMMUNICATION">
+            <summary>
+            通信模式
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_EmRunningMode">
+            <summary>
+            运行模式
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_EmRunningMode.SGIF_EmRunningMode_cont">
+            <summary>
+            OFF
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_EmRunningMode.SGIF_EmRunningMode_time">
+            <summary>
+            定时
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_EmRunningMode.SGIF_EmRunningMode_trig">
+            <summary>
+            触发
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_EmDirection">
+            <summary>
+            检测方向
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_EmDirection.SGIF_EmDirection_all">
+            <summary>
+            正负计时
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_EmDirection.SGIF_EmDirection_pos">
+            <summary>
+            正计时
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_EmDirection.SGIF_EmDirection_neg">
+            <summary>
+            负计时
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_EmEncoderInput">
+            <summary>
+            编码器模式
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_EmEncoderInput.SGIF_EmEncoderInput_1x1">
+            <summary>
+            一相一递增
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_EmEncoderInput.SGIF_EmEncoderInput_2x1">
+            <summary>
+            二相一递增
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_EmEncoderInput.SGIF_EmEncoderInput_2x2">
+            <summary>
+            二相二递增
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_EmEncoderInput.SGIF_EmEncoderInput_2x4">
+            <summary>
+            二相四递增
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_EmInputTime">
+            <summary>
+            脉宽最低输入时间
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_EmInputTime.SGIF_EmInputTime_100">
+            <summary>
+            100ns
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_EmInputTime.SGIF_EmInputTime_200">
+            <summary>
+            200ns
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_EmInputTime.SGIF_EmInputTime_500">
+            <summary>
+            500ns
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_EmInputTime.SGIF_EmInputTime_1000">
+            <summary>
+            1000ns
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_EmInputTime.SGIF_EmInputTime_2000">
+            <summary>
+            2000ns
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_EmInputTime.SGIF_EmInputTime_5000">
+            <summary>
+            5000ns
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_EmInputTime.SGIF_EmInputTime_10000">
+            <summary>
+            10000ns
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_EmInputTime.SGIF_EmInputTime_20000">
+            <summary>
+            20000ns
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_FLOATVALUE_OUT">
+            <summary>
+            实时数据
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_FLOATVALUE_OUT.OutNo">
+            <summary>
+            OUT编号
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_FLOATVALUE_OUT.FloatResult">
+            <summary>
+            数据类型
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_FLOATVALUE_OUT.Value">
+            <summary>
+            数据值
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_FLOATVALUE">
+            <summary>
+            存储区数据
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_FLOATVALUE.FloatResult">
+            <summary>
+            数据类型
+            </summary>
+        </member>
+        <member name="F:AutoFrame.SG.SGIF_FLOATVALUE.Value">
+            <summary>
+            数据值
+            </summary>
+        </member>
+        <member name="T:AutoFrame.SG.SGIF_OPENPARAM_ETHERNET">
+            <summary>
+            通讯地址
+            </summary>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetStorageTarget(System.Int32,System.Int32,System.Boolean@)">
+            <summary>
+            存储（OUT编号设定）获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">OUT编号</param>
+            <param name="Status">状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetTriggerMode(System.Int32,System.Int32,AutoFrame.SG.SGIF_TRIGGERMODE@)">
+            <summary>
+            触发模式获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">OUT编号</param>
+            <param name="TriggerMode">触发模式</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetTriggerMode(System.Int32,System.Int32,AutoFrame.SG.SGIF_TRIGGERMODE)">
+            <summary>
+            触发模式设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">OUT编号</param>
+            <param name="TriggerMode">触发模式</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_OpenDeviceETHER(System.Int32,AutoFrame.SG.SGIF_OPENPARAM_ETHERNET@,System.UInt32)">
+            <summary>
+            连接设备
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OpenParam">连接参数</param>
+            <param name="TimeOut">连接超时</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_OpenDeviceETHER_test(System.Int32,AutoFrame.SG.SGIF_OPENPARAM_ETHERNET@)">
+            <summary>
+            连接设备
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OpenParam">连接参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_CloseDevice(System.Int32)">
+            <summary>
+            断开设备连接
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_Refresh(System.Int32)">
+            <summary>
+            设备状态刷新
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetDeviceType(System.Int32,AutoFrame.SG.SGIF_DEVICE_TYPE@)">
+            <summary>
+            获取设备类型
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="DeviceType">设备类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetCameraSpotType(System.Int32,System.Int32@)">
+            <summary>
+            获取光斑类型
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="EissionSpotType">光斑类型【0=小光斑；1=大光斑】</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetProgramNo(System.Int32,System.Int32@)">
+            <summary>
+            获取当前程序号
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="ProgramNo">程序编号（0到7）</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetProgramNo(System.Int32,System.Int32)">
+            <summary>
+            切换指定程序号
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="ProgramNo">程序编号（0到7）</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetMode(System.Int32,AutoFrame.SG.SGIF_MODE)">
+            <summary>
+            设置运行模式
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="Mode">模式</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetNumOfUsedHeads(System.Int32,System.Int32@)">
+            <summary>
+            主动传感头计数获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="NumOfUsedHeads">传感头计数</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetNumOfUsedOut(System.Int32,System.Int32@)">
+            <summary>
+            主动OUT计数获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="NumOfUsedOut">OUT计数</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetStrobeTime(System.Int32,AutoFrame.SG.SGIF_STOROBETIME@)">
+            <summary>
+            选通时间获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="StrobeTime">输出形式</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetMutualInterferencePrevention(System.Int32,AutoFrame.SG.SGIF_MUTUAL_INTERFERENCE_PREVENTION@)">
+            <summary>
+            防止互相干扰获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="Status">状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetSamplingCycle(System.Int32,AutoFrame.SG.SGIF_SAMPLINGCYCLE@)">
+            <summary>
+            采样周期获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="SamplingCycle">采样周期</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetSynchronization(System.Int32,System.Int32@,System.Boolean@)">
+            <summary>
+            同步设定获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">OUT编号</param>
+            <param name="Status">状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetDisplayUnit(System.Int32,System.Int32@,AutoFrame.SG.SGIF_DISPLAYUNIT@)">
+            <summary>
+            显示最小单位获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">OUT编号</param>
+            <param name="DisplayUnit">显示最小单位</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetCalcMode(System.Int32,System.Int32@,AutoFrame.SG.SGIF_CALCMODE@)">
+            <summary>
+            测量方法获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">OUT编号</param>
+            <param name="CalcMode">测量方法</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetOffset(System.Int32,System.Int32@,System.Int32@)">
+            <summary>
+            偏移获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">OUT编号</param>
+            <param name="Offset">偏移量</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetFilter(System.Int32,System.Int32@,AutoFrame.SG.SGIF_FILTERMODE@,AutoFrame.SG.SGIF_FILTERPARA@)">
+            <summary>
+            滤波器设定获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">OUT编号</param>
+            <param name="FilterMode">滤波器模式</param>
+            <param name="FilterPara">滤波参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetScaling(System.Int32,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@)">
+            <summary>
+            缩放设定获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">OUT编号</param>
+            <param name="InputValue1">点1的测量值</param>
+            <param name="OutputValue1">点1的显示值</param>
+            <param name="InputValue2">点2的测量值</param>
+            <param name="OutputValue2">点2的显示值</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetOutOperation(System.Int32,System.Int32@,AutoFrame.SG.SGIF_OUTNO@)">
+            <summary>
+            待计算的OUT(Ave,Max,Min,P-P)获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">OUT编号</param>
+            <param name="TargetOut">多个OUT或HEAD组合</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetOutAddSub(System.Int32,System.Int32@,System.Int32@,System.Int32@)">
+            <summary>
+            待计算的OUT(Add,Sub)获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">OUT编号</param>
+            <param name="AddSub1">待计算的OUT编号1</param>
+            <param name="AddSub2">待计算的OUT编号2</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetCalcTarget(System.Int32,System.Int32@,AutoFrame.SG.SGIF_CALCTARGET@)">
+            <summary>
+            测量目标获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">OUT编号</param>
+            <param name="CalcTarget">计算标签</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetCalcMethod(System.Int32,System.Int32@,AutoFrame.SG.SGIF_CALCMETHOD@,System.Int32@)">
+            <summary>
+            计算方式获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">OUT编号</param>
+            <param name="CalcMethod">计算方法</param>
+            <param name="HeadOutNo">传感头或OUT编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetMutualInterferencePreventionGroup(System.Int32,System.Int32,AutoFrame.SG.SGIF_MUTUAL_INTERFERENCE_PREVENTION_GROUP@)">
+            <summary>
+            防止互相干扰组获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="HeadNo">传感头编号</param>
+            <param name="Group">组</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetLaserCtrlGroup(System.Int32,System.Int32,AutoFrame.SG.SGIF_LASER_CTRL_GROUP@)">
+            <summary>
+            Laser Ctrl组获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="HeadNo">传感头编号</param>
+            <param name="LaserCtrlGroup">LaserCtrl组</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetMedian(System.Int32,System.Int32,AutoFrame.SG.SGIF_MEDIAN@)">
+            <summary>
+            中位数获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="HeadNo">传感头编号</param>
+            <param name="Median">中位数</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetMask(System.Int32,System.Int32,System.Boolean@,System.Int32@,System.Int32@)">
+            <summary>
+            屏蔽设定获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="HeadNo">传感头编号</param>
+            <param name="Status">状态</param>
+            <param name="Pos1">位置1</param>
+            <param name="Pos2">位置2</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetReflectionMode(System.Int32,System.Int32,AutoFrame.SG.SGIF_REFLECTIONMODE@)">
+            <summary>
+            安装模式获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="HeadNo">传感头编号</param>
+            <param name="ReflectionMode">反射模式</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetAlarmLevel(System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            警报级别获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="HeadNo">传感头编号</param>
+            <param name="AlarmLevel">警报级别</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetNumRecovery(System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            警报恢复次数获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="HeadNo">传感头编号</param>
+            <param name="RecoveryNum">恢复次数</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetNumAlarm(System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            警报处理次数获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="HeadNo">传感头编号</param>
+            <param name="AlarmNum">警报次数</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetBasicPoint(System.Int32,System.Int32,AutoFrame.SG.SGIF_BASICPOINT@)">
+            <summary>
+            基准点获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="HeadNo">传感头编号</param>
+            <param name="BasicPoint">基准点</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetMeasureMode(System.Int32,System.Int32,AutoFrame.SG.SGIF_MEASUREMODE@)">
+            <summary>
+            测量模式获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="HeadNo">传感头编号</param>
+            <param name="MeasureMode">测量模式</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetAbleMinMax(System.Int32,System.Int32,System.Int32@,System.Int32@)">
+            <summary>
+            Able控制范围获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="HeadNo">传感头编号</param>
+            <param name="Min">最小值</param>
+            <param name="Max">最大值</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetAbleMode(System.Int32,System.Int32,AutoFrame.SG.SGIF_ABLEMODE@)">
+            <summary>
+            Able设定获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="HeadNo">传感头编号</param>
+            <param name="AbleMode">Able模式</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetTolerance(System.Int32,System.Int32,System.Int32@,System.Int32@,System.Int32@)">
+            <summary>
+            公差设定获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">OUT编号</param>
+            <param name="UpperLimit">上限</param>
+            <param name="LowerLimit">下限</param>
+            <param name="Hysteresis">滞后</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetStrobeTime(System.Int32,AutoFrame.SG.SGIF_STOROBETIME)">
+            <summary>
+            选通时间设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="StrobeTime">选通时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetMutualInterferencePrevention(System.Int32,AutoFrame.SG.SGIF_MUTUAL_INTERFERENCE_PREVENTION)">
+            <summary>
+            防止互相干扰组设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="Status">组设定</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetSamplingCycle(System.Int32,System.Int32)">
+            <summary>
+            采样周期设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="SamplingCycle">采样周期</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetStorageTarget(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            存储（OUT编号规格）设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">OUT编号</param>
+            <param name="Status">状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetSynchronization(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            同步设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">OUT编号</param>
+            <param name="Status">状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetDisplayUnit(System.Int32,System.Int32,AutoFrame.SG.SGIF_DISPLAYUNIT)">
+            <summary>
+            设定显示单位设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">OUT编号</param>
+            <param name="DisplayUnit">显示单位</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetCalcMode(System.Int32,System.Int32,AutoFrame.SG.SGIF_CALCMODE)">
+            <summary>
+            检测方法设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">OUT编号</param>
+            <param name="CalcMode">检测模式</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetOffset(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            偏移设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">OUT编号</param>
+            <param name="Offset">偏移量</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetFilter(System.Int32,System.Int32,AutoFrame.SG.SGIF_FILTERMODE,AutoFrame.SG.SGIF_FILTERPARA)">
+            <summary>
+            滤波器设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">OUT编号</param>
+            <param name="FilterMode">滤波模式</param>
+            <param name="FilterPar">滤波参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetScaling(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            缩放设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">OUT编号</param>
+            <param name="InputValue1">点1的测量值</param>
+            <param name="OutputValue1">点1的显示值</param>
+            <param name="InputValue2">点2的测量值</param>
+            <param name="OutputValue2">点2的显示值</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetOutOperation(System.Int32,System.Int32,AutoFrame.SG.SGIF_OUTNO)">
+            <summary>
+            待计算的OUT(Ave,Max,Min,P-P)设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">OUT编号</param>
+            <param name="TargetOut">多个OUT组合</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetOutAddSub(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            待计算的OUT(Add,Sub)设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">OUT编号</param>
+            <param name="AddSub1">待计算的OUT</param>
+            <param name="AddSub2">待计算的OUT</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetCalcTarget(System.Int32,System.Int32,AutoFrame.SG.SGIF_CALCTARGET)">
+            <summary>
+            测量目标设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">OUT编号</param>
+            <param name="CalcTarget">计算标签</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetCalcMethod(System.Int32,System.Int32,AutoFrame.SG.SGIF_CALCMETHOD,System.Int32)">
+            <summary>
+            计算方式设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">OUT编号</param>
+            <param name="CalcMethod">计算方法</param>
+            <param name="HeadOutNo">传感头输出编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetMutualInterferencePreventionGroup(System.Int32,System.Int32,AutoFrame.SG.SGIF_MUTUAL_INTERFERENCE_PREVENTION_GROUP)">
+            <summary>
+            防止互相干扰组设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="HeadNo">传感头编号</param>
+            <param name="Group">组</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetLaserCtrlGroup(System.Int32,System.Int32,AutoFrame.SG.SGIF_LASER_CTRL_GROUP)">
+            <summary>
+            LaserCtrl组设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="HeadNo">传感头编号</param>
+            <param name="LaserCtrlGroup">LaserCtrl组</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetMedian(System.Int32,System.Int32,AutoFrame.SG.SGIF_MEDIAN)">
+            <summary>
+            中位数设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="HeadNo">传感头编号</param>
+            <param name="Median">中位数</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetMask(System.Int32,System.Int32,System.Boolean,System.Int32,System.Int32)">
+            <summary>
+            屏蔽设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="HeadNo">传感头编号</param>
+            <param name="OnOff">开关</param>
+            <param name="Pos1">点位1</param>
+            <param name="Pos2">点位2</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetReflectionMode(System.Int32,System.Int32,AutoFrame.SG.SGIF_REFLECTIONMODE)">
+            <summary>
+            安装模式设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="HeadNo">传感头编号</param>
+            <param name="ReflectionMode">反射模式</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_AbleCancel(System.Int32)">
+            <summary>
+            Able校准取消
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_AbleStop(System.Int32)">
+            <summary>
+            Able校准完成
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_AbleStart(System.Int32,System.Int32)">
+            <summary>
+            Able校准开始
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="HeadNo">传感头编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetAlarmLevel(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            警报级别设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="HeadNo">传感头编号</param>
+            <param name="AlarmLevel">警报级别</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetNumRecovery(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            恢复数量设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="HeadNo">传感头编号</param>
+            <param name="RecoveryNum">恢复次数</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetNumAlarm(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            警报数量设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="HeadNo">传感头编号</param>
+            <param name="AlarmNum">警报数量</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetBasicPoint(System.Int32,System.Int32,AutoFrame.SG.SGIF_BASICPOINT)">
+            <summary>
+            基准点设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="HeadNo">传感头编号</param>
+            <param name="BasicPoint">基准点</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetMeasureMode(System.Int32,System.Int32,AutoFrame.SG.SGIF_MEASUREMODE)">
+            <summary>
+            测量模式设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="HeadNo">传感头编号</param>
+            <param name="MeasureMode">测量模式</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetAbleMinMax(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Able控制范围设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="HeadNo">传感头编号</param>
+            <param name="Min">下限</param>
+            <param name="Max">上限</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetAbleMode(System.Int32,System.Int32,AutoFrame.SG.SGIF_ABLEMODE)">
+            <summary>
+            Able模式设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="HeadNo">传感头编号</param>
+            <param name="AbleMode">模式</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetTolerance(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            公差设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">传感头编号</param>
+            <param name="UpperLimit">上限</param>
+            <param name="LowerLimit">下限</param>
+            <param name="Hystersys">滞后</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetRunningMode(System.Int32,AutoFrame.SG.SGIF_EmRunningMode,AutoFrame.SG.SGIF_EmDirection)">
+            <summary>
+            运行模式设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="RunningMode">运行模式 0:OFF/1:定时/2:触发</param>
+            <param name="CatchDirection">检测方向 0:正负计时/1:正计时/2:负计时</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetEncoder(System.Int32,AutoFrame.SG.SGIF_EmEncoderInput,AutoFrame.SG.SGIF_EmInputTime,System.Int32)">
+            <summary>
+            编码器输入模式设置
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="Inputmode">运行模式 0:1相1递增/1:2相1递增/2:2相2递增,3:2相4递增</param>
+            <param name="InputTime">最小输入时间</param>
+            <param name="TrigInterval">触发间隔</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetDataStorage(System.Int32,System.Int32@,AutoFrame.SG.SGIF_STORAGECYCLE@)">
+            <summary>
+            存储周期获取
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="NumStorage">存储数据编号</param>
+            <param name="StorageCycle">存储周期</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetDataStorage(System.Int32,System.Int32,AutoFrame.SG.SGIF_STORAGECYCLE)">
+            <summary>
+            存储周期设定
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="NumStorage">待存储数据的编号</param>
+            <param name="StorageCycle">存储周期</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_DataStorageGetStatus(System.Int32,System.Boolean@,System.IntPtr)">
+            <summary>
+            数据存储状态输出
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="StorageState">存储状态</param>
+            <param name="StorageNum">各输出口存储数量数组（int[]）</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_DataStorageInit(System.Int32)">
+            <summary>
+            数据存储初始化
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_DataStorageGetData(System.Int32,System.Int32,System.Int32,System.IntPtr,System.Int32@)">
+            <summary>
+            数据存储数据输出
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">OUT编号</param>
+            <param name="NumOfBuffer">数据大小</param>
+            <param name="OutBuffer">数据数组(float[])</param>
+            <param name="NumReceived">实际接收的数据个数</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_DataStorageStop(System.Int32)">
+            <summary>
+            数据存储停止
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_DataStorageStart(System.Int32)">
+            <summary>
+            数据存储开始
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetResetSync(System.Int32)">
+            <summary>
+            重置（同步）
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetResetMulti(System.Int32,AutoFrame.SG.SGIF_OUTNO)">
+            <summary>
+            重置（多个）
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">指定OUT</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetResetSingle(System.Int32,System.Int32)">
+            <summary>
+            重置（多个）
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">指定OUT</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetZeroSync(System.Int32,System.Boolean)">
+            <summary>
+            自动归零（同步）
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OnOff">开或关</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetZeroMulti(System.Int32,AutoFrame.SG.SGIF_OUTNO,System.Boolean)">
+            <summary>
+            自动归零（多个）
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">指定OUT</param>
+            <param name="OnOff">开或关</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetZeroSingle(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            自动归零（一个）
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">指定OUT</param>
+            <param name="OnOff">开或关</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetTimingSync(System.Int32,System.Boolean)">
+            <summary>
+            计时ON/OFF(同步)
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OnOff">开或关</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetTimingMulti(System.Int32,AutoFrame.SG.SGIF_OUTNO,System.Boolean)">
+            <summary>
+            计时ON/OFF(多个)
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">指定OUT</param>
+            <param name="OnOff">开或关</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_SetTimingSingle(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            计时ON/OFF(一个)
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">指定OUT</param>
+            <param name="OnOff">开或关</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetCalcDataALL(System.Int32,System.IntPtr)">
+            <summary>
+            全部测量值输出
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="CalcData">测量值数组(SGIF_FLOATVALUE_OUT[])</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetCalcDataMulti(System.Int32,AutoFrame.SG.SGIF_OUTNO,System.IntPtr)">
+            <summary>
+            多个测量值输出
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">指定OUT</param>
+            <param name="CalcData">测量值数组(SGIF_FLOATVALUE_OUT[])</param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoFrame.SG.SGLinkFuc.SGIF_GetCalcDataSingle(System.Int32,System.Int32,AutoFrame.SG.SGIF_FLOATVALUE_OUT@)">
+            <summary>
+            单个测量值输出
+            </summary>
+            <param name="DeviceID">设备ID</param>
+            <param name="OutNo">指定OUT</param>
+            <param name="CalcData">测量值数组</param>
+            <returns></returns>
+        </member>
+        <member name="F:AutoFrame.Form_InspectInfo.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AutoFrame.Form_InspectInfo.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AutoFrame.Form_InspectInfo.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:AutoFrame.Form_MaintenanceLogin.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AutoFrame.Form_MaintenanceLogin.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AutoFrame.Form_MaintenanceLogin.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:AutoFrame.Form_UnloadInfo.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AutoFrame.Form_UnloadInfo.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AutoFrame.Form_UnloadInfo.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:AutoFrame.UI.Frm_SG.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:AutoFrame.UI.Frm_SG.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:AutoFrame.UI.Frm_SG.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:AutoFrame.UI.HandleCyForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AutoFrame.UI.HandleCyForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AutoFrame.UI.HandleCyForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:AutoFrame.NGData">
+            <summary>不良品表格绑定实体</summary>
+        </member>
+        <member name="P:AutoFrame.NGData.NGName">
+            <summary>不良名称(界面显示中英文)</summary>
+        </member>
+        <member name="P:AutoFrame.NGData.NGCount">
+            <summary>不良总数</summary>
+        </member>
+        <member name="P:AutoFrame.NGData.NGRate">
+            <summary>不良占比 0~100百分比</summary>
+        </member>
+    </members>
+</doc>

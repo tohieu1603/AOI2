@@ -1,0 +1,30 @@
+
+{
+  "reportTime": "2026-11-03",
+  "domainId": "VNLP",
+  "machineNo": "AOI-001",
+  "woId": "WO20261103001",
+  "model": "PKK4-CGY4 WIDE",
+  "testStartTime": "2026-11-03 14:10:00",
+  "testEndTime": "2026-11-03 14:15:30",
+  "executionDuration": 330.0,
+  "inputQty": 36,
+  "totalPassQty": 32,
+  "totalFailQty": 4,
+  "itemList": [
+    {
+      "defectCode": "D3",
+      "defectName": "OpticalLens_划伤",
+      "qty": 2
+    },
+    {
+      "defectCode": "D4",
+      "defectName": "OpticalLens_异物",
+      "qty": 2
+    }
+  ]
+}
+
+// curl -X POST "http://10.18.80.21:8081/api/savetestdata" -H "Content-Type: application/json" -d @testmes.json
+
+

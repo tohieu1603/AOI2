@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DowntimeCauseDLL</name>
+    </assembly>
+    <members>
+        <member name="M:DowntimeCauseDLL.DowntimeCause.GetAllDowntimeCauses">
+            <summary>
+            获取所有停机原因的副本
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DowntimeCauseDLL.DowntimeCause.GetDowntimeCauseByEnglishName(System.String)">
+            <summary>
+            根据英文名称查找停机原因
+            </summary>
+            <param name="englishName">英文名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:DowntimeCauseDLL.DowntimeCause.SearchByEnglishName(System.String)">
+            <summary>
+            根据英文名称搜索停机原因
+            </summary>
+            <param name="keyword">英文名称关键词</param>
+            <returns></returns>
+        </member>
+        <member name="M:DowntimeCauseDLL.DowntimeCause.SearchByChineseName(System.String)">
+            <summary>
+            根据中文名称搜索停机原因
+            </summary>
+            <param name="keyword">中文名称关键词</param>
+            <returns></returns>
+        </member>
+        <member name="M:DowntimeCauseDLL.DowntimeCause.GetDowntimeCausesCount">
+            <summary>
+            获取所有停机原因数量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DowntimeCauseDLL.DowntimeCause.GetFormattedDowntimeCausesList">
+            <summary>
+            获取格式化字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DowntimeCauseDLL.DowntimeCause.GetDowntimeCauseDetails(System.String)">
+            <summary>
+            获取停机原因详细信息（分割成元组）
+            </summary>
+            <param name="englishName">英文名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:DowntimeCauseDLL.DowntimeCause.DowntimeCauseExists(System.String)">
+            <summary>
+            检查停机原因是否存在
+            </summary>
+            <param name="englishName">英文名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:DowntimeCauseDLL.DowntimeCause.GetEnglishNameByChinese(System.String)">
+            <summary>
+            根据中文名称获取英文名称
+            </summary>
+            <param name="chineseName">中文名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:DowntimeCauseDLL.DowntimeCause.GetChineseNameByEnglish(System.String)">
+            <summary>
+            根据英文名称获取中文名称
+            </summary>
+            <param name="englishName">英文名称</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

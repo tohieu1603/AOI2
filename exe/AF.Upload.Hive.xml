@@ -1,0 +1,3217 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AF.Upload.Hive</name>
+    </assembly>
+    <members>
+        <member name="F:AF.Upload.Hive.Form_HiveOnboard.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_HiveOnboard.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_HiveOnboard.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.SafetyDeviceConfig.DeviceId">
+            <summary>
+            IO名字
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.SafetyDeviceConfig.DeviceType">
+            <summary>
+            IO类型
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.SafetyDeviceConfig.Get">
+            <summary>
+            读DI
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.SafetyDeviceConfig.Set">
+            <summary>
+            写DO
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.GlobalMessageBoxHook">
+            <summary>
+            全局 MessageBox Hook - 自动置顶所有 MessageBox
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.GlobalMessageBoxHook.Install">
+            <summary>
+            安装 MessageBox Hook（当前线程）
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.GlobalMessageBoxHook.Uninstall">
+            <summary>
+            卸载 MessageBox Hook
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.GlobalMessageBoxHook.TemporarilyDisableOtherTopMostForms">
+            <summary>
+            临时取消其他 TopMost 窗体的置顶
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.GlobalMessageBoxHook.RestoreAllFormsTopMost">
+            <summary>
+            恢复所有窗体的 TopMost 状态
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.GlobalMessageBoxHook.IsMessageBoxWindow(System.IntPtr)">
+            <summary>
+            判断窗口是否为 MessageBox
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HashHelper.GetFileMD5(System.String)">
+            <summary>
+            计算文件的MD5哈希值
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HashHelper.GetFileSHA1(System.String)">
+            <summary>
+            计算文件的SHA1哈希值
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HashHelper.GetFileSHA256(System.String)">
+            <summary>
+            计算文件的SHA256哈希值
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HashHelper.GetFileHash(System.String,System.Security.Cryptography.HashAlgorithm)">
+            <summary>
+            通用的文件哈希计算方法
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HashHelper.GetStringMD5(System.String)">
+            <summary>
+            计算字符串的MD5哈希值
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HashHelper.GetStringSHA1(System.String)">
+            <summary>
+            计算字符串的SHA1哈希值
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HashHelper.GetStringSHA256(System.String)">
+            <summary>
+            计算字符串的SHA256哈希值
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HashHelper.GetStringHash(System.String,System.Security.Cryptography.HashAlgorithm)">
+            <summary>
+            通用的字符串哈希计算方法
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.PopupRequest">
+            <summary>
+            弹窗请求类
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.PopupManager">
+            <summary>
+            弹窗管理器 - 单例模式
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.PopupManager.GetMainForm">
+            <summary>
+            获取主窗体实例
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.PopupManager.RequestPopup(System.String,System.Collections.Generic.List{System.String},System.Int32)">
+            <summary>
+            请求显示弹窗
+            </summary>
+            <param name="requestType">请求类型</param>
+            <param name="parameters">参数列表</param>
+            <param name="priority">优先级</param>
+        </member>
+        <member name="M:AF.Upload.Hive.PopupManager.OnPopupClosed">
+            <summary>
+            弹窗关闭回调
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.PopupManager.ShowPopupInternal(AF.Upload.Hive.PopupRequest)">
+            <summary>
+            内部显示弹窗方法
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.PopupManager.CreateAndShowPopup(AF.Upload.Hive.PopupRequest)">
+            <summary>
+            创建并显示弹窗（在UI线程上执行）
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.PopupManager.CreatePopupForm(AF.Upload.Hive.PopupRequest)">
+            <summary>
+            根据请求创建对应的弹窗窗体
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.PopupManager.GetStatus">
+            <summary>
+            获取队列状态
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.PopupManager.ClearQueue">
+            <summary>
+            清空队列
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.HiveCommandProcessor">
+            <summary>
+            Hive命令处理器 - 负责处理所有Hive相关命令和弹窗管理
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveCommandProcessor.AllowMainProgramButtons">
+            <summary>
+            是否允许操作主程序按钮(Start, Pause, Stop)
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveCommandProcessor.IsPopupShowing">
+            <summary>
+            是否有弹窗正在显示
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.ProcessMachineStateCommand(System.Collections.Generic.List{System.String})">
+            <summary>
+            处理机器状态命令
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.ProcessMachineStateCommand(AF.Upload.Hive.MachineStateParameters)">
+            <summary>
+            处理机器状态命令
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.ProcessManualCommand(System.Collections.Generic.List{System.String})">
+            <summary>
+            处理手动操作命令
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.ProcessTRDataCommand(AF.Upload.Hive.HiveTool.TRDataParameters)">
+            <summary>
+            处理TR数据命令（新版本-基于对象参数）
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.ProcessMachineDataCommand(AF.Upload.Hive.HiveTool.MachineDataParameters)">
+            <summary>
+            处理机器数据命令
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.ProcessStationSwVersionCommand(AF.Upload.Hive.StationSwVersionParameters)">
+            <summary>
+            处理站点身份数据命令
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.ProcessHeartbeatCommand(AF.Upload.Hive.Heartbeat)">
+            <summary>
+            处理心跳命令
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.ProcessOnboardingStatusCommand(AF.Upload.Hive.Heartbeat)">
+            <summary>
+            处理心跳命令
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.ProcessCommunicationCommand(System.Collections.Generic.List{System.String})">
+            <summary>
+            处理通信设置命令
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.ProcessRunModeCommand(System.Collections.Generic.List{System.String})">
+            <summary>
+            处理运行模式命令
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.ProcessPCSCommand(System.Collections.Generic.List{System.String})">
+            <summary>
+            处理PCS命令
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.ProcessStationCommand(System.Collections.Generic.List{System.String})">
+            <summary>
+            处理站点命令
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.ProcessUnknownCommand(System.Collections.Generic.List{System.String})">
+            <summary>
+            处理未知命令
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.MachineState(AF.Upload.Hive.MachineStateParameters)">
+            <summary>
+            机器状态数据处理
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.MachineData(AF.Upload.Hive.HiveTool.MachineDataParameters)">
+            <summary>
+            machine data上传案例
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.TRData(AF.Upload.Hive.HiveTool.TRDataParameters)">
+            <summary>
+            TR数据上传案例
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:AF.Upload.Hive.HiveCommandProcessor.StationSwVersion(AF.Upload.Hive.StationSwVersionParameters)" -->
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.Heartbeat(AF.Upload.Hive.Heartbeat)">
+            <summary>
+            心跳数据处理
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.OnboardingStatus(AF.Upload.Hive.Heartbeat)">
+            <summary>
+            心跳数据处理
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.SetMainProgramButtonsEnabled(System.Boolean)">
+            <summary>
+            设置是否允许操作主程序按钮
+            </summary>
+            <param name="allow">是否允许</param>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.GetPopupStatus">
+            <summary>
+            获取弹窗队列状态
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.ClearPopupQueue">
+            <summary>
+            清空弹窗队列
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.FormatCommandLog(System.Collections.Generic.List{System.String},System.Object)">
+            <summary>
+            格式化命令日志信息
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.ProcessCommand(System.Collections.Generic.List{System.String},System.Object)">
+            <summary>
+            处理命令 - 修改为使用队列管理上传任务
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.IsUploadCommand(System.String,System.Object)">
+            <summary>
+            判断是否为需要上传的命令
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.ProcessCommandInternal(System.Collections.Generic.List{System.String},System.Object)">
+            <summary>
+            原有的命令处理逻辑（非上传命令）
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.GenerateJsonData(System.Collections.Generic.List{System.String},System.Object)">
+            <summary>
+            根据命令生成JSON数据
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.GenerateTRDataJson(AF.Upload.Hive.HiveTool.TRDataParameters)">
+            <summary>
+            生成TR数据的JSON
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.GenerateMachineDataJson(AF.Upload.Hive.HiveTool.MachineDataParameters)">
+            <summary>
+            生成机器数据的JSON
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.GenerateStationSwVersionJson(AF.Upload.Hive.StationSwVersionParameters)">
+            <summary>
+            生成站点软件版本JSON
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.GenerateHeartbeatJson(AF.Upload.Hive.Heartbeat)">
+            <summary>
+            生成心跳JSON
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.GenerateOnboardingStatusJson(AF.Upload.Hive.Heartbeat)">
+            <summary>
+            生成Onboarding状态JSON
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.GenerateMachineStateJson(AF.Upload.Hive.MachineStateParameters)">
+            <summary>
+            生成机器状态JSON
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveCommandProcessor.GetDataStyleFromCommand(System.String)">
+            <summary>
+            根据命令类型获取DataStyle
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.UploadRequest">
+            <summary>
+            上传请求
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.QueueStatus">
+            <summary>
+            队列状态
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.UploadQueueManager">
+            <summary>
+            上传队列管理器 - 负责管理上传任务的排队和执行
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.UploadQueueManager.EnqueueUpload(AF.Upload.Hive.DataStyle,System.String)">
+            <summary>
+            添加上传请求到队列（非阻塞）
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.UploadQueueManager.ProcessQueue">
+            <summary>
+            后台处理队列
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.UploadQueueManager.ProcessSingleRequest(AF.Upload.Hive.UploadRequest)">
+            <summary>
+            处理单个请求
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.UploadQueueManager.GetQueueStatus">
+            <summary>
+            获取队列状态
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.UploadQueueManager.ClearQueue">
+            <summary>
+            清空队列
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.UploadQueueManager.Stop">
+            <summary>
+            停止队列处理
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_Login.CheckPermissionAccess(System.Int32,System.String)">
+            <summary>
+            检查用户是否有权限访问所选权限
+            </summary>
+            <param name="userLevel">用户等级</param>
+            <param name="selectedPermission">选择的权限</param>
+            <returns>是否有权限</returns>
+        </member>
+        <member name="F:AF.Upload.Hive.Form_Login.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_Login.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_Login.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_MsgWithMaintenance.AreAllCheckBoxesChecked">
+            <summary>
+            检查所有动态生成的CheckBox是否都已选中
+            </summary>
+            <returns>如果全部选中返回true，否则返回false</returns>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_MsgWithMaintenance.CreateDynamicCheckBoxes">
+            <summary>
+            创建动态CheckBox控件
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_MsgWithMaintenance.CreateCheckBox(System.String,System.Int32)">
+            <summary>
+            创建单个CheckBox控件
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_MsgWithMaintenance.LoadCheckBoxStateFromExcel(System.Windows.Forms.CheckBox)">
+            <summary>
+            从Excel加载CheckBox的状态，根据保存的时间决定是否自动勾选
+            </summary>
+            <param name="checkBox">要检查的CheckBox控件</param>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_MsgWithMaintenance.ClearDynamicControls">
+            <summary>
+            清空动态创建的控件
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.Form_MsgWithMaintenance.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_MsgWithMaintenance.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_MsgWithMaintenance.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.Form_OffboardMsg.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_OffboardMsg.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_OffboardMsg.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.Form_OperationMsg.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_OperationMsg.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_OperationMsg.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.Form_ResOnboard.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_ResOnboard.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_ResOnboard.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.Form_Resume.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_Resume.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_Resume.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.Form_ResumeInput.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_ResumeInput.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_ResumeInput.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.Form_ResumeMsg.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_ResumeMsg.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_ResumeMsg.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.Form_Warning.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_Warning.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_Warning.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_MsgWithRepair.SetupMessageControls">
+            <summary>
+            设置消息控件
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_MsgWithRepair.CreateMessageControl">
+            <summary>
+            创建消息控件
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_MsgWithRepair.ClearMessageControls">
+            <summary>
+            清除所有消息控件
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_MsgWithRepair.OnResize(System.EventArgs)">
+            <summary>
+            窗体大小改变时调整控件
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_MsgWithRepair.AdjustMessageControlsLayout">
+            <summary>
+            调整消息控件布局
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.Form_MsgWithRepair.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_MsgWithRepair.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_MsgWithRepair.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_Operation.GetCheckedButton">
+            <summary>
+            获取当前选中的radiobutton
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_Operation.RemoveBetweenFirstAndLastChinese(System.String)">
+            <summary>
+            把内容里的中文去掉
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="F:AF.Upload.Hive.Form_Operation.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_Operation.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AF.Upload.Hive.Form_Operation.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveMgr.Enable">
+            <summary>
+            是否启用Hive
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.HiveMgr.IsProduceRun">
+            <summary>
+            是否 生产或空跑 流程
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.HiveMgr.MachineStart">
+            <summary>
+            设备启动
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.HiveMgr.MachineStop">
+            <summary>
+            设备停止
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.HiveMgr.MachinePause">
+            <summary>
+            设备暂停
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.HiveMgr.GetHiveStationInfo">
+            <summary>
+            获取Hive信息，通过Mes获取 StationID、Product
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.HiveMgr.GetHiveUserInfo">
+            <summary>
+            获取Hive信息，通过Mes获取 StationID、Product
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveMgr.Init(AF.Communicate.TcpClient)">
+            <summary>
+            初始化
+            </summary>
+            <param name="tcpHive">Hive网口</param>
+        </member>
+        <member name="F:AF.Upload.Hive.HiveMgr.SetFormOwner">
+            <summary>
+            是否设置窗体所有者关系。当设置为true时，弹出的窗体会随着主窗体最小化和显示；
+            当设置为false时，弹出的窗体将独立于主窗体。永远显示在最前
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveMgr.SwitchPermission(System.String)">
+            <summary>
+            切换到指定的权限
+            </summary>
+            <param name="permission">要切换的权限</param>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveMgr.BindSystemIO">
+            <summary>
+            绑定系统IO
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveMgr.LoadAllVersionInfo">
+            <summary>
+            从INI文件中获取所有节点的完整信息（包括version和hash_key）
+            </summary>
+            <returns>字典，key为节点名称，value为模块信息对象</returns>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveMgr.LoadVisionInfo">
+            <summary>
+            使用配置映射的方式加载模块信息并转换为参数列表
+            </summary>
+            <returns>参数列表</returns>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveMgr.OnNewEvent(System.Object,AF.Common.AlarmEventArgs)">
+            <summary>
+            报警跳变
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveMgr.HandleResumeLogic">
+            <summary>
+            处理恢复逻辑（提取公共代码）
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveMgr.HandlePauseLogic">
+            <summary>
+            处理暂停逻辑（提取公共代码）
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveMgr.SaveLog(System.String,System.Boolean,System.String,AF.Upload.Hive.DataStyle)">
+            <summary>
+            保存上传日志
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.ErrorMessage">
+            <summary>
+            Error Information
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.StateMessage">
+            <summary>
+            Error Machine State(包含报error 时的信息)
+            当状态为5时，可以保存error信息
+            用来暂存状态信息
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.StateMessage.MachineState">
+            <summary>
+            机台之前状态
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.StateMessage.code">
+            <summary>
+            故障代码
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.StateMessage.strMsg">
+            <summary>
+            故障信息
+            </summary>       
+        </member>
+        <member name="F:AF.Upload.Hive.StateMessage.strLevel">
+            <summary>
+            故障等级
+            </summary>       
+        </member>
+        <member name="T:AF.Upload.Hive.DataStyle">
+            <summary>
+            用于上传的数据类型
+            （MachineData,MachineState,ErrorData,EnvironmentData）
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.MachineLocalState">
+            <summary>
+            设备根据Hive要求的运行状态
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.MachineStateData">
+            <summary>
+            机器状态数据
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.HiveTool">
+            <summary>
+            Hive数据管理类 - 负责数据上传和管理
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.HiveTool.CurrentHiveStatus">
+            <summary>
+            用于Form_Main界面状态显示
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.HiveTool._currentHiveStatus">
+            <summary>
+            用于Form_Main界面状态显示，通信失败用于缓存
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.GetUrl(AF.Upload.Hive.DataStyle)">
+            <summary>
+            获取API URL
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.MachineDataUpload(AF.Upload.Hive.HiveTool.MachineDataParameters,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            机器数据上传
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.MachineStateUpload(AF.Upload.Hive.MachineStateParameters,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            机器状态数据上传
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.TRDataUpload(AF.Upload.Hive.HiveTool.TRDataParameters,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            TR数据上传
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.StationSwVersionUpload(AF.Upload.Hive.StationSwVersionParameters)">
+            <summary>
+            SWVersion上传
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.HeartbeatUpload(AF.Upload.Hive.Heartbeat)">
+            <summary>
+            Heartbeat数据上传
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.OnboardingStatusUpload(AF.Upload.Hive.Heartbeat)">
+            <summary>
+            Heartbeat数据上传
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.ProcessUploadSync(AF.Upload.Hive.DataStyle,System.String)">
+            <summary>
+            同步处理上传
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.ShowOffboardMessageNonModal">
+            <summary>
+            使用非模态窗体显示离线消息（不阻塞UI）
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.ShowOffboardMessageSync">
+            <summary>
+            同步显示离线消息弹窗
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.ProcessJsonAsync(AF.Upload.Hive.DataStyle,System.String)">
+            <summary>
+            处理JSON - 异步版本
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.ShowOffboardMessageAsync">
+            <summary>
+            异步显示离线消息弹窗
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.ProcessJson(AF.Upload.Hive.DataStyle,System.String)">
+            <summary>
+            处理JSON
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.GetFailureReason(System.Boolean,System.String,AF.Upload.Hive.DataStyle)">
+            <summary>
+            获取失败原因
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.ProcessUploadResult(AF.Upload.Hive.DataStyle,System.Boolean,System.String)">
+            <summary>
+            处理上传结果
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.SaveHiveLog(AF.Upload.Hive.DataStyle,System.String)">
+            <summary>
+            保存日志到本地文件
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.PostData(System.String,System.String,System.String@)">
+            <summary>
+            发送POST请求
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.Compress(System.String)">
+            <summary>
+            压缩JSON字符串（移除空白字符）
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.ConvertJsonString(System.String)">
+            <summary>
+            格式化JSON字符串
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.SerializeToJson``1(``0,Newtonsoft.Json.Formatting,Newtonsoft.Json.NullValueHandling,Newtonsoft.Json.DefaultValueHandling,System.String,Newtonsoft.Json.DateTimeZoneHandling,Newtonsoft.Json.ReferenceLoopHandling,Newtonsoft.Json.MissingMemberHandling,Newtonsoft.Json.TypeNameHandling,Newtonsoft.Json.StringEscapeHandling,Newtonsoft.Json.FloatFormatHandling,Newtonsoft.Json.FloatParseHandling,Newtonsoft.Json.Serialization.IContractResolver,System.Collections.Generic.IEnumerable{Newtonsoft.Json.JsonConverter})">
+            <summary>
+            将对象序列化为JSON字符串
+            </summary>
+            <typeparam name="T">对象类型</typeparam>
+            <param name="obj">要序列化的对象</param>
+            <param name="formatting">格式化选项，默认：None（紧凑格式）</param>
+            <param name="nullValueHandling">Null值处理方式，默认：Include（包含null值）</param>
+            <param name="defaultValueHandling">默认值处理方式，默认：Include（包含默认值）</param>
+            <param name="dateFormatString">日期格式字符串，默认：yyyy-MM-ddTHH:mm:ss.fffzzz</param>
+            <param name="dateTimeZoneHandling">日期时区处理方式，默认：RoundtripKind（保持原有时区）</param>
+            <param name="referenceLoopHandling">循环引用处理方式，默认：Error（遇到循环引用时抛出异常）</param>
+            <param name="missingMemberHandling">缺少成员处理方式，默认：Ignore（忽略JSON中多余的成员）</param>
+            <param name="typeNameHandling">类型名称处理方式，默认：None（不包含类型信息）</param>
+            <param name="stringEscapeHandling">字符串转义处理方式，默认：Default（默认转义）</param>
+            <param name="floatFormatHandling">浮点数格式处理方式，默认：String（作为字符串处理）</param>
+            <param name="floatParseHandling">浮点数解析处理方式，默认：Double（作为double处理）</param>
+            <param name="contractResolver">合约解析器，默认：null（使用默认解析器）</param>
+            <param name="converters">自定义转换器集合，默认：null</param>
+            <returns>JSON字符串</returns>
+        </member>
+        <member name="T:AF.Upload.Hive.HiveTool.SFCMode">
+            <summary>
+            SFC选择模式
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.Connect(AF.Communicate.TcpClient)">
+            <summary>
+            连接PDCA
+            </summary>
+            <param name="link"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.Disconnect(AF.Communicate.TcpClient)">
+            <summary>
+            断开PDCA连接
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.SendMessage(AF.Communicate.TcpClient,System.String)">
+            <summary>
+            发送信息
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.IsSuccess(System.String)">
+            <summary>
+            判断PDCA回复是否成功
+            </summary>
+            <param name="reply"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.SFCResult(System.String,System.String)">
+            <summary>
+            解析SFC反馈
+            </summary>
+            <param name="strMsg"></param>
+            <param name="regular"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.ShowLog(System.String,System.Boolean,System.String,AF.Upload.Hive.DataStyle)">
+            <summary>
+            显示上传日志
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.ValidatePassValue(System.String)">
+            <summary>
+            验证pass参数值
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.AddOptionalData(System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String)">
+            <summary>
+            添加可选数据字段
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.IsExcludedForm(System.Windows.Forms.Form)">
+            <summary>
+            检查是否为需要排除的窗体（HiveEx命名空间的Form_Login）
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.IsFormOpen``1">
+            <summary>
+            检查指定类型的窗体是否已打开（排除HiveEx命名空间的Form_Login窗体）
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.IsAnyFormOpenInNamespace(System.String)">
+            <summary>
+            检查当前命名空间内的窗体是否已打开（排除HiveEx命名空间的Form_Login窗体）
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.IsFormOpenInNamespace(System.String,System.String)">
+            <summary>
+            检查当前命名空间内的指定名称的窗体是否已打开（排除HiveEx命名空间的Form_Login窗体）
+            </summary>
+            <param name="namespaceName">命名空间名称</param>
+            <param name="formName">窗体类型名称（不包含命名空间）</param>
+            <returns>如果找到指定命名空间和名称的可见窗体则返回true，否则返回false</returns>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveTool.IsFormOpenByFullName(System.String)">
+            <summary>
+            检查当前命名空间内的指定名称的窗体是否已打开（使用完整类型名称，排除HiveEx命名空间的Form_Login窗体）
+            </summary>
+            <param name="fullTypeName">完整类型名称（包含命名空间）</param>
+            <returns>如果找到指定完整类型名称的可见窗体则返回true，否则返回false</returns>
+        </member>
+        <member name="T:AF.Upload.Hive.HiveTool.MachineData">
+            <summary>
+            机器数据定义
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:AF.Upload.Hive.HiveTool.TRDataParameters.keypart_sn" -->
+        <member name="P:AF.Upload.Hive.HiveTool.TRDataParameters.module_sn">
+            <summary>
+            WIP SN 
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveTool.TRDataParameters.smallpart_sn">
+            <summary>
+            次要部件被丢弃，
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.HiveTool.StationSwVersion">
+            <summary>
+            站台软件版本信息
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.Heartbeat">
+            <summary>
+            心跳数据
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.HiveMgrExtensions">
+            <summary>
+            Hive管理扩展方法
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveMgrExtensions.ReadJsonContentFromFile(System.String)">
+            <summary>
+            从文件读取JSON内容
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveMgrExtensions.GetHiveServerModel(System.String)">
+            <summary>
+            JSON字符串转换为Hive服务器响应模型
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveMgrExtensions.GetHiveServerModelRegister(System.String)">
+            <summary>
+            JSON字符串转换为Hive服务器响应模型
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveMgrExtensions.IsSuccess(AF.Upload.Hive.HiveServerModel,AF.Upload.Hive.DataStyle)">
+            <summary>
+            检查响应是否成功
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveMgrExtensions.IsRegisterSuccess(AF.Upload.Hive.HiveServerRegisterModel,AF.Upload.Hive.DataStyle)">
+            <summary>
+            检查响应是否成功
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveMgrExtensions.GetErrorMessage(AF.Upload.Hive.HiveServerModel)">
+            <summary>
+            获取错误信息
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.HiveServerRegisterModel">
+            <summary>
+            hive 服务器返回信息的注册model
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveServerRegisterModel.is_active">
+            <summary>
+            错误编码
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveServerRegisterModel.machine_state">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveServerRegisterModel.state_change_time">
+            <summary>
+            错误校验明细
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveServerRegisterModel.onboarding_status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveServerRegisterModel.station_id">
+            <summary>
+            数据内容
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.HiveServerModel">
+            <summary>
+            hive 服务器返回信息的model
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveServerModel.ErrorCode">
+            <summary>
+            错误编码
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveServerModel.ErrorText">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveServerModel.ErrorValidation">
+            <summary>
+            错误校验明细
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveServerModel.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveServerModel.Data">
+            <summary>
+            数据内容
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveServerModel.is_active">
+            <summary>
+            错误编码
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveServerModel.machine_state">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveServerModel.state_change_time">
+            <summary>
+            错误校验明细
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveServerModel.onboarding_status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveServerModel.station_id">
+            <summary>
+            数据内容
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.HiveUserControl">
+            <summary>
+            Hive用户控件基类
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.BlackBorderTextBox">
+            <summary>
+            带黑色边框的文本框控件，支持热点效果
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.BlackBorderTextBox.GetWindowDC(System.IntPtr)">
+            <summary>
+            获取窗口设备上下文
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.BlackBorderTextBox.ReleaseDC(System.IntPtr,System.IntPtr)">
+            <summary>
+            释放设备上下文
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.BlackBorderTextBox.#ctor">
+            <summary>
+            初始化BlackBorderTextBox
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.BlackBorderTextBox.BorderWidth">
+            <summary>
+            获取或设置边框宽度
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.BlackBorderTextBox.HotTrack">
+            <summary>
+            获取或设置是否启用热点效果
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.BlackBorderTextBox.BorderColor">
+            <summary>
+            获取或设置边框颜色
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.BlackBorderTextBox.HotColor">
+            <summary>
+            获取或设置热点时边框颜色
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.BlackBorderTextBox.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标移动到控件上时触发
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.BlackBorderTextBox.OnMouseLeave(System.EventArgs)">
+            <summary>
+            鼠标离开控件时触发
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.BlackBorderTextBox.OnGotFocus(System.EventArgs)">
+            <summary>
+            控件获得焦点时触发
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.BlackBorderTextBox.OnLostFocus(System.EventArgs)">
+            <summary>
+            控件失去焦点时触发
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.BlackBorderTextBox.WndProc(System.Windows.Forms.Message@)">
+            <summary>
+            处理Windows消息，用于自定义绘制
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.BlackBorderTextBox.DrawCustomBorder(System.Windows.Forms.Message@)">
+            <summary>
+            绘制自定义边框
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.BlackBorderTextBox.CreateBorderPen">
+            <summary>
+            根据当前状态创建边框画笔
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.MultiLineButton">
+            <summary>
+            多行按钮控件，支持显示两行文本和左侧图标
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.MultiLineButton.#ctor">
+            <summary>
+            初始化MultiLineButton
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.MultiLineButton.InitializeComponent">
+            <summary>
+            初始化控件属性
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.MultiLineButton.Line1">
+            <summary>
+            获取或设置第一行文本
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.MultiLineButton.Line2">
+            <summary>
+            获取或设置第二行文本
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.MultiLineButton.Line1Font">
+            <summary>
+            获取或设置第一行文本字体
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.MultiLineButton.Line2Font">
+            <summary>
+            获取或设置第二行文本字体
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.MultiLineButton.LeftImage">
+            <summary>
+            获取或设置左侧图片
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.MultiLineButton.ImagePadding">
+            <summary>
+            获取或设置图片内边距
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.MultiLineButton.TextPadding">
+            <summary>
+            获取或设置文本内边距
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.MultiLineButton.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            自定义绘制按钮
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.MultiLineButton.DrawBackground(System.Drawing.Graphics)">
+            <summary>
+            绘制按钮背景
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.MultiLineButton.CalculateContentStartX">
+            <summary>
+            计算内容起始X坐标
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.MultiLineButton.DrawTextContent(System.Drawing.Graphics,System.Int32)">
+            <summary>
+            绘制文本内容
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.MultiLineButton.DrawLeftImage(System.Drawing.Graphics)">
+            <summary>
+            绘制左侧图片
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.MultiLineButton.DrawLineText(System.Drawing.Graphics,System.String,System.Drawing.Font,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            绘制单行文本
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.MultiLineButton.DrawBorder(System.Drawing.Graphics)">
+            <summary>
+            绘制边框
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.MultiLineButton.DrawFocusRectangle(System.Drawing.Graphics)">
+            <summary>
+            绘制焦点矩形
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.MultiLineButton.TruncateText(System.Drawing.Graphics,System.String,System.Drawing.Font,System.Int32)">
+            <summary>
+            截断文本以适应指定宽度
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.MultiLineButton.Dispose(System.Boolean)">
+            <summary>
+            清理使用的资源
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.HiveBaseForm">
+            <summary>
+            自定义窗体基类，提供统一的窗口样式和标题栏自定义功能
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm.SetWindowLong(System.IntPtr,System.Int32,System.Int32)">
+            <summary>
+            设置窗口样式
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm.GetWindowLong(System.IntPtr,System.Int32)">
+            <summary>
+            获取窗口样式
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm.SetWindowPos(System.IntPtr,System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32,System.UInt32)">
+            <summary>
+            设置窗口位置和大小
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm.DwmSetWindowAttribute(System.IntPtr,System.Int32,System.Int32@,System.Int32)">
+            <summary>
+            设置桌面窗口管理器属性
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm.DwmGetWindowAttribute(System.IntPtr,System.Int32,System.Boolean@,System.Int32)">
+            <summary>
+            获取桌面窗口管理器属性
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveBaseForm.BorderColor">
+            <summary>
+            获取或设置边框颜色
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveBaseForm.TitleBarColor">
+            <summary>
+            获取或设置标题栏背景颜色
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveBaseForm.TitleTextColor">
+            <summary>
+            获取或设置标题栏文字颜色
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveBaseForm.EnableTitleBarDrag">
+            <summary>
+            获取或设置是否启用标题栏拖动
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveBaseForm.EnableMessageBoxDetection">
+            <summary>
+            获取或设置是否启用MessageBox检测
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm.#ctor">
+            <summary>
+            初始化HiveBaseForm
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm.InitializeMessageBoxDetection">
+            <summary>
+            初始化MessageBox检测定时器
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm.StartMessageBoxDetection">
+            <summary>
+            开始检测MessageBox
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm.StopMessageBoxDetection">
+            <summary>
+            停止检测MessageBox
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm.MessageBoxCheckTimer_Tick(System.Object,System.EventArgs)">
+            <summary>
+            MessageBox检测定时器事件
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm.CheckAndBringMessageBoxesToFront">
+            <summary>
+            检查并置顶MessageBox
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm.EnumWindowsCallback(System.IntPtr,System.IntPtr)">
+            <summary>
+            枚举窗口回调函数
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm.IsMessageBoxWindow(System.IntPtr)">
+            <summary>
+            判断窗口是否为MessageBox
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm.HasMessageBoxFeatures(System.IntPtr)">
+            <summary>
+            检查窗口是否具有MessageBox的特征
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm.BringMessageBoxToFront(System.IntPtr)">
+            <summary>
+            将MessageBox置顶
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm.CleanupProcessedMessageBoxes">
+            <summary>
+            清理已处理的MessageBox记录
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm.OnHandleCreated(System.EventArgs)">
+            <summary>
+            窗口句柄创建完成时调用
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm.OnActivated(System.EventArgs)">
+            <summary>
+            窗体激活时
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm.OnFormClosed(System.Windows.Forms.FormClosedEventArgs)">
+            <summary>
+            窗体关闭时
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm.WndProc(System.Windows.Forms.Message@)">
+            <summary>
+            处理Windows消息
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm.OnLoad(System.EventArgs)">
+            <summary>
+            窗体加载时执行
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm.RefreshWindowStyle">
+            <summary>
+            更新窗口边框样式（子类可调用）
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm.SetSquareBorderStyle">
+            <summary>
+            设置直角边框样式
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm.SetBlackBorderColor">
+            <summary>
+            设置黑色边框颜色和直角角样式
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm.UpdateTitleBarColor">
+            <summary>
+            更新标题栏颜色设置
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm.ColorToInt(System.Drawing.Color)">
+            <summary>
+            将Color颜色值转换为Windows API使用的整数值
+            </summary>
+            <param name="color">要转换的颜色</param>
+            <returns>Windows API格式的颜色整数值</returns>
+        </member>
+        <member name="T:AF.Upload.Hive.HiveBaseForm1">
+            <summary>
+            自定义窗体基类，提供统一的窗口样式和标题栏自定义功能
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm1.SetWindowLong(System.IntPtr,System.Int32,System.Int32)">
+            <summary>
+            设置窗口样式
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm1.GetWindowLong(System.IntPtr,System.Int32)">
+            <summary>
+            获取窗口样式
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm1.SetWindowPos(System.IntPtr,System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32,System.UInt32)">
+            <summary>
+            设置窗口位置和大小
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm1.DwmSetWindowAttribute(System.IntPtr,System.Int32,System.Int32@,System.Int32)">
+            <summary>
+            设置桌面窗口管理器属性
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm1.DwmGetWindowAttribute(System.IntPtr,System.Int32,System.Boolean@,System.Int32)">
+            <summary>
+            获取桌面窗口管理器属性
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveBaseForm1.BorderColor">
+            <summary>
+            获取或设置边框颜色
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveBaseForm1.TitleBarColor">
+            <summary>
+            获取或设置标题栏背景颜色
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveBaseForm1.TitleTextColor">
+            <summary>
+            获取或设置标题栏文字颜色
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveBaseForm1.EnableTitleBarDrag">
+            <summary>
+            获取或设置是否启用标题栏拖动
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm1.#ctor">
+            <summary>
+            初始化HiveBaseForm
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm1.OnHandleCreated(System.EventArgs)">
+            <summary>
+            窗口句柄创建完成时调用
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm1.WndProc(System.Windows.Forms.Message@)">
+            <summary>
+            处理Windows消息
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm1.OnLoad(System.EventArgs)">
+            <summary>
+            窗体加载时执行
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm1.RefreshWindowStyle">
+            <summary>
+            更新窗口边框样式（子类可调用）
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm1.SetSquareBorderStyle">
+            <summary>
+            设置直角边框样式
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm1.SetBlackBorderColor">
+            <summary>
+            设置黑色边框颜色和直角角样式
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm1.UpdateTitleBarColor">
+            <summary>
+            更新标题栏颜色设置
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseForm1.ColorToInt(System.Drawing.Color)">
+            <summary>
+            将Color颜色值转换为Windows API使用的整数值
+            </summary>
+            <param name="color">要转换的颜色</param>
+            <returns>Windows API格式的颜色整数值</returns>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveBaseFormText.UseCustomTitleBar">
+            <summary>
+            获取或设置是否使用自定义标题栏
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveBaseFormText.BorderColor">
+            <summary>
+            获取或设置边框颜色
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveBaseFormText.BorderWidth">
+            <summary>
+            获取或设置边框宽度
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveBaseFormText.AlwaysShowBorder">
+            <summary>
+            获取或设置是否始终显示边框
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveBaseFormText.ShowCloseButton">
+            <summary>
+            获取或设置是否显示关闭按钮
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveBaseFormText.CloseButtonSize">
+            <summary>
+            获取或设置关闭按钮大小
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseFormText.DrawCustomBorder(System.Drawing.Graphics)">
+            <summary>
+            绘制自定义边框
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseFormText.SetTitleBarColor(System.Drawing.Color,System.Drawing.Color)">
+            <summary>
+            设置标题栏颜色
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseFormText.SetCloseButtonColor(System.Drawing.Color,System.Drawing.Color)">
+            <summary>
+            设置关闭按钮颜色
+            </summary>
+            <param name="normalColor">正常状态颜色</param>
+            <param name="foreColor">文字颜色</param>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveBaseFormText.FormBorderStyle">
+            <summary>
+            设置窗体边框样式，同时保持自定义边框功能
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseFormText.ApplyBorderlessStyle">
+            <summary>
+            应用无边框样式但保持自定义边框
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveBaseFormText.RestoreOriginalBorderStyle">
+            <summary>
+            恢复原始边框样式
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.EllipseLabel">
+            <summary>
+            椭圆形标签控件，支持圆角背景和自定义颜色
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.EllipseLabel.#ctor">
+            <summary>
+            初始化EllipseLabel
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.EllipseLabel.InitializeComponent">
+            <summary>
+            初始化控件属性
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.EllipseLabel.BackgroundColor">
+            <summary>
+            获取或设置椭圆形背景颜色
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.EllipseLabel.CornerRadius">
+            <summary>
+            获取或设置圆角半径
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.EllipseLabel.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            自定义绘制椭圆形标签
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.EllipseLabel.DrawEllipseBackground(System.Drawing.Graphics)">
+            <summary>
+            绘制椭圆形背景
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.EllipseLabel.CreateRoundedRectanglePath">
+            <summary>
+            创建圆角矩形路径
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.EllipseLabel.DrawText(System.Drawing.Graphics)">
+            <summary>
+            绘制文本
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.EllipseLabel.CreateTextFormat">
+            <summary>
+            创建文本格式
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.EllipseLabel.OnTextChanged(System.EventArgs)">
+            <summary>
+            响应文本更改事件
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.EllipseLabel.OnFontChanged(System.EventArgs)">
+            <summary>
+            响应字体更改事件
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.EllipseLabel.OnSizeChanged(System.EventArgs)">
+            <summary>
+            响应尺寸更改事件
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.EllipseLabel.Dispose(System.Boolean)">
+            <summary>
+            清理使用的资源
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.CustomComboBox">
+            <summary>
+            自定义下拉框控件，支持边框自定义、提示文字颜色和自定义下拉箭头
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomComboBox.SafeInvalidate">
+            <summary>
+            安全的刷新方法
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomComboBox.ResetBorderColor">
+            <summary>
+            设计器支持 - 返回默认值
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.CustomTableLayoutPanel">
+            <summary>
+            自定义表格布局控件，支持设置外边框和内边框颜色，以及提示文本功能
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.#ctor">
+            <summary>
+            初始化CustomTableLayoutPanel
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.InitializeComponent">
+            <summary>
+            初始化控件属性
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.CustomTableLayoutPanel.OuterBorderColor">
+            <summary>
+            获取或设置外边框颜色
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.CustomTableLayoutPanel.InnerBorderColor">
+            <summary>
+            获取或设置内边框颜色
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.CustomTableLayoutPanel.OuterBorderWidth">
+            <summary>
+            获取或设置外边框宽度
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.CustomTableLayoutPanel.InnerBorderWidth">
+            <summary>
+            获取或设置内边框宽度
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.CustomTableLayoutPanel.ShowInnerBorders">
+            <summary>
+            获取或设置是否显示内边框
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.CustomTableLayoutPanel.ShowOuterBorder">
+            <summary>
+            获取或设置是否显示外边框
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.CustomTableLayoutPanel.TipText">
+            <summary>
+            获取或设置提示文本内容
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.CustomTableLayoutPanel.TipTextColor">
+            <summary>
+            获取或设置提示文本颜色
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.CustomTableLayoutPanel.TipFont">
+            <summary>
+            获取或设置提示文本字体
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.CustomTableLayoutPanel.TipRow">
+            <summary>
+            获取或设置提示文本所在行
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.CustomTableLayoutPanel.TipColumn">
+            <summary>
+            获取或设置提示文本所在列
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.CustomTableLayoutPanel.TipRowSpan">
+            <summary>
+            获取或设置提示文本横跨的行数
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.CustomTableLayoutPanel.TipColumnSpan">
+            <summary>
+            获取或设置提示文本横跨的列数
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.CustomTableLayoutPanel.TipVisible">
+            <summary>
+            获取或设置提示文本是否可见
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.CustomTableLayoutPanel.TipTextAlignment">
+            <summary>
+            获取或设置提示文本对齐方式
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.CustomTableLayoutPanel.TipOffsetX">
+            <summary>
+            获取或设置提示文本的水平偏移量
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.CustomTableLayoutPanel.TipOffsetY">
+            <summary>
+            获取或设置提示文本的垂直偏移量
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.CustomTableLayoutPanel.TipWidth">
+            <summary>
+            获取或设置提示文本的宽度（-1表示自动宽度）
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.CustomTableLayoutPanel.TipHeight">
+            <summary>
+            获取或设置提示文本的高度（-1表示自动高度）
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.CustomTableLayoutPanel.TipAutoSize">
+            <summary>
+            获取或设置提示文本是否自动调整大小
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.CustomTableLayoutPanel.TipMargin">
+            <summary>
+            获取或设置提示文本的外边距
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.CustomTableLayoutPanel.TipPadding">
+            <summary>
+            获取或设置提示文本的内边距
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.CustomTableLayoutPanel.TipBackColor">
+            <summary>
+            获取或设置提示文本的背景色
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.CustomTableLayoutPanel.TipShowBackground">
+            <summary>
+            获取或设置是否显示提示文本背景
+            </summary>
+        </member>
+        <member name="E:AF.Upload.Hive.CustomTableLayoutPanel.TipVisibleChanged">
+            <summary>
+            提示文本可见性改变时触发的事件
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            自定义绘制表格布局控件
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.DrawOuterBorder(System.Drawing.Graphics)">
+            <summary>
+            绘制外边框
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.DrawInnerBorders(System.Drawing.Graphics)">
+            <summary>
+            绘制内边框（单元格分隔线）
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.DrawColumnBorders(System.Drawing.Graphics,System.Drawing.Pen)">
+            <summary>
+            绘制列分隔线
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.DrawRowBorders(System.Drawing.Graphics,System.Drawing.Pen)">
+            <summary>
+            绘制行分隔线
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.DrawTipText(System.Drawing.Graphics)">
+            <summary>
+            绘制提示文本（按单行形式绘制多行内容）
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.GetTipTopToFirstLineDelta">
+            <summary>
+            获取提示文本框顶部与文本第一行顶部的Y方向差值
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.GetTipTopToLineDelta(System.Int32)">
+            <summary>
+            获取提示文本框顶部与指定行顶部的Y方向差值
+            </summary>
+            <param name="lineIndex">行索引（从0开始）</param>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.AlignTextRectangle(System.Drawing.Rectangle,System.Drawing.Rectangle,System.Drawing.StringFormat)">
+            <summary>
+            根据对齐方式调整文本矩形位置
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.ApplyMargin(System.Drawing.Rectangle,System.Windows.Forms.Padding)">
+            <summary>
+            应用外边距
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.ApplyPadding(System.Drawing.Rectangle,System.Windows.Forms.Padding)">
+            <summary>
+            应用内边距
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.CreateTipStringFormat">
+            <summary>
+            创建提示文本的格式
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.GetTipTextRectangle">
+            <summary>
+            获取提示文本的显示区域
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.GetColumnWidth(System.Int32)">
+            <summary>
+            获取指定列的宽度
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.GetRowHeight(System.Int32)">
+            <summary>
+            获取指定行的高度
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.OnTipVisibleChanged(System.EventArgs)">
+            <summary>
+            触发提示文本可见性改变事件
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.OnLayout(System.Windows.Forms.LayoutEventArgs)">
+            <summary>
+            布局改变时触发
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.OnResize(System.EventArgs)">
+            <summary>
+            尺寸改变时触发
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.ResetOuterBorderColor">
+            <summary>
+            设计器支持 - 返回默认值
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.ShowTip">
+            <summary>
+            显示提示文本
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.HideTip">
+            <summary>
+            隐藏提示文本
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.ToggleTip">
+            <summary>
+            切换提示文本的显示状态
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.SetTipPosition(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            设置提示文本位置和尺寸
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.SetTipPadding(System.Windows.Forms.Padding,System.Windows.Forms.Padding)">
+            <summary>
+            设置提示文本边距
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.AutoSizeTip">
+            <summary>
+            自动调整提示文本大小以适应内容（多行版本）
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.DebugTipInfo">
+            <summary>
+            调试方法：显示当前提示文本设置
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.CustomTableLayoutPanel.Dispose(System.Boolean)">
+            <summary>
+            清理使用的资源
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.DualLineLabel">
+            <summary>
+            双行标签控件，支持分别控制两行文本的字体和大小
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.DualLineLabel.#ctor">
+            <summary>
+            初始化DualLineLabel
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.DualLineLabel.InitializeComponent">
+            <summary>
+            初始化控件属性
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.DualLineLabel.Line1Text">
+            <summary>
+            获取或设置第一行文本
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.DualLineLabel.Line2Text">
+            <summary>
+            获取或设置第二行文本
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.DualLineLabel.Line1Font">
+            <summary>
+            获取或设置第一行文本字体
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.DualLineLabel.Line2Font">
+            <summary>
+            获取或设置第二行文本字体
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.DualLineLabel.Line1Color">
+            <summary>
+            获取或设置第一行文本颜色
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.DualLineLabel.Line2Color">
+            <summary>
+            获取或设置第二行文本颜色
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.DualLineLabel.LineSpacing">
+            <summary>
+            获取或设置行间距
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.DualLineLabel.Line1Alignment">
+            <summary>
+            获取或设置第一行文本对齐方式
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.DualLineLabel.Line2Alignment">
+            <summary>
+            获取或设置第二行文本对齐方式
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.DualLineLabel.AutoAdjustHeight">
+            <summary>
+            获取或设置是否自动调整控件高度
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.DualLineLabel.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            自定义绘制双行标签
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.DualLineLabel.DrawTextLine(System.Drawing.Graphics,System.String,System.Drawing.Font,System.Drawing.Color,System.Drawing.ContentAlignment,System.Boolean)">
+            <summary>
+            绘制单行文本
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.DualLineLabel.CalculateTextRectangle(System.Drawing.Graphics,System.String,System.Drawing.Font,System.Boolean)">
+            <summary>
+            计算文本绘制区域
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.DualLineLabel.CreateStringFormat(System.Drawing.ContentAlignment)">
+            <summary>
+            创建文本格式
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.DualLineLabel.TruncateText(System.Drawing.Graphics,System.String,System.Drawing.Font,System.Single)">
+            <summary>
+            截断文本以适应宽度
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.DualLineLabel.AdjustControlSize">
+            <summary>
+            调整控件尺寸
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.DualLineLabel.OnTextChanged(System.EventArgs)">
+            <summary>
+            文本改变时触发
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.DualLineLabel.OnFontChanged(System.EventArgs)">
+            <summary>
+            字体改变时触发
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.DualLineLabel.OnResize(System.EventArgs)">
+            <summary>
+            尺寸改变时触发
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.DualLineLabel.Text">
+            <summary>
+            获取或设置控件文本（作为第一行文本）
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.DualLineLabel.Font">
+            <summary>
+            获取或设置控件字体（作为第一行字体）
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.DualLineLabel.ResetLine1Font">
+            <summary>
+            设计器支持 - 返回默认值
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.DualLineLabel.Dispose(System.Boolean)">
+            <summary>
+            清理使用的资源
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.StatusIndicatorLabel.#ctor">
+            <summary>
+            初始化StatusIndicatorLabel
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.StatusIndicatorLabel.InitializeComponent">
+            <summary>
+            初始化控件属性
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.StatusIndicatorLabel.Line1">
+            <summary>
+            获取或设置第一行文本
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.StatusIndicatorLabel.Line2">
+            <summary>
+            获取或设置第二行文本
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.StatusIndicatorLabel.Line1Font">
+            <summary>
+            获取或设置第一行文本字体
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.StatusIndicatorLabel.Line2Font">
+            <summary>
+            获取或设置第二行文本字体
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.StatusIndicatorLabel.LeftImage">
+            <summary>
+            获取或设置左侧图片
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.StatusIndicatorLabel.ImagePadding">
+            <summary>
+            获取或设置图片内边距
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.StatusIndicatorLabel.TextPadding">
+            <summary>
+            获取或设置文本内边距
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.StatusIndicatorLabel.IsNormalStatus">
+            <summary>
+            获取或设置状态指示（true为正常状态，false为暗淡状态）
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.StatusIndicatorLabel.NormalTextColor">
+            <summary>
+            获取或设置正常状态下的文字颜色
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.StatusIndicatorLabel.DimmedTextColor">
+            <summary>
+            获取或设置暗淡状态下的文字颜色
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.StatusIndicatorLabel.DimmedImageOpacity">
+            <summary>
+            获取或设置暗淡状态下图片的透明度（0.0-1.0）
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.StatusIndicatorLabel.LineSpacing">
+            <summary>
+            获取或设置行间距
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.StatusIndicatorLabel.Line1Alignment">
+            <summary>
+            获取或设置第一行文本对齐方式
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.StatusIndicatorLabel.Line2Alignment">
+            <summary>
+            获取或设置第二行文本对齐方式
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.StatusIndicatorLabel.AutoAdjustHeight">
+            <summary>
+            获取或设置是否自动调整控件高度
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.StatusIndicatorLabel.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            自定义绘制标签
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.StatusIndicatorLabel.DrawBackground(System.Drawing.Graphics)">
+            <summary>
+            绘制标签背景
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.StatusIndicatorLabel.CalculateContentStartX">
+            <summary>
+            计算内容起始X坐标
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.StatusIndicatorLabel.DrawTextContent(System.Drawing.Graphics,System.Int32)">
+            <summary>
+            绘制文本内容
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.StatusIndicatorLabel.DrawLeftImage(System.Drawing.Graphics)">
+            <summary>
+            绘制左侧图片
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.StatusIndicatorLabel.DrawLineText(System.Drawing.Graphics,System.String,System.Drawing.Font,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            绘制单行文本
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.StatusIndicatorLabel.CalculateTextRectangle(System.Drawing.Graphics,System.String,System.Drawing.Font,System.Boolean)">
+            <summary>
+            计算文本绘制区域
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.StatusIndicatorLabel.CreateStringFormat(System.Drawing.ContentAlignment)">
+            <summary>
+            创建文本格式
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.StatusIndicatorLabel.DrawBorder(System.Drawing.Graphics)">
+            <summary>
+            绘制边框
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.StatusIndicatorLabel.TruncateText(System.Drawing.Graphics,System.String,System.Drawing.Font,System.Int32)">
+            <summary>
+            截断文本以适应指定宽度
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.StatusIndicatorLabel.AdjustControlSize">
+            <summary>
+            调整控件尺寸
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.StatusIndicatorLabel.OnTextChanged(System.EventArgs)">
+            <summary>
+            文本改变时触发
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.StatusIndicatorLabel.OnFontChanged(System.EventArgs)">
+            <summary>
+            字体改变时触发
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.StatusIndicatorLabel.OnResize(System.EventArgs)">
+            <summary>
+            尺寸改变时触发
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.StatusIndicatorLabel.Text">
+            <summary>
+            获取或设置控件文本（作为第一行文本）
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.StatusIndicatorLabel.Font">
+            <summary>
+            获取或设置控件字体（作为第一行字体）
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.StatusIndicatorLabel.ResetLine1Font">
+            <summary>
+            设计器支持 - 返回默认值
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.StatusIndicatorLabel.Dispose(System.Boolean)">
+            <summary>
+            清理使用的资源
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.DropDownTextBox.DrawTriangleArrow(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Color,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            公共方法：在指定的Graphics对象上绘制三角形箭头
+            </summary>
+            <param name="g">Graphics对象</param>
+            <param name="bounds">绘制区域的边界</param>
+            <param name="arrowColor">箭头颜色</param>
+            <param name="arrowWidth">箭头宽度</param>
+            <param name="arrowHeight">箭头高度</param>
+            <param name="direction">箭头方向：0-向下，1-向上，2-向左，3-向右</param>
+        </member>
+        <member name="M:AF.Upload.Hive.DropDownTextBox.DrawTriangleArrow(System.Drawing.Graphics,System.Drawing.Rectangle,System.Int32)">
+            <summary>
+            公共方法：使用当前实例的箭头设置绘制三角形箭头
+            </summary>
+            <param name="g">Graphics对象</param>
+            <param name="bounds">绘制区域的边界</param>
+            <param name="direction">箭头方向：0-向下，1-向上，2-向左，3-向右</param>
+        </member>
+        <member name="M:AF.Upload.Hive.DropDownTextBox.DrawTriangleArrow(System.Drawing.Graphics,System.Int32,System.Int32,System.Int32,System.Int32,System.Drawing.Color,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            公共方法：在指定位置绘制三角形箭头
+            </summary>
+            <param name="g">Graphics对象</param>
+            <param name="x">X坐标</param>
+            <param name="y">Y坐标</param>
+            <param name="width">宽度</param>
+            <param name="height">高度</param>
+            <param name="arrowColor">箭头颜色</param>
+            <param name="arrowWidth">箭头宽度</param>
+            <param name="arrowHeight">箭头高度</param>
+            <param name="direction">箭头方向：0-向下，1-向上，2-向左，3-向右</param>
+        </member>
+        <member name="T:AF.Upload.Hive.LineControl">
+            <summary>
+            自定义直线控件
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.LineControl.LineDirection">
+            <summary>
+            直线方向
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.LineControl.LineDirection.Horizontal">
+            <summary>
+            水平方向
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.LineControl.LineDirection.Vertical">
+            <summary>
+            垂直方向
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.LineControl.LineDirection.DiagonalDown">
+            <summary>
+            左上到右下对角线
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.LineControl.LineDirection.DiagonalUp">
+            <summary>
+            左下到右上对角线
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.LineControl.#ctor">
+            <summary>
+            初始化直线控件
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.LineControl.LineColor">
+            <summary>
+            获取或设置直线颜色
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.LineControl.LineThickness">
+            <summary>
+            获取或设置直线粗细
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.LineControl.Direction">
+            <summary>
+            获取或设置直线方向
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.LineControl.LineLength">
+            <summary>
+            获取或设置直线长度
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.LineControl.LineStyle">
+            <summary>
+            获取或设置直线样式
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.LineControl.AntiAlias">
+            <summary>
+            获取或设置是否启用抗锯齿
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.LineControl.BackColor">
+            <summary>
+            获取或设置控件背景颜色
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.LineControl.Margin">
+            <summary>
+            获取或设置控件与其他控件之间的间距
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.LineControl.Padding">
+            <summary>
+            获取或设置控件的内边距
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.LineControl.Text">
+            <summary>
+            隐藏基类的Text属性
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.LineControl.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            绘制控件
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.LineControl.OnResize(System.EventArgs)">
+            <summary>
+            控件大小改变时
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.LineControl.OnMarginChanged(System.EventArgs)">
+            <summary>
+            当边距改变时
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.LineControl.CalculateLinePoints(System.Drawing.Point@,System.Drawing.Point@)">
+            <summary>
+            计算直线的起点和终点（考虑内边距）
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.LineControl.UpdateSize">
+            <summary>
+            根据属性更新控件大小
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.LineControl.SetLinePosition(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            设置直线位置和长度
+            </summary>
+            <param name="x">X坐标</param>
+            <param name="y">Y坐标</param>
+            <param name="length">长度</param>
+        </member>
+        <member name="M:AF.Upload.Hive.LineControl.SetLineStyle(System.Drawing.Color,System.Int32,System.Drawing.Drawing2D.DashStyle)">
+            <summary>
+            设置直线样式
+            </summary>
+            <param name="color">颜色</param>
+            <param name="thickness">粗细</param>
+            <param name="style">样式</param>
+        </member>
+        <member name="M:AF.Upload.Hive.LineControl.SetDashPattern(System.Single[])">
+            <summary>
+            设置虚线样式
+            </summary>
+            <param name="dashPattern">虚线模式数组</param>
+        </member>
+        <member name="M:AF.Upload.Hive.LineControl.GetPreferredSize">
+            <summary>
+            获取推荐的大小（包含边距）
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.LineControl.OnCreateControl">
+            <summary>
+            设计时属性默认值
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.HiveStatusControl">
+            <summary>
+            Hive状态显示控件
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.HiveStatusControl.HiveStatus">
+            <summary>
+            Hive状态枚举
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.HiveStatusControl.HiveStatus.Default">
+            <summary>
+            默认状态
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.HiveStatusControl.HiveStatus.RunningState1">
+            <summary>
+            运行状态 - 机器状态1
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.HiveStatusControl.HiveStatus.IdleState2">
+            <summary>
+            空闲状态 - 机器状态2
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.HiveStatusControl.HiveStatus.DownState5">
+            <summary>
+            停机状态 - 机器状态5
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.HiveStatusControl.HiveStatus.CommunicationError">
+            <summary>
+            通信错误
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.HiveStatusControl.HiveStatus.CommandError">
+            <summary>
+            命令错误
+            </summary>
+        </member>
+        <member name="F:AF.Upload.Hive.HiveStatusControl.HiveStatus.Offboard">
+            <summary>
+            站未注册
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveStatusControl.#ctor">
+            <summary>
+            初始化Hive状态控件
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveStatusControl.CurrentStatus">
+            <summary>
+            获取或设置当前Hive状态
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveStatusControl.CornerRadius">
+            <summary>
+            获取或设置圆角半径
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveStatusControl.TextAlignment">
+            <summary>
+            获取或设置文本对齐方式
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveStatusControl.TextColor">
+            <summary>
+            获取或设置文本颜色
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveStatusControl.StatusFont">
+            <summary>
+            获取或设置状态文本字体
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveStatusControl.UseBoldFont">
+            <summary>
+            获取或设置是否使用粗体
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveStatusControl.FontSize">
+            <summary>
+            获取或设置字体大小
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveStatusControl.StatusText">
+            <summary>
+            获取当前状态的显示文本
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveStatusControl.StatusColor">
+            <summary>
+            获取当前状态的显示颜色
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveStatusControl.Text">
+            <summary>
+            隐藏基类的Text属性
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveStatusControl.RefreshInterval">
+            <summary>
+            获取或设置定时器刷新间隔（毫秒）
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveStatusControl.TimerEnabled">
+            <summary>
+            获取或设置是否启用定时器
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveStatusControl.AutoRefresh">
+            <summary>
+            获取或设置是否自动刷新状态
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveStatusControl.LastRefreshTime">
+            <summary>
+            获取最后一次刷新时间
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveStatusControl.RefreshCount">
+            <summary>
+            获取刷新次数统计
+            </summary>
+        </member>
+        <member name="E:AF.Upload.Hive.HiveStatusControl.TimerRefresh">
+            <summary>
+            定时器刷新时触发的事件
+            </summary>
+        </member>
+        <member name="E:AF.Upload.Hive.HiveStatusControl.StatusChanged">
+            <summary>
+            状态改变时触发的事件
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveStatusControl.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            绘制控件
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveStatusControl.OnResize(System.EventArgs)">
+            <summary>
+            控件大小改变时
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveStatusControl.OnFontChanged(System.EventArgs)">
+            <summary>
+            字体改变时
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveStatusControl.Dispose(System.Boolean)">
+            <summary>
+            清理资源
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveStatusControl.InitializeTimer">
+            <summary>
+            初始化定时器
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveStatusControl.RefreshTimer_Tick(System.Object,System.EventArgs)">
+            <summary>
+            定时器事件处理
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveStatusControl.OnTimerRefresh(AF.Upload.Hive.TimerRefreshEventArgs)">
+            <summary>
+            触发定时器刷新事件
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveStatusControl.OnStatusChanged(AF.Upload.Hive.StatusChangedEventArgs)">
+            <summary>
+            触发状态改变事件
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveStatusControl.GetStatusText(AF.Upload.Hive.HiveStatusControl.HiveStatus)">
+            <summary>
+            根据状态获取显示文本
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveStatusControl.GetStatusColor(AF.Upload.Hive.HiveStatusControl.HiveStatus)">
+            <summary>
+            根据状态获取显示颜色
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveStatusControl.DrawRoundedRectangle(System.Drawing.Graphics,System.Drawing.Color,System.Drawing.Rectangle,System.Int32)">
+            <summary>
+            绘制圆角矩形
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveStatusControl.CreateRoundedRectanglePath(System.Drawing.Rectangle,System.Int32)">
+            <summary>
+            创建圆角矩形路径
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveStatusControl.DrawStatusText(System.Drawing.Graphics,System.String)">
+            <summary>
+            绘制状态文本
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveStatusControl.SetStatus(AF.Upload.Hive.HiveStatusControl.HiveStatus)">
+            <summary>
+            设置状态
+            </summary>
+            <param name="status">新的状态</param>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveStatusControl.SetAllStatusColors(System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color)">
+            <summary>
+            设置所有状态颜色
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveStatusControl.SetTextStyle(System.Drawing.Font,System.Drawing.Color)">
+            <summary>
+            设置文本样式
+            </summary>
+            <param name="font">字体</param>
+            <param name="color">颜色</param>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveStatusControl.ResetFont">
+            <summary>
+            重置字体为默认值
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveStatusControl.GetStatusDescription">
+            <summary>
+            获取状态描述
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveStatusControl.StartTimer">
+            <summary>
+            启动定时器
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveStatusControl.StopTimer">
+            <summary>
+            停止定时器
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveStatusControl.ResetRefreshCount">
+            <summary>
+            重置刷新计数器
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveStatusControl.RefreshNow">
+            <summary>
+            立即触发一次刷新
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveStatusControl.TimerRefreshStatus">
+            <summary>
+            定时器刷新状态（供外部重写）
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveStatusControl.ShouldSerializeStatusFont">
+            <summary>
+            是否应该序列化StatusFont属性
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveStatusControl.ResetStatusFont">
+            <summary>
+            重置StatusFont属性
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.StatusChangedEventArgs">
+            <summary>
+            状态改变事件参数
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.StatusChangedEventArgs.OldStatus">
+            <summary>
+            获取之前的状态
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.StatusChangedEventArgs.NewStatus">
+            <summary>
+            获取新的状态
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.StatusChangedEventArgs.#ctor(AF.Upload.Hive.HiveStatusControl.HiveStatus,AF.Upload.Hive.HiveStatusControl.HiveStatus)">
+            <summary>
+            初始化状态改变事件参数
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.HiveQRCodeControl">
+            <summary>
+            HIVE二维码显示控件
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveQRCodeControl.ErrorCode">
+            <summary>
+            获取或设置错误代码
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveQRCodeControl.HiveState">
+            <summary>
+            获取或设置HIVE状态
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveQRCodeControl.DisplayPercentage">
+            <summary>
+            获取或设置二维码显示百分比（相对于控件大小）
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveQRCodeControl.QRCodeDarkColor">
+            <summary>
+            获取或设置二维码深色模块颜色
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveQRCodeControl.QRCodeLightColor">
+            <summary>
+            获取或设置二维码浅色模块颜色
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveQRCodeControl.PixelsPerModule">
+            <summary>
+            获取或设置每个模块的像素数
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveQRCodeControl.ShowBorder">
+            <summary>
+            获取或设置是否显示边框
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveQRCodeControl.AutoGenerate">
+            <summary>
+            获取或设置是否自动生成二维码
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveQRCodeControl.ErrorCorrectionLevel">
+            <summary>
+            获取或设置错误校正级别
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveQRCodeControl.RefreshInterval">
+            <summary>
+            获取或设置定时器刷新间隔（毫秒）
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveQRCodeControl.TimerEnabled">
+            <summary>
+            获取或设置是否启用定时器
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveQRCodeControl.LastRefreshTime">
+            <summary>
+            获取最后一次刷新时间
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveQRCodeControl.RefreshCount">
+            <summary>
+            获取刷新次数统计
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveQRCodeControl.CurrentQRContent">
+            <summary>
+            获取当前QR码内容
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveQRCodeControl.IsQRCodeVisible">
+            <summary>
+            获取QR码是否可见
+            </summary>
+        </member>
+        <member name="E:AF.Upload.Hive.HiveQRCodeControl.TimerRefresh">
+            <summary>
+            定时器刷新时触发的事件
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveQRCodeControl.#ctor">
+            <summary>
+            初始化HIVE二维码控件
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveQRCodeControl.OnTimerRefresh(AF.Upload.Hive.TimerRefreshEventArgs)">
+            <summary>
+            触发定时器刷新事件
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveQRCodeControl.GetStatusMessage">
+            <summary>
+            获取状态消息
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveQRCodeControl.GetQRContent">
+            <summary>
+            获取QR码内容
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveQRCodeControl.UpdateQRCodeVisibility">
+            <summary>
+            更新QR码可见性
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveQRCodeControl.GenerateQRCode">
+            <summary>
+            生成二维码
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveQRCodeControl.CalculateQRSize">
+            <summary>
+            计算二维码大小
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveQRCodeControl.ScaleQRCode(System.Drawing.Bitmap,System.Int32)">
+            <summary>
+            缩放二维码
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveQRCodeControl.ApplyColorToQRCode(System.Drawing.Bitmap,System.Drawing.Color,System.Drawing.Color)">
+            <summary>
+            将黑白二维码应用自定义颜色
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveQRCodeControl.TimerGenerateQRCode">
+            <summary>
+            生成QR码
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveQRCodeControl.CreateErrorImage">
+            <summary>
+            创建错误图像
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveQRCodeControl.UpdateHiveState(System.Int32,System.String)">
+            <summary>
+            更新HIVE状态和错误代码
+            </summary>
+            <param name="state">HIVE状态 (1-5)</param>
+            <param name="errorCode">错误代码</param>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveQRCodeControl.SetHiveParameters(System.String,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            设置所有HIVE参数
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveQRCodeControl.ClearQRCode">
+            <summary>
+            清除QR码
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveQRCodeControl.SaveQRCodeToFile(System.String,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            保存QR码图像到文件
+            </summary>
+            <param name="filename">文件名</param>
+            <param name="format">图像格式</param>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveQRCodeControl.StartTimer">
+            <summary>
+            启动定时器
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveQRCodeControl.StopTimer">
+            <summary>
+            停止定时器
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveQRCodeControl.ResetRefreshCount">
+            <summary>
+            重置刷新计数器
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveQRCodeControl.RefreshNow">
+            <summary>
+            立即触发一次刷新
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveQRCodeControl.OnCreateControl">
+            <summary>
+            设计时属性默认值
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.TimerRefreshEventArgs">
+            <summary>
+            定时器刷新事件参数
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.TimerRefreshEventArgs.RefreshCount">
+            <summary>
+            刷新次数
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.TimerRefreshEventArgs.RefreshTime">
+            <summary>
+            刷新时间
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.TimerRefreshEventArgs.#ctor(System.Int32,System.DateTime)">
+            <summary>
+            初始化事件参数
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.HiveMessageControl">
+            <summary>
+            Hive消息显示控件
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveMessageControl.#ctor">
+            <summary>
+            初始化Hive消息控件
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveMessageControl.MessageText">
+            <summary>
+            获取或设置消息文本
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveMessageControl.LinkText">
+            <summary>
+            获取或设置链接文本
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveMessageControl.MessageColor">
+            <summary>
+            获取或设置消息文本颜色
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveMessageControl.LinkColor">
+            <summary>
+            获取或设置链接文本颜色
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveMessageControl.MessageFont">
+            <summary>
+            获取或设置消息文本字体
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveMessageControl.LinkFont">
+            <summary>
+            获取或设置链接文本字体
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveMessageControl.AutoSizeControl">
+            <summary>
+            获取或设置是否自动调整控件大小
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveMessageControl.VerticalSpacing">
+            <summary>
+            获取或设置垂直间距
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveMessageControl.HorizontalSpacing">
+            <summary>
+            获取或设置水平间距
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveMessageControl.MessageLabel">
+            <summary>
+            获取消息标签控件
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.HiveMessageControl.MessageLinkLabel">
+            <summary>
+            获取链接标签控件
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveMessageControl.SetValue(System.String,System.String)">
+            <summary>
+            设置消息内容
+            </summary>
+            <param name="message">消息文本</param>
+            <param name="linkText">链接文本（可选）</param>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveMessageControl.SetMessageStyle(System.Drawing.Font,System.Drawing.Color,System.Drawing.Font,System.Drawing.Color)">
+            <summary>
+            设置消息样式
+            </summary>
+            <param name="messageFont">消息字体</param>
+            <param name="messageColor">消息颜色</param>
+            <param name="linkFont">链接字体</param>
+            <param name="linkColor">链接颜色</param>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveMessageControl.Clear">
+            <summary>
+            清除消息内容
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveMessageControl.OnResize(System.EventArgs)">
+            <summary>
+            控件大小改变时
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveMessageControl.OnFontChanged(System.EventArgs)">
+            <summary>
+            字体改变时
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveMessageControl.Dispose(System.Boolean)">
+            <summary>
+            清理资源
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveMessageControl.ShouldSerializeMessageFont">
+            <summary>
+            是否应该序列化MessageFont属性
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveMessageControl.ResetMessageFont">
+            <summary>
+            重置MessageFont属性
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveMessageControl.ShouldSerializeLinkFont">
+            <summary>
+            是否应该序列化LinkFont属性
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.HiveMessageControl.ResetLinkFont">
+            <summary>
+            重置LinkFont属性
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.MaintenanceTimerControl.StartMaintenanceTimer">
+            <summary>
+            启动维护定时器
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.MaintenanceTimerControl.StopMaintenanceTimer">
+            <summary>
+            停止维护定时器
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.MaintenanceTimerControl.RefreshMaintenanceTime">
+            <summary>
+            立即更新维护时间显示
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.MaintenanceTimerControl.SetUpdateInterval(System.Int32)">
+            <summary>
+            设置定时器更新间隔
+            </summary>
+            <param name="interval">间隔时间（毫秒）</param>
+        </member>
+        <member name="M:AF.Upload.Hive.MaintenanceTimerControl.AdjustFontSize">
+            <summary>
+            根据控件大小自动调整字体大小
+            </summary>
+        </member>
+        <member name="M:AF.Upload.Hive.MaintenanceTimerControl.SetLayoutProportions(System.Single,System.Single)">
+            <summary>
+            设置布局比例
+            </summary>
+            <param name="labelColumnPercentage">标签列宽度百分比</param>
+            <param name="valueColumnPercentage">数值列宽度百分比</param>
+        </member>
+        <member name="P:AF.Upload.Hive.MaintenanceTimerControl.WeeklyRemainingDays">
+            <summary>
+            获取周维护剩余天数
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.MaintenanceTimerControl.MonthlyRemainingDays">
+            <summary>
+            获取月维护剩余天数
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.MaintenanceTimerControl.WeeklyLabelText">
+            <summary>
+            获取或设置周维护标签文本
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.MaintenanceTimerControl.MonthlyLabelText">
+            <summary>
+            获取或设置月维护标签文本
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.MaintenanceTimerControl.TimerInterval">
+            <summary>
+            获取或设置定时器更新间隔（毫秒）
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.MaintenanceTimerControl.AutoAdjustFont">
+            <summary>
+            获取或设置是否启用自动字体调整
+            </summary>
+        </member>
+        <member name="T:AF.Upload.Hive.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.Properties.Resources.Culture">
+            <summary>
+              重写当前线程的 CurrentUICulture 属性，对
+              使用此强类型资源类的所有资源查找执行重写。
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.Properties.Resources.EStop">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.Properties.Resources.LightCurtain">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.Properties.Resources.Pause">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.Properties.Resources.SafetyDoor">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.Properties.Resources.Start">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:AF.Upload.Hive.Properties.Resources.Stop">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+    </members>
+</doc>

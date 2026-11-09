@@ -1,0 +1,370 @@
+﻿using AF.Common;
+using AF.Common.UI;
+using AF.Data;
+using AF.Data.Language;
+using AF.Data.Permission;
+using AF.Station;
+using AF.Station.UI;
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Management;
+using System.Reflection;
+using System.Runtime.InteropServices.ComTypes;
+using System.Text.RegularExpressions;
+using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
+using static AF.Station.StationBase;
+using AF.File;
+using Autoframe;
+using AF.Card;
+using AF.Upload.Hive;
+using System.Threading.Tasks;
+using AF.Communicate;
+using AutoFrame;
+using System.ComponentModel;
+
+namespace Autoframe.UI
+{
+    public partial class Form_Auto : AF.Data.Language.BaseForm
+    {
+        private static List<Form> formCustom = new List<Form>();
+        Timer timer = new Timer();
+
+        bool bFirstInit = false;
+
+        public Form_Auto()
+        {
+            InitializeComponent();
+            //InitCtrlAnchor();
+
+            bFirstInit = true;
+
+
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            string[] strArrayDefect = ExtensionHelper.dicDecfect.Keys.Select(p => p).ToArray<string>();
+            int[] intArrayCount = ExtensionHelper.dicDecfect.Values.Select(p => p).ToArray<int>();
+            chartPie.Series[0].Points.AddXY(strArrayDefect, intArrayCount);
+        }
+
+        /// <summary>
+        /// 添加自定义TabPage
+        /// </summary>
+        /// <param name="form"></param>
+        public static void AddPage(params Form[] form)
+        {
+            foreach (var item in form)
+                formCustom.Add(item);
+        }
+
+        /// <summary>
+        /// 添加自定义面板
+        /// </summary>
+        /// <param name="arrayDI"></param>
+        /// <param name="arrayDO"></param>
+        public static void SetCustomPanel(object[] arrayDI = null, object[] arrayDO = null)
+        {
+            ucQuickPanel = new Form_Auto_CustomPanel();
+            ((Form_Auto_CustomPanel)ucQuickPanel).Init(arrayDI, arrayDO);
+        }
+
+        /// <summary>
+        /// 添加自定义面板
+        /// </summary>
+        /// <param name="uc">自定义</param>
+        public static void SetCustomPanel(UserControl uc)
+        {
+            ucQuickPanel = uc;
+        }
+
+        private static UserControl ucQuickPanel = null;
+
+        void LoadCustom()
+        {
+            if(ucQuickPanel != null)
+            {
+                ucQuickPanel.Dock = DockStyle.Fill;
+                this.tableLayoutPanel_Main.Controls.Add(ucQuickPanel, 0, 2);
+            }
+            else
+            {
+                this.tableLayoutPanel_Main.SetRowSpan(this.dataGridViewProductDataShow, 3);
+            }
+
+            if (formCustom == null)
+                return;
+            if (formCustom.Count < 1)
+                return;
+
+            foreach (var form in formCustom)
+            {
+                TabPage tabPage = new TabPage();
+                tabPage.AutoScroll = true;
+                tabPage.Name = form.Text;
+                tabPage.Text = form.Text;
+                form.TopLevel = false;
+                form.FormBorderStyle = FormBorderStyle.None;
+                form.Dock = DockStyle.Fill;
+                tabPage.Controls.Add(form);
+                this.tabControl_Auto.Controls.Add(tabPage);
+                form.Show();
+            }
+        }
+
+        private void Form_Auto_Load(object sender, EventArgs e)
+        {
+            //AddPage(new Form_InspectInfo(), new Form_UnloadInfo());
+            LoadCustom();
+            StationMgr.Stop();
+            this.logGroup1.Init();
+
+            ProgramTool.StationStateChangedEvent += OnStationStateChanged;
+            OnStationStateChanged(StationState.Manual, StationMgr.State);
+
+            ProductConfig.StoreDataChangedEvent += InitProductDataGridViewHead;            
+            InitProductDataGridViewHead();
+            ProductConfig.ShowProductDataEvent += OnShowProductData;
+            UpdateProductCounter();
+            ProductConfig.UpdateCarrierCounter += OnUpdateCarrierCounter;
+            OnUpdateCarrierCounter();
+
+            //Parameter.UpdateParameter += OnUpdateParameter;
+            //OnUpdateParameter();
+            
+
+            panel_IoSummary.ContextMenu = new ContextMenu();
+            MenuItem clearItem = new MenuItem("数据清空");
+            clearItem.Click += button_clear_Click;
+            panel_IoSummary.ContextMenu.MenuItems.Add(clearItem);
+
+            this.label_MachineName.Text = Ini.GetStringValue(Program.g_IniFile, "Info", "Machine", "");
+            this.lb_SiteValue.Text = Ini.GetStringValue(Program.g_IniFile, "Info", "Site", "");
+            this.lb_SWVersionValue.Text = Form_Main.SoftwareVersion;
+            this.lb_MSPathValue.Text = Assembly.GetExecutingAssembly().Location;
+            string hashCode = ProgramTool.GetFileHash(Assembly.GetExecutingAssembly().Location);
+            if (!string.IsNullOrEmpty(hashCode) && hashCode.Length > 6)
+                this.lb_MSHashValue.Text = hashCode/*.Substring(0, 6)*/;
+
+            if (HiveMgr.Enable)
+            {
+                HiveMgr.GetHiveStationInfo += OnGetHiveStationInfo;
+                HiveMgr.GetHiveUserInfo += OnGetHiveUserInfo;
+            }
+               
+
+            LanguageMgr.Instance.eventChangeLanguage += OnChangeLanguage;
+
+            if (bFirstInit)
+            {
+                bFirstInit = false;
+                timer.Interval = 1000;
+                timer.Tick += Timer_Tick;
+                timer.Start();
+            }
+           
+        }
+
+        private void OnUpdateCarrierCounter()
+        {
+            if (this.IsDisposed || !this.IsHandleCreated)
+                return;
+            this.BeginInvoke((Action)delegate
+            {
+                this.label_CarrierCount.Text = SystemIO.CarrierCount.ToString();
+            });
+        }
+
+        //private void OnUpdateParameter()
+        //{
+        //    this.dataGridView_CriticalParam.Rows.Clear();
+        //    foreach (var item in Parameter.GetKeyParameters())
+        //    {
+        //        this.dataGridView_CriticalParam.Rows.Add(item.m_strDescribe.txtTrans(TransType.Trans), item.m_strValue, item.m_strMin, item.m_strMax);
+        //    }
+        //}
+
+        private void OnChangeLanguage()
+        {
+            //OnUpdateParameter();
+            this.logGroup1.OnChangeLanguage();
+            foreach (KeyValuePair<string, ProductConfig.SaveOption> keyValuePair in ProductConfig.Instance.Option)
+            {
+                if (keyValuePair.Value.bShow)
+                    dataGridViewProductDataShow.Columns[keyValuePair.Key].HeaderText = keyValuePair.Key.txtTrans(TransType.Trans);
+            }
+        }
+
+
+        private void OnStationStateChanged(StationState OldState, StationState NewState)
+        {
+            if (this.IsDisposed || !this.IsHandleCreated)
+                return;
+            this.BeginInvoke((Action)delegate
+            {
+                if (OldState == StationState.Manual && NewState == StationState.Init)
+                {
+                    this.logGroup1.Clear();
+                }
+            });
+        }
+
+        /// <summary>
+        /// 初始化界面生产数据表
+        /// </summary>
+        private void InitProductDataGridViewHead()
+        {
+            if (this.IsDisposed || !this.IsHandleCreated)
+                return;
+            this.BeginInvoke((Action)delegate
+            {
+                dataGridViewProductDataShow.Rows.Clear();
+                dataGridViewProductDataShow.Columns.Clear();
+                dataGridViewProductDataShow.RowsDefaultCellStyle.BackColor = Color.Ivory;
+                dataGridViewProductDataShow.AlternatingRowsDefaultCellStyle.BackColor = Color.PaleTurquoise;
+
+                if (ProductConfig.Instance.Option != null && ProductConfig.Instance.Option.Count > 0)
+                {
+                    foreach (KeyValuePair<string, ProductConfig.SaveOption> keyValuePair in ProductConfig.Instance.Option)
+                    {
+                        if (keyValuePair.Value.bShow)
+                        {
+                            dataGridViewProductDataShow.Columns.Add(keyValuePair.Key, keyValuePair.Key.txtTrans(TransType.Trans));
+                        }
+                    }
+                    foreach (DataGridViewColumn column in dataGridViewProductDataShow.Columns)
+                    {
+                        column.SortMode = DataGridViewColumnSortMode.NotSortable;
+                        column.Width = 100;
+                    }
+                }
+            });
+        }
+
+        /// <summary>
+        /// 界面最大显示100行物料数据
+        /// </summary>
+        public static int ShowCount = 100;
+
+        /// <summary>
+        /// 生产数据展示
+        /// </summary>
+        /// <param name="dicProduct"></param>
+        private void OnShowProductData(Dictionary<string, string> dicProduct)
+        {
+            if (this.IsDisposed || !this.IsHandleCreated)
+                return;
+
+            this.BeginInvoke((Action)delegate
+            {
+                // 更新计数器
+                UpdateProductCounter();
+                if (dicProduct.Count < 1)
+                    return;
+
+                DataGridViewRow row = new DataGridViewRow();
+                row.CreateCells(dataGridViewProductDataShow, dicProduct.Values.ToArray());
+                if (dicProduct.ContainsKey("结果"))
+                {
+                    bool result;
+                    string resultValue = dicProduct["结果"];
+                    if (bool.TryParse(resultValue, out result) && !result)
+                        row.DefaultCellStyle.ForeColor = Color.Red;
+                }
+                dataGridViewProductDataShow.Rows.Insert(0, row);
+                if (dataGridViewProductDataShow.Rows.Count > ShowCount)
+                    dataGridViewProductDataShow.Rows.RemoveAt(dataGridViewProductDataShow.Rows.Count - 1);
+                dataGridViewProductDataShow.Refresh();
+            });
+
+            if(HiveMgr.Enable)
+            {
+                Task.Run(() => 
+                {
+                    HiveTool.MachineDataParameters machineDataParameters = new HiveTool.MachineDataParameters();                    
+                    switch (StationEx.Process)
+                    {
+                        case AutoProcess.正常生产:
+                            machineDataParameters.Mode = Parameter.GetBit("Enable_PDCA") ? ProcessingMode.NormalRunWithPdcaSfc : ProcessingMode.NormalRunNotWithPdcaSfc;
+                            break;
+                        case AutoProcess.空跑:
+                            machineDataParameters.Mode = ProcessingMode.DryRun;
+                            break;
+                        case AutoProcess.CPK:
+                            machineDataParameters.Mode = ProcessingMode.CPK;
+                            break;
+                        //case AutoProcess.GRR:
+                        //    machineDataParameters.Mode = ProcessingMode.GRR;
+                        //    break;
+                        default:
+                            break;
+                    }
+                    //填充产品其他数据
+                    HiveMgr.OnSendProductData(machineDataParameters);
+                });
+            }
+        }
+
+        /// <summary>
+        /// 获取Hive站位信息
+        /// </summary>
+        private HiveStationInfo OnGetHiveStationInfo()
+        {
+            //可以从MES 获取Hive站点信息
+            HiveStationInfo hiveStationInfo = new HiveStationInfo();
+            SFCQuery.M_UploadSFC(ref hiveStationInfo);
+            return hiveStationInfo;
+        }
+        /// <summary>
+        /// 获取Hive用户信息
+        /// </summary>
+        private bool OnGetHiveUserInfo(ref HiveUserInfo hiveUserInfo)
+        {
+            //可以从MES 获取Hive站点信息
+            SFCQuery.M_UploadSFC(ref hiveUserInfo);
+            return true;
+        }
+
+        /// <summary>
+        /// 更新计数器显示
+        /// </summary>
+        private void UpdateProductCounter()
+        {
+            if (this.IsDisposed || !this.IsHandleCreated)
+                return;
+
+            this.BeginInvoke((Action)delegate
+            {
+                lb_TotalValue.Text = ProductConfig.TotalCount.ToString();
+                lb_PassValue.Text = ProductConfig.PassCount.ToString();
+                lb_FailValue.Text = ProductConfig.FailCount.ToString();
+
+                if (ProductConfig.TotalCount > 0)
+                {
+                    double yield = (double)ProductConfig.PassCount / ProductConfig.TotalCount * 100;
+                    lb_YieldValue.Text = yield.ToString("F2") + "%";
+                }
+                else
+                {
+                    lb_YieldValue.Text = "0.00%";
+                }
+            });            
+        }
+
+        private void button_clear_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("是否清空统计数据？".txtTrans(TransType.Trans), "提示".txtTrans(TransType.Trans),
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                ProductConfig.ClearProductCounter();
+                UpdateProductCounter();
+            }
+        }
+    }
+}

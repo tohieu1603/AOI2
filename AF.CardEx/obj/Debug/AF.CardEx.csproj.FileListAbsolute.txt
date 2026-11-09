@@ -1,0 +1,104 @@
+E:\Projects\git new\release\autoframe_release\exe\AF.CardEx.xml
+E:\Projects\git new\release\autoframe_release\exe\AF.CardEx.dll
+E:\Projects\git new\release\autoframe_release\exe\AF.CardEx.pdb
+E:\Projects\git new\release\autoframe_release\AF.CardEx\obj\Debug\AF.CardEx.csproj.CoreCompileInputs.cache
+E:\Projects\git new\release\autoframe_release\AF.CardEx\obj\Debug\AF.CardEx.csproj.CopyComplete
+E:\Projects\git new\release\autoframe_release\AF.CardEx\obj\Debug\AF.CardEx.dll
+E:\Projects\git new\release\autoframe_release\AF.CardEx\obj\Debug\AF.CardEx.pdb
+E:\Projects\git new\release\autoframe_release\AF.CardEx\obj\Debug\AF.CardEx.csprojAssemblyReference.cache
+D:\M\2. Project\3. Other\autoframe_release\exe\AF.CardEx.xml
+D:\M\2. Project\3. Other\autoframe_release\exe\AF.CardEx.dll
+D:\M\2. Project\3. Other\autoframe_release\exe\AF.CardEx.pdb
+D:\M\2. Project\3. Other\autoframe_release\AF.CardEx\obj\Debug\AF.CardEx.csproj.AssemblyReference.cache
+D:\M\2. Project\3. Other\autoframe_release\AF.CardEx\obj\Debug\AF.CardEx.csproj.CoreCompileInputs.cache
+D:\M\2. Project\3. Other\autoframe_release\AF.CardEx\obj\Debug\AF.CardEx.csproj.CopyComplete
+D:\M\2. Project\3. Other\autoframe_release\AF.CardEx\obj\Debug\AF.CardEx.dll
+D:\M\2. Project\3. Other\autoframe_release\AF.CardEx\obj\Debug\AF.CardEx.pdb
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\exe\AF.CardEx.xml
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\exe\AF.CardEx.dll
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\exe\AF.CardEx.pdb
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\AF.CardEx\obj\Debug\AF.CardEx.csproj.AssemblyReference.cache
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\AF.CardEx\obj\Debug\AF.CardEx.csproj.CoreCompileInputs.cache
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\AF.CardEx\obj\Debug\AF.CardEx.csproj.CopyComplete
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\AF.CardEx\obj\Debug\AF.CardEx.dll
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_ASide_20260929_update unloadLogic\AF.CardEx\obj\Debug\AF.CardEx.pdb
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\exe\AF.CardEx.xml
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\exe\AF.CardEx.dll
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\exe\AF.CardEx.pdb
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\AF.CardEx\obj\Debug\AF.CardEx.csproj.AssemblyReference.cache
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\AF.CardEx\obj\Debug\AF.CardEx.csproj.CoreCompileInputs.cache
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\AF.CardEx\obj\Debug\AF.CardEx.csproj.CopyComplete
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\AF.CardEx\obj\Debug\AF.CardEx.dll
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20260930_update unloadLogic\AF.CardEx\obj\Debug\AF.CardEx.pdb
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\exe\AF.CardEx.xml
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\exe\AF.CardEx.dll
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\exe\AF.CardEx.pdb
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.CardEx\obj\Debug\AF.CardEx.csproj.AssemblyReference.cache
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.CardEx\obj\Debug\AF.CardEx.csproj.CoreCompileInputs.cache
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.CardEx\obj\Debug\AF.CardEx.csproj.CopyComplete
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.CardEx\obj\Debug\AF.CardEx.dll
+D:\M\9.Secote\AOI组立\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.CardEx\obj\Debug\AF.CardEx.pdb
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\exe\AF.CardEx.xml
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\exe\AF.CardEx.dll
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\exe\AF.CardEx.pdb
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.CardEx\obj\Debug\AF.CardEx.csproj.AssemblyReference.cache
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.CardEx\obj\Debug\AF.CardEx.csproj.CoreCompileInputs.cache
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.CardEx\obj\Debug\AF.CardEx.csproj.CopyComplete
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.CardEx\obj\Debug\AF.CardEx.dll
+E:\AOI组立\Code\1.RUNNING\AOI组立_newFrame_BSide_20261001_update unloadLogic\AF.CardEx\obj\Debug\AF.CardEx.pdb
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\exe\AF.CardEx.xml
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\exe\AF.CardEx.dll
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\exe\AF.CardEx.pdb
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.csproj.AssemblyReference.cache
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.csproj.CoreCompileInputs.cache
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.csproj.CopyComplete
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.dll
+E:\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.pdb
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\exe\AF.CardEx.xml
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\exe\AF.CardEx.dll
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\exe\AF.CardEx.pdb
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.csproj.AssemblyReference.cache
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.csproj.CoreCompileInputs.cache
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.csproj.CopyComplete
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.dll
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261002_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.pdb
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\exe\AF.CardEx.xml
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\exe\AF.CardEx.dll
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\exe\AF.CardEx.pdb
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.csproj.AssemblyReference.cache
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.csproj.CoreCompileInputs.cache
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.csproj.CopyComplete
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.dll
+E:\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.pdb
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\exe\AF.CardEx.xml
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\exe\AF.CardEx.dll
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\exe\AF.CardEx.pdb
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.csproj.AssemblyReference.cache
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.csproj.CoreCompileInputs.cache
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.csproj.CopyComplete
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.dll
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261003_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.pdb
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\exe\AF.CardEx.xml
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\exe\AF.CardEx.dll
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\exe\AF.CardEx.pdb
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.csproj.AssemblyReference.cache
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.csproj.CoreCompileInputs.cache
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.csproj.CopyComplete
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.dll
+D:\装机软件\HAI\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.pdb
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\exe\AF.CardEx.xml
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\exe\AF.CardEx.dll
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\exe\AF.CardEx.pdb
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.csproj.AssemblyReference.cache
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.csproj.CoreCompileInputs.cache
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.csproj.CopyComplete
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.dll
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261005_Update-显示动子有料盘\AF.CardEx\obj\Debug\AF.CardEx.pdb
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\exe\AF.CardEx.xml
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\exe\AF.CardEx.dll
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\exe\AF.CardEx.pdb
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\AF.CardEx\obj\Debug\AF.CardEx.csproj.AssemblyReference.cache
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\AF.CardEx\obj\Debug\AF.CardEx.csproj.CoreCompileInputs.cache
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\AF.CardEx\obj\Debug\AF.CardEx.csproj.CopyComplete
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\AF.CardEx\obj\Debug\AF.CardEx.dll
+E:\AOI组立\Code\1.RUNNING\AOI组立_NewFrame_BSide_20261008_Update-清料模式\AF.CardEx\obj\Debug\AF.CardEx.pdb

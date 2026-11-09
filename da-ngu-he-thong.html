@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hệ Thống Đa Ngữ – Autoframe</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f1117; color: #e2e8f0; line-height: 1.7; }
+  
+  .header { background: linear-gradient(135deg, #1a1f36 0%, #0d1b2a 100%); border-bottom: 2px solid #3b82f6; padding: 30px 40px; }
+  .header h1 { font-size: 2rem; color: #60a5fa; margin-bottom: 6px; }
+  .header p { color: #94a3b8; font-size: 0.95rem; }
+
+  .container { max-width: 1100px; margin: 0 auto; padding: 30px 20px; }
+
+  /* Section */
+  .section { margin-bottom: 40px; }
+  .section-title { font-size: 1.3rem; font-weight: 700; color: #f1f5f9; border-left: 4px solid #3b82f6; padding-left: 14px; margin-bottom: 18px; }
+
+  /* Cards */
+  .card { background: #1e2535; border: 1px solid #2d3748; border-radius: 10px; padding: 20px 24px; margin-bottom: 16px; }
+  .card h3 { font-size: 1rem; color: #60a5fa; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+  .card p, .card li { font-size: 0.9rem; color: #cbd5e1; }
+  .card ul { padding-left: 18px; }
+  .card ul li { margin-bottom: 4px; }
+
+  /* Arch flow */
+  .arch { display: flex; gap: 0; align-items: stretch; flex-wrap: wrap; margin: 10px 0; }
+  .arch-box { background: #1a2744; border: 1px solid #3b82f6; border-radius: 8px; padding: 14px 20px; flex: 1; min-width: 150px; text-align: center; }
+  .arch-box .label { font-size: 0.75rem; color: #94a3b8; }
+  .arch-box .value { font-size: 0.95rem; font-weight: 600; color: #93c5fd; margin-top: 4px; }
+  .arch-arrow { display: flex; align-items: center; color: #3b82f6; font-size: 1.5rem; padding: 0 8px; }
+
+  /* Table */
+  table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+  th { background: #1e3a5f; color: #93c5fd; font-weight: 600; padding: 10px 14px; text-align: left; }
+  td { padding: 9px 14px; border-bottom: 1px solid #2d3748; color: #cbd5e1; }
+  tr:hover td { background: #1e2535; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 0.75rem; font-weight: 600; }
+  .badge-zh { background: #7c3aed22; color: #c4b5fd; border: 1px solid #7c3aed55; }
+  .badge-en { background: #15803d22; color: #86efac; border: 1px solid #15803d55; }
+  .badge-vi { background: #b4530022; color: #fdba74; border: 1px solid #c2410c55; }
+
+  /* Code */
+  pre { background: #0d1117; border: 1px solid #2d3748; border-radius: 8px; padding: 16px 18px; overflow-x: auto; font-size: 0.85rem; color: #e2e8f0; }
+  code { font-family: 'Cascadia Code', 'Consolas', monospace; }
+  .kw { color: #c792ea; }
+  .str { color: #c3e88d; }
+  .cm { color: #546e7a; font-style: italic; }
+  .type { color: #82aaff; }
+  .method { color: #89ddff; }
+  .num { color: #f78c6c; }
+  .prop { color: #ffcb6b; }
+
+  /* Alert */
+  .alert { border-left: 4px solid; border-radius: 0 8px 8px 0; padding: 12px 16px; margin: 12px 0; font-size: 0.88rem; }
+  .alert-info { border-color: #3b82f6; background: #1e3a5f33; color: #93c5fd; }
+  .alert-warn { border-color: #f59e0b; background: #78350f22; color: #fcd34d; }
+  .alert-green { border-color: #22c55e; background: #14532d22; color: #86efac; }
+
+  /* Flow diagram */
+  .flow { display: flex; flex-direction: column; gap: 2px; }
+  .flow-step { display: flex; align-items: flex-start; gap: 12px; }
+  .flow-line { display: flex; flex-direction: column; align-items: center; }
+  .flow-dot { width: 14px; height: 14px; border-radius: 50%; background: #3b82f6; flex-shrink: 0; margin-top: 4px; }
+  .flow-vline { width: 2px; background: #3b82f655; flex: 1; min-height: 20px; }
+  .flow-content { background: #1a2744; border: 1px solid #2d3748; border-radius: 6px; padding: 10px 14px; flex: 1; margin-bottom: 8px; }
+  .flow-content strong { color: #93c5fd; font-size: 0.9rem; }
+  .flow-content p { color: #94a3b8; font-size: 0.82rem; margin-top: 2px; }
+
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 700px) { .grid2 { grid-template-columns: 1fr; } .arch { flex-direction: column; } }
+
+  .tag-mono { font-family: monospace; background: #0d1117; padding: 1px 6px; border-radius: 4px; font-size: 0.82rem; color: #89ddff; }
+  .flag { font-size: 1.1rem; }
+
+  .section-num { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; background: #3b82f6; border-radius: 50%; font-size: 0.8rem; font-weight: 700; color: #fff; margin-right: 8px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🌐 Hệ Thống Đa Ngữ – Autoframe</h1>
+  <p>Phân tích kiến trúc multi-language trong dự án • SQLite + LanguageMgr + txtTrans()</p>
+</div>
+
+<div class="container">
+
+  <!-- ===== TỔNG QUAN ===== -->
+  <div class="section">
+    <div class="section-title"><span class="section-num">1</span>Tổng quan kiến trúc</div>
+
+    <div class="arch">
+      <div class="arch-box">
+        <div class="label">🗄️ Database</div>
+        <div class="value">language.db</div>
+      </div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-box">
+        <div class="label">📦 DLL</div>
+        <div class="value">AF.Data.Language.dll</div>
+      </div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-box">
+        <div class="label">🔧 Singleton</div>
+        <div class="value">LanguageMgr.Instance</div>
+      </div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-box">
+        <div class="label">🔌 Extension</div>
+        <div class="value">.txtTrans()</div>
+      </div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-box">
+        <div class="label">🖥️ UI</div>
+        <div class="value">Form / Controls</div>
+      </div>
+    </div>
+
+    <div class="alert alert-info" style="margin-top:14px;">
+      Toàn bộ logic đa ngữ nằm trong <strong>AF.Data.Language.dll</strong> (binary, không có source). Code Autoframe chỉ gọi API của DLL này qua <code>LanguageMgr.Instance</code> và extension method <code>.txtTrans()</code>.
+    </div>
+  </div>
+
+  <!-- ===== NGÔN NGỮ HỖ TRỢ ===== -->
+  <div class="section">
+    <div class="section-title"><span class="section-num">2</span>Các ngôn ngữ được hỗ trợ</div>
+    <div class="card">
+      <table>
+        <thead><tr><th>id</th><th>Tên</th><th>Mã</th><th>Flag</th><th>Trạng thái</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><span class="tag-mono">0</span></td>
+            <td>中文</td>
+            <td><span class="badge badge-zh">ZH</span></td>
+            <td><span class="flag">🇨🇳</span> img\lan\cn.png</td>
+            <td>✅ Active (mặc định)</td>
+          </tr>
+          <tr>
+            <td><span class="tag-mono">4349f938-...</span></td>
+            <td>English</td>
+            <td><span class="badge badge-en">EN</span></td>
+            <td><span class="flag">🇬🇧</span> img\lan\gb.png</td>
+            <td>✅ Active</td>
+          </tr>
+          <tr>
+            <td><span class="tag-mono">78779677-...</span></td>
+            <td>Vietnamese</td>
+            <td><span class="badge badge-vi">VI</span></td>
+            <td><span class="flag">🇻🇳</span> img\lan\vn.png</td>
+            <td>✅ Active</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="alert alert-info" style="margin-top:12px;">
+        <strong>currentLan</strong> trong bảng <code>tbSysParam</code> lưu ID ngôn ngữ hiện tại (giá trị <code>0</code> = Tiếng Trung). Khi user đổi ngôn ngữ, giá trị này được cập nhật.
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== HAI LỚP DỊCH ===== -->
+  <div class="section">
+    <div class="section-title"><span class="section-num">3</span>Hai lớp dịch thuật (Two-Layer Translation)</div>
+
+    <div class="grid2">
+      <div class="card">
+        <h3>📋 Layer 1 — UI Control Translation</h3>
+        <p><strong>Bảng:</strong> <code>tblanguage</code></p>
+        <ul style="margin-top:10px;">
+          <li>Dịch các control cố định: Label, Button, MenuItem</li>
+          <li>Key = <strong>classname + controlname</strong></li>
+          <li>Load 1 lần lúc khởi động form</li>
+          <li>Framework tự động áp vào control</li>
+        </ul>
+        <div style="margin-top:12px; font-size:0.82rem; color:#94a3b8;">
+          Ví dụ:<br>
+          <code>Form_Main | toolStripMenuItem_Calib</code><br>
+          🇨🇳 标定 → 🇻🇳 Hiệu chuẩn<br>
+          <code>Form_Main | toolStripMenuItem_Produce</code><br>
+          🇨🇳 生产 → 🇻🇳 Sản xuất
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>💬 Layer 2 — Runtime Text Translation</h3>
+        <p><strong>Bảng:</strong> <code>textTranslation</code></p>
+        <ul style="margin-top:10px;">
+          <li>Dịch chuỗi động trong code lúc runtime</li>
+          <li>Key = <strong>chuỗi Hán văn gốc</strong></li>
+          <li>Gọi thông qua <code>.txtTrans(TransType.Trans)</code></li>
+          <li>Tổng: <strong>4.327 bản ghi</strong> dịch thuật</li>
+        </ul>
+        <div style="margin-top:12px; font-size:0.82rem; color:#94a3b8;">
+          Ví dụ:<br>
+          🇨🇳 <code>"加载参数"</code><br>
+          → 🇬🇧 <code>"Load parameters"</code><br>
+          → 🇻🇳 <code>"Tải tham số"</code>
+        </div>
+      </div>
+    </div>
+
+    <!-- DB Schema -->
+    <div class="card" style="margin-top:0;">
+      <h3>🗃️ Schema các bảng trong language.db</h3>
+      <table>
+        <thead><tr><th>Bảng</th><th>Columns chính</th><th>Mục đích</th><th>Số bản ghi</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><code>tblanguagecon</code></td>
+            <td>id, name, code, img, isActive</td>
+            <td>Danh sách ngôn ngữ hỗ trợ</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td><code>tblanguage</code></td>
+            <td>lanId, _classname, _controlname, _cnvalue, _tranvalue</td>
+            <td>Dịch UI control theo form</td>
+            <td>1.566</td>
+          </tr>
+          <tr>
+            <td><code>textTranslation</code></td>
+            <td>id (=CH text), lanId, _tranvalue</td>
+            <td>Dịch runtime text</td>
+            <td>4.327</td>
+          </tr>
+          <tr>
+            <td><code>tbparameter</code></td>
+            <td>—</td>
+            <td>Dịch tên parameter</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td><code>tbSysParam</code></td>
+            <td>key, value</td>
+            <td>Lưu trạng thái hệ thống (currentLan)</td>
+            <td>2</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ===== CÁCH DÙNG TRONG CODE ===== -->
+  <div class="section">
+    <div class="section-title"><span class="section-num">4</span>Cách dùng trong code C#</div>
+
+    <div class="card">
+      <h3>🔌 Extension Method: txtTrans()</h3>
+      <pre><code><span class="cm">// TransType enum — 2 giá trị</span>
+<span class="kw">enum</span> <span class="type">TransType</span>
+{
+    Trans,  <span class="cm">// Dịch text thực sự → lookup từ textTranslation table</span>
+    Mark,   <span class="cm">// Đánh dấu cho log/event → không dịch UI, chỉ ghi nhận</span>
+}
+
+<span class="cm">// Extension method định nghĩa trong AF.Data.Language.dll</span>
+<span class="kw">public static string</span> <span class="method">txtTrans</span>(<span class="kw">this string</span> cnText, <span class="type">TransType</span> type)
+{
+    <span class="cm">// Nội bộ DLL — lookup từ textTranslation table theo currentLan</span>
+    <span class="cm">// Nếu không tìm thấy → trả về chuỗi gốc (Tiếng Trung)</span>
+}</code></pre>
+    </div>
+
+    <div class="card">
+      <h3>📌 Các kiểu sử dụng trong dự án</h3>
+      <div class="grid2">
+        <div>
+          <p style="color:#94a3b8; font-size:0.82rem; margin-bottom:6px;">MessageBox / Dialog</p>
+          <pre style="font-size:0.8rem;"><code><span class="type">MessageBox</span>.<span class="method">Show</span>(
+  <span class="str">"请登录管理员"</span>
+  .<span class="method">txtTrans</span>(<span class="type">TransType</span>.Trans)
+);</code></pre>
+        </div>
+        <div>
+          <p style="color:#94a3b8; font-size:0.82rem; margin-bottom:6px;">Event log / Error</p>
+          <pre style="font-size:0.8rem;"><code><span class="type">EventMgr</span>.<span class="method">Error</span>(
+  <span class="str">"参数类型错误"</span>
+  .<span class="method">txtTrans</span>(<span class="type">TransType</span>.Mark)
+);</code></pre>
+        </div>
+        <div>
+          <p style="color:#94a3b8; font-size:0.82rem; margin-bottom:6px;">Column header (khi đổi ngôn ngữ)</p>
+          <pre style="font-size:0.8rem;"><code>col.HeaderText = keyValuePair.Key
+  .<span class="method">txtTrans</span>(<span class="type">TransType</span>.Trans);</code></pre>
+        </div>
+        <div>
+          <p style="color:#94a3b8; font-size:0.82rem; margin-bottom:6px;">ToolStrip Text</p>
+          <pre style="font-size:0.8rem;"><code>tssl.Text = tssl.Tag.ToString()
+  .<span class="method">txtTrans</span>(<span class="type">TransType</span>.Trans);</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== LUỒNG ĐỔI NGÔN NGỮ ===== -->
+  <div class="section">
+    <div class="section-title"><span class="section-num">5</span>Luồng đổi ngôn ngữ lúc runtime</div>
+
+    <div class="flow">
+      <div class="flow-step">
+        <div class="flow-line"><div class="flow-dot"></div><div class="flow-vline"></div></div>
+        <div class="flow-content">
+          <strong>① User click chọn ngôn ngữ trên UI</strong>
+          <p>Có thể là button hoặc menu item ngôn ngữ trên Form_Main (nằm trong AF.Data.Language.dll — không thấy source)</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-line"><div class="flow-dot"></div><div class="flow-vline"></div></div>
+        <div class="flow-content">
+          <strong>② LanguageMgr.Instance lưu ngôn ngữ mới</strong>
+          <p>Cập nhật <code>currentLan</code> trong <code>tbSysParam</code> → SQLite ghi vào <code>language.db</code></p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-line"><div class="flow-dot"></div><div class="flow-vline"></div></div>
+        <div class="flow-content">
+          <strong>③ LanguageMgr bắn event <code>eventChangeLanguage</code></strong>
+          <p>Tất cả subscriber đã đăng ký sẽ nhận được thông báo</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-line"><div class="flow-dot"></div><div class="flow-vline"></div></div>
+        <div class="flow-content">
+          <strong>④ Form_Main.OnChangeLanguage() — cập nhật ToolStrip, MenuItem</strong>
+          <p>Lặp qua các ToolStripMenuItem và cập nhật Text từ <code>.txtTrans(TransType.Trans)</code></p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-line"><div class="flow-dot"></div><div class="flow-vline"></div></div>
+        <div class="flow-content">
+          <strong>⑤ Form_Auto.OnChangeLanguage() — cập nhật DataGrid + logGroup</strong>
+          <p>Cập nhật HeaderText của các column trong <code>dataGridViewProductDataShow</code></p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-line"><div class="flow-dot"></div></div>
+        <div class="flow-content">
+          <strong>⑥ Layer 1 (tblanguage) tự động apply cho control tĩnh</strong>
+          <p>Framework trong DLL tự scan form và update text cho Label, Button, v.v.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <h3>📝 Code đăng ký event trong dự án</h3>
+      <pre><code><span class="cm">// Form_Auto.cs — dòng 254</span>
+<span class="type">LanguageMgr</span>.Instance.eventChangeLanguage += <span class="prop">OnChangeLanguage</span>;
+
+<span class="cm">// Form_Main.cs — dòng 342</span>
+<span class="type">LanguageMgr</span>.Instance.eventChangeLanguage += <span class="prop">OnChangeLanguage</span>;
+<span class="type">LanguageMgr</span>.Instance.eventChangeLanguage += () =>
+{
+    tssl.Text = tssl.Tag.ToString().<span class="method">txtTrans</span>(<span class="type">TransType</span>.Trans);
+};
+<span class="prop">OnChangeLanguage</span>();  <span class="cm">// Gọi ngay 1 lần lúc load form</span></code></pre>
+    </div>
+  </div>
+
+  <!-- ===== NẾU MUỐN THÊM CHUỖI MỚI ===== -->
+  <div class="section">
+    <div class="section-title"><span class="section-num">6</span>Cách thêm chuỗi mới vào hệ thống đa ngữ</div>
+
+    <div class="card">
+      <h3>✅ Bước 1 — Dùng chuỗi Hán văn trong code như bình thường</h3>
+      <pre><code><span class="cm">// Viết thẳng Hán văn, gọi .txtTrans() để dịch</span>
+<span class="type">MessageBox</span>.<span class="method">Show</span>(<span class="str">"保存成功"</span>.<span class="method">txtTrans</span>(<span class="type">TransType</span>.Trans));</code></pre>
+    </div>
+
+    <div class="card">
+      <h3>✅ Bước 2 — Thêm bản ghi vào bảng textTranslation</h3>
+      <pre><code><span class="cm">-- Thêm bản dịch Tiếng Anh</span>
+<span class="kw">INSERT INTO</span> textTranslation (id, lanId, _tranvalue, createtime)
+<span class="kw">VALUES</span> (<span class="str">'保存成功'</span>, <span class="str">'4349f938-d6da-442e-b65d-1c30bd8b26d9'</span>, <span class="str">'Save successful'</span>, datetime('now'));
+
+<span class="cm">-- Thêm bản dịch Tiếng Việt</span>
+<span class="kw">INSERT INTO</span> textTranslation (id, lanId, _tranvalue, createtime)
+<span class="kw">VALUES</span> (<span class="str">'保存成功'</span>, <span class="str">'78779677-6783-46dc-a397-8e2d3faa8cad'</span>, <span class="str">'Lưu thành công'</span>, datetime('now'));</code></pre>
+      <div class="alert alert-warn" style="margin-top:10px;">
+        Nếu không insert bản ghi → <code>.txtTrans()</code> sẽ trả về chuỗi Hán văn gốc (không lỗi, chỉ hiện chữ Trung).
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>✅ Bước 3 — UI Control tĩnh (Label, Button)</h3>
+      <pre><code><span class="cm">-- Thêm vào tblanguage để DLL tự dịch control</span>
+<span class="kw">INSERT INTO</span> tblanguage (lanId, _namespace, _classname, _controlname, _cnvalue, _tranvalue, isTrans, createtime)
+<span class="kw">VALUES</span> (<span class="str">'78779677-...'</span>, <span class="str">'Autoframe.UI'</span>, <span class="str">'Form_Main'</span>, <span class="str">'btnSave'</span>, <span class="str">'保存'</span>, <span class="str">'Lưu'</span>, <span class="num">1</span>, datetime('now'));</code></pre>
+    </div>
+  </div>
+
+  <!-- ===== PHÂN BỐ TRONG DỰ ÁN ===== -->
+  <div class="section">
+    <div class="section-title"><span class="section-num">7</span>Phân bố sử dụng trong dự án</div>
+
+    <div class="grid2">
+      <div class="card">
+        <h3>📂 Files dùng TransType.Trans (dịch UI)</h3>
+        <ul>
+          <li>Form_Main.cs — ~20 chỗ</li>
+          <li>Form_Auto.cs — cột DataGrid, header</li>
+          <li>Form_Auto_CustomPanel.cs — MessageBox</li>
+          <li>Form_UnloadInfo.cs — MessageBox</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>📂 Files dùng TransType.Mark (log/event)</h3>
+        <ul>
+          <li>TcpCommu_Camera.cs — lỗi kết nối</li>
+          <li>TcpCommu_Camera_CCD1.cs — lỗi param</li>
+          <li>TcpCommu_Robot.cs — lỗi param</li>
+          <li>TcpCommu_Camera_AOI.cs — timeout</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="alert alert-green">
+      <strong>💡 Điểm khác biệt Trans vs Mark:</strong><br>
+      <code>TransType.Trans</code> → dịch và hiển thị ra UI cho user thấy<br>
+      <code>TransType.Mark</code> → ghi vào log/event system (có thể dùng để tra cứu sau, không nhất thiết phải đẹp)
+    </div>
+  </div>
+
+  <!-- ===== TÓM TẮT ===== -->
+  <div class="section">
+    <div class="section-title"><span class="section-num">8</span>Tóm tắt nhanh</div>
+    <div class="card">
+      <table>
+        <thead><tr><th>Thành phần</th><th>Vị trí</th><th>Vai trò</th></tr></thead>
+        <tbody>
+          <tr><td><code>language.db</code></td><td>exe/db/</td><td>SQLite lưu toàn bộ bản dịch + config</td></tr>
+          <tr><td><code>AF.Data.Language.dll</code></td><td>exe/</td><td>Engine đa ngữ — Singleton, event, extension</td></tr>
+          <tr><td><code>LanguageMgr.Instance</code></td><td>DLL (binary)</td><td>Singleton quản lý ngôn ngữ hiện tại</td></tr>
+          <tr><td><code>eventChangeLanguage</code></td><td>DLL (binary)</td><td>Event broadcast khi đổi ngôn ngữ</td></tr>
+          <tr><td><code>.txtTrans(TransType.Trans)</code></td><td>DLL extension</td><td>Dịch chuỗi Hán → ngôn ngữ hiện tại</td></tr>
+          <tr><td><code>OnChangeLanguage()</code></td><td>Form_Main, Form_Auto</td><td>Handler cập nhật lại UI text</td></tr>
+          <tr><td><code>tblanguage</code></td><td>SQLite</td><td>Dịch control tĩnh theo form + tên control</td></tr>
+          <tr><td><code>textTranslation</code></td><td>SQLite</td><td>4327 chuỗi runtime (key = chữ Hán)</td></tr>
+          <tr><td><code>tbSysParam.currentLan</code></td><td>SQLite</td><td>Lưu ngôn ngữ đang chọn (persist qua restart)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<div style="background:#0d1117; border-top:1px solid #2d3748; padding:16px 40px; text-align:center; color:#475569; font-size:0.82rem;">
+  Autoframe · Hệ thống đa ngữ · 3 ngôn ngữ: 🇨🇳 中文 / 🇬🇧 English / 🇻🇳 Tiếng Việt
+</div>
+
+</body>
+</html>
+
